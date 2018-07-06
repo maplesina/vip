@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li,ol,li{
+	list-style: none;
+}{
+    list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/* 版心 */
+.wraper{
+	width: 1170px;
+	margin: 0 auto;
+}
+.clearfix:after{
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix{
+	*zoom: 1;
+}
