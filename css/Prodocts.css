@@ -2,18 +2,71 @@
 .main{
     margin: 0 auto;
     height: 800px;
+    min-width: 1000px;
 }
-
+/* 产品位置导航开始 */
 .product-01{
     width: 100%;
     font-size: 12px;
 }
+/* 产品位置导航结束 */
+/* 左侧产品以及简介开始 */
+.product-left{
+    height: 530px;
+    width: 420px;
+    float: left;
+}
+
+.p-safe{
+    width: 420px;
+    height: 59px;
+    border-top:1px dotted #BCB7BA; 
+}
+.p-safe ul{
+    height: 40px;
+    margin-top: 9px;
+}
+.p-safe li{
+    width: 140px;
+    float: left;
+    font-size: 16px;
+    color:#BCB7BA;
+}
+/* 左侧产品以及简介结束 */
+/* 右侧商品介绍开始 */
+.product-right{
+    height:550px ;
+    width: 750px;
+    background-color: #aaa;
+    float: left;
+}
+/* 右侧商品介绍结束 */
 /* 页面结构结束 */
 /* 详情页底部开始 */
 .P-footer{
     width: 100%;
     min-width: 1000px;
-    background-color: #000;
-    height: 400px;
+    background-color: #FCFCFC;
+    height: 480px;
+    border-top: 1px solid #EBEBEB;
 }
+.footer-vip{
+    height: 105px;
+    background: #000;    
+}
+.footer-list{
+    height: 150px;
+}
+.footer-list ul{
+    width: 194px;
+    float: left;
+    border-left: 1px solid #EBEBEB;
+    margin-top: 10px;   
+}
+.footer-list ul li{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
 /* 详情页底部结束 */
