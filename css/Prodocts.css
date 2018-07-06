@@ -1,0 +1,19 @@
+/* 页面结构开始 */
+.main{
+    margin: 0 auto;
+    height: 800px;
+}
+
+.product-01{
+    width: 100%;
+    font-size: 12px;
+}
+/* 页面结构结束 */
+/* 详情页底部开始 */
+.P-footer{
+    width: 100%;
+    min-width: 1000px;
+    background-color: #000;
+    height: 400px;
+}
+/* 详情页底部结束 */

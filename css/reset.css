@@ -23,3 +23,6 @@ a{
 .clearfix{
 	*zoom: 1;
 }
+.mt{
+	margin-top: 20px;
+}
