@@ -1,4 +1,132 @@
-.top-head{
-	
+.top-head {
+	height: 130px;
+	width: 100%;
+	min-width: 1000px;
 }
 
+.head-bg {
+	width: 100%;
+	background-color: #f5f5f5;
+	color: #777;
+	line-height: 28px;
+	font-size: 12px;
+}
+
+.head-bg .location {
+	width: 55px;
+	float: left;
+	line-height: 28px;
+}
+
+.r-head {
+	width: 844px;
+	float: right;
+}
+
+.r-head>ul {
+	width: 844px;
+}
+
+.r-head>ul>li {
+	padding: 0 10px;
+	float: left;
+}
+
+.r-head>ul>li .phone {
+	display: block;
+	float: left;
+	width: 10px;
+	height: 14px;
+	margin-top: 5px;
+	margin-right: 2px;
+	background: url(../img/q-ind-h3.png) no-repeat;
+}
+
+.top-nav {
+	width: 1170px;
+}
+
+.logo {
+	float: left;
+}
+
+.logo>img {
+	width: 160px;
+	height: 100px;
+}
+
+.c-nav {
+	float: left;
+	line-height: 100px;
+	margin-left: 10px;
+}
+
+.tool {
+	float: right;
+	height: 100px;
+	line-height: 100px;
+}
+
+.tool>span {
+	position: relative;
+	float: left;
+}
+
+.tool>span>input {
+	padding: 0 5px;
+	width: 330px;
+	line-height: 30px;
+	color: #333;
+	font-size: 14px;
+	background-color: #fff;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border: 1px solid #333;
+}
+
+.tool .search {
+	position: absolute;
+	right: 6px;
+	top: 4px;
+}
+
+.tool .c-nav-r {
+	position: relative;
+	line-height: 100px;
+	float: right;
+	margin-top: 34px;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	line-height: 32px;
+	padding: 0 32px;
+	font-size: 12px;
+	margin-left: 20px;
+}
+
+.tool .c-nav-r a {
+	/*line-height: 100px;*/
+	width: 40px;
+	height: 34px;
+	color: #333333;
+	/*float: left;*/
+}
+
+.tool .c-nav-r a>i {
+	position: absolute;
+	left: 16px;
+	top: 3px;
+}
+
+.tool .c-nav-icon {
+	position: absolute;
+	top: 8px;
+	right: 7px;
+	z-index: 1;
+	border-radius: 8px;
+	height: 16px;
+	width: 24px;
+	line-height: 16px;
+	color: #fff;
+	text-align: center;
+	background-color: #f00581;
+}
