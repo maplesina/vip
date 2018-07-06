@@ -1,3 +1,80 @@
+.top-menu{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f10180;
+}
+.main-nav{
+    min-width: 1000px;
+}
+.head-inner li{
+    float: left;
+}
+.head-inner li a{
+    padding: 0 20px;
+    color: #fff;
+}
+.first-page{
+    background: #bd1067;
+}
+.head-inner .icon-desc{
+    position: relative;
+    font-style: normal;
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent ;
+    border-top:5px solid #fff;
+}
+.icon-desc::after{
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    content: "";
+    font-style: normal;
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent ;
+    border-bottom:5px solid #fff;
+    display: none;
+}
+.head-inner .nav-comingsoon{
+    float: right;
+}
+.head-inner .nav-category{
+    position: relative;
+    float: right;
+}
+.main-nav-link{
+    display: block;
+    height: 40px;
+    padding: 0 14px;
+    text-align: center;
+    color: #fff;
+}
+.main-nav-link img{
+    vertical-align: middle;
+    margin-top: -6px;
+    margin-right: 6px;
+}
+.nav-category .line{
+    position: absolute;
+    right: 0;
+    top: 12px;
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background: grey;
+}
+.head-inner li:hover{
+    background: #bd1067;
+}
+.channel-item-group{
+	background: red;
+}
 .top-head {
 	height: 130px;
 	width: 100%;
