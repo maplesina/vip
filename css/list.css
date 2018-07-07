@@ -1,3 +1,7 @@
+/* 共有部分 */
+
+
+/* 头部开始 */
 /* 头部菜单css样式 */
 .top-menu{
     width: 100%;
@@ -274,63 +278,127 @@
 	text-align: center;
 	background-color: #f00581;
 }
+/* 头部结束 */
 
-/*banner图开始*/
-.banner-bg{
-	width: 100%;
-	min-width: 1400px;
-	height: 510px;
-	position: relative;
-}
-.banner-bg .bg>img{
-	width: 100%;
-	height: 440px;	
-}
-.banner-bg .banner{
-	position: absolute;
-	width: 1000px;
-	height: 400px;
-	top: 0px;
-	left: 50%;
-	margin-left: -500px;
-}
-.banner>ul{
-	position: absolute;
-	top: 50px;	
-}
-.banner>ul>li{
-	position: absolute;
-	width: 1145px;
-	overflow: hidden;
-}
-.banner>ul>li>img{
-	width: 975px;
-	height: 340px;
-}
-.banner .banner-list{
-	position: absolute;
-	bottom: -30px;
+/* 大图开始 */
+/* 大图结束 */
+
+/* 主要部分开始 */
+.main{
+    width: 1000px;
+    margin: 0 auto;
+    /* background-color: skyblue; */
 }
 
-.banner-list>ul{
-	font-size: 0;
-	width: 976px;
-	padding: 15px 0;
-	text-align: center;
-	border-bottom: 1px solid #A9A9A9;
+/* 倒计时开始 */
+.main .count-down{
+    height: 47px;
+    border: 1px solid black;
+    border-bottom: none;
 }
-.banner-list>ul>li{
-	display: inline-block;
-	width: 195px;
-	border-right: 1px solid #777777;
-	/*line-height: 40px;*/
-	font-size: 12px;
-	color: #333333;
+/* 倒计时结束 */
+
+/* 选项开始 */
+.main .sort{
+    height: 48px;
+    background-color: #F5F5F5;
 }
-.banner-list .border-r{
-	border: none;
+/* 选项结束 */
+
+
+/* 选项开始 */
+.main .choose{
+    height: 247px;
+    border: 1px solid black;
 }
-.banner-list .selected{
-	border-bottom: 2px solid #E6057D;
+/* 选项结束 */
+
+
+/* 产品展示部分开始 */
+.main .show ul li{
+    float: left;
+    width: 235px;
+    height: 373px;
+    font-size: 12px;
+    margin-right: 20px;
 }
-/*banner图结束*/
+.main .show ul li:nth-child(4n){
+    margin-right: 0;
+}
+.main .show ul li div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.main .show ul li div span{
+    color: #f10180;
+}
+.main .show ul li div big{
+    font-size: 22px;
+}
+.main .show ul li div .agio{
+    float: right;
+    color: #f1b13b;
+    padding: 0px 3px;
+    margin-top: 5px;
+    border: 1px solid #f1b13b;
+}
+.main .show ul li div del{
+    color: #999;
+    margin-left: 20px;
+}
+.main .show ul li p{
+    color: #666;
+}
+/* 产品展示部分结束 */
+
+/* 分页按钮开始 */
+.main .btn{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.main .btn a{
+    display: inline-block;
+    padding: 12px 22px;
+    color: #848585;
+    border: 1px solid #b8b8b8;
+}
+.main .btn a:hover{
+    color: #f10180;
+    border-color: #ffbde0;
+}
+/* 分页按钮结束 */
+
+/* 你可能喜欢的品牌开始 */
+.main .hobby h2{
+    color: #fff;
+    line-height: 28px;
+    font-size: 14px;
+    text-indent: 12px;
+    background-color: #F10180;
+}
+.main .hobby ul li{
+    float: left;
+    width: 320px;
+    height: 193px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: darkgray;
+}
+.main .hobby ul li:nth-child(3n){
+    margin-right: 0;
+}
+/* 你可能喜欢的品牌结束 */
+
+
+/* 主要部分结束 */
+
+
+/* 底部开始 */
+.footer{
+    width: 100%;
+    height: 477px;
+    /* background-color: #FCFCFC; */
+    background-color: ghostwhite;
+}
+/* 底部结束 */
