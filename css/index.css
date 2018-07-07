@@ -12,6 +12,8 @@
     float: left;
 }
 .main-nav-atag{
+	display: block;
+	line-height: 40px;
     padding: 0 20px;
     color: #fff;
 }
@@ -19,7 +21,9 @@
     background: #bd1067;
 }
 .head-inner .icon-desc{
-    position: relative;
+	position: absolute;
+	top: 22px;
+	right: 4px;
     font-style: normal;
     display: inline-block;
     height: 0;
@@ -31,7 +35,7 @@
 .more-wrap::after{
     position: absolute;
     top: 22px;
-    left: 57px;
+    left: 58px;
     content: "";
     font-style: normal;
     display: inline-block;
