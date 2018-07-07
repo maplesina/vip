@@ -8,6 +8,7 @@ li{
 .fr{
 	float: right;
 }
+
 .top-menu {
 	width: 100%;
 	height: 40px;
@@ -499,7 +500,7 @@ li{
 }
 .product-list .jp-list .jp-list-inner .like{
 	float: left;
-	background-color: pink;
+	background-color: white;
 	width: 70px;
 	height: 20px;
 	line-height: 20px;
@@ -508,6 +509,10 @@ li{
 	margin-top: 15px;
 	margin-left: 46px;
 	font-size: 12px;
+}
+.product-list .jp-list .jp-list-inner .like:hover{
+	background-color: #F10582;
+	color:white;
 	
 }
 .product-list .jp-list .jp-list-inner .enter{
@@ -523,9 +528,68 @@ li{
 	font-size: 14px;
 	text-align: center;
 }
+.product-list .jp-list .jp-list-inner .enter:hover{
+	color: white;
+	background-color: #333;
+}
 /*新特卖结束*/
 /*女装品牌开始*/
-
+.women-fashion{
+	margin-top: 30px;
+	width: 1000px;
+}
+.women-fashion .title{
+	height: 42px;
+	margin-bottom: 20px;
+}
+.women-fashion .title h2{
+	font-size: 34px;
+	font-weight: 700;
+	color: #333;
+}
+.women-fashion .title span{
+	font-size: 14px;
+	color: #555;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.women-fashion .title>a{
+	width: 102px;
+	height: 22px;
+	color: #333333;
+	font-size: 14px;
+	margin-top: 20px;
+	margin-right: 15px;
+}
+.women-fashion .title-list{
+	position: relative;
+	width: 1000px;
+}
+.women-fashion .title-list>img{
+	width: 1000px;
+}
+.women-fashion .title-list .list-wrap{
+	position: absolute;
+	top: 0;
+	width: 1000px;
+	height: 335px;
+}
+.women-fashion .title-list .list-wrap>img{
+	width: 1000px;
+}
+.women-fashion .title-list .list-wrap>ul{
+	width: 980px;
+	height: 335px;
+	padding: 0 10px;
+}
+.women-fashion .title-list .list-wrap>ul>li{
+	float: left;
+	margin-right: 10px;
+	width: 155px;
+}
+.women-fashion .title-list .list-wrap>ul>li img{
+	width: 155px;
+}
 
 /*女装品牌结束*/
 
