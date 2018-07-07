@@ -1,0 +1,22 @@
+.main{
+    height: 40px;
+    /* line-height: 40px; */
+    background: #f10582;
+}
+.head{
+    width: 1000px;
+    height: 40px;
+    margin: 0 auto;
+}
+.link{
+    font-size: 14px;
+    display: inline;
+}
+.link li a{
+    color: #fff;
+}
+.link li{
+    width: 88px;
+    line-height: 40px;
+    float: left;
+}
