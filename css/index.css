@@ -296,9 +296,7 @@
 }
 .banner>ul{
 	position: absolute;
-	top: 50px;
-	
-	
+	top: 50px;	
 }
 .banner>ul>li{
 	position: absolute;
@@ -324,7 +322,6 @@
 .banner-list>ul>li{
 	display: inline-block;
 	width: 195px;
-	
 	border-right: 1px solid #777777;
 	/*line-height: 40px;*/
 	font-size: 12px;
