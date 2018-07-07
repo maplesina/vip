@@ -1,32 +1,133 @@
-.header{
-    width: 100%;
-    height: 168px;
-    background-color: darkgrey;
-}
+/* 共有部分 */
+
+
 /* 头部开始 */
+/* 头部结束 */
 
 /* 大图开始 */
+.img{
+    text-align: center;
+}
 /* 大图结束 */
 
 /* 主要部分开始 */
 .main{
     width: 1000px;
     margin: 0 auto;
-    height: 800px;
-    background-color: skyblue;
+    /* background-color: skyblue; */
 }
 
 /* 倒计时开始 */
+.main .count-down{
+    height: 47px;
+    border: 1px solid black;
+    border-bottom: none;
+}
+.main .count-down h2{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 47px;
+    text-indent: 15px;
+    display: inline-block;
+}
+.main .count-down .haveday{
+    font-size: 12px;
+    display: inline-block;
+}
 /* 倒计时结束 */
 
 /* 选项开始 */
+.main .sort{
+    height: 48px;
+    background-color: #F5F5F5;
+}
 /* 选项结束 */
 
+
+/* 选项开始 */
+.main .choose{
+    height: 247px;
+    border: 1px solid black;
+}
+/* 选项结束 */
+
+
 /* 产品展示部分开始 */
+.main .show ul li{
+    float: left;
+    width: 235px;
+    height: 373px;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.main .show ul li:nth-child(4n){
+    margin-right: 0;
+}
+.main .show ul li div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.main .show ul li div span{
+    color: #f10180;
+}
+.main .show ul li div big{
+    font-size: 22px;
+}
+.main .show ul li div .agio{
+    float: right;
+    color: #f1b13b;
+    padding: 0px 3px;
+    margin-top: 5px;
+    border: 1px solid #f1b13b;
+}
+.main .show ul li div del{
+    color: #999;
+    margin-left: 20px;
+}
+.main .show ul li p{
+    color: #666;
+}
 /* 产品展示部分结束 */
 
+/* 分页按钮开始 */
+.main .btn{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.main .btn a{
+    display: inline-block;
+    padding: 12px 22px;
+    color: #848585;
+    border: 1px solid #b8b8b8;
+}
+.main .btn a:hover{
+    color: #f10180;
+    border-color: #ffbde0;
+}
+/* 分页按钮结束 */
+
 /* 你可能喜欢的品牌开始 */
+.main .hobby h2{
+    color: #fff;
+    line-height: 28px;
+    font-size: 14px;
+    text-indent: 12px;
+    background-color: #F10180;
+}
+.main .hobby ul li{
+    float: left;
+    width: 320px;
+    height: 193px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: darkgray;
+}
+.main .hobby ul li:nth-child(3n){
+    margin-right: 0;
+}
 /* 你可能喜欢的品牌结束 */
+
 
 /* 主要部分结束 */
 
