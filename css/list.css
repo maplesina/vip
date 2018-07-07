@@ -47,9 +47,51 @@
 }
 .main .count-down .haveday{
     font-size: 12px;
+    margin-left: 40px;
     display: inline-block;
 }
+.main .count-down .Collection{
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
+    padding: 2px 10px;
+    font-size: 12px;
+    border: 1px solid #dfdfdf;
+    border-radius: 1em;
+    color : #f32b80;
+}
+.main .count-down .Collection em{
+    color: #999;
+}
+.main .count-down .Collection:hover{
+    color: #fff;
+    cursor: pointer;
+    transition: all .5s;
+    background-color: #f32b80;
+}
 /* 倒计时结束 */
+
+
+
+
+/* 选项开始 */
+.main .choose{
+    height: 247px;
+    font-size: 12px;
+    border: 1px solid black;
+}
+/* 第一项选项开始 */
+.main .choose il{
+    
+}
+/* 第一项选项结束 */
+
+/* 第二项选项开始 */
+/* 第二项选项结束 */
+
+/* 选项结束 */
+
+
 
 /* 选项开始 */
 .main .sort{
@@ -59,12 +101,7 @@
 /* 选项结束 */
 
 
-/* 选项开始 */
-.main .choose{
-    height: 247px;
-    border: 1px solid black;
-}
-/* 选项结束 */
+
 
 
 /* 产品展示部分开始 */
