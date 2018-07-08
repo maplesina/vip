@@ -1,4 +1,12 @@
 /* 共有部分 */
+.main .agio{
+    padding: 0px 3px;
+    margin-top: 5px;
+    border: 1px solid #f1b13b;
+}
+
+
+
 /* 字体图标 */
 @font-face {
     font-family: '../iconfont';
@@ -21,7 +29,9 @@
 
 /* 大图开始 */
 .img{
-    text-align: center;
+    height: 380px;
+    margin: auto;
+    background: url("../img/xy-big-img.jpg") center no-repeat;
 }
 /* 大图结束 */
 
@@ -35,7 +45,7 @@
 /* 倒计时开始 */
 .main .count-down{
     height: 47px;
-    border: 1px solid black;
+    border: 1px solid #dfdfdf;
     border-bottom: none;
 }
 .main .count-down h2{
@@ -48,6 +58,7 @@
 .main .count-down .haveday{
     font-size: 12px;
     margin-left: 40px;
+    letter-spacing:  1px;
     display: inline-block;
 }
 .main .count-down .Collection{
@@ -75,30 +86,115 @@
 
 
 /* 选项开始 */
-.main .choose{
-    height: 247px;
+.main .choose,.main .sort{
     font-size: 12px;
-    border: 1px solid black;
+    border: 1px solid #dfdfdf;
 }
-/* 第一项选项开始 */
-.main .choose il{
-    
+.main .choose dl{
+    position: relative;
+    /* margin-top: 10px; */
 }
-/* 第一项选项结束 */
-
-/* 第二项选项开始 */
-/* 第二项选项结束 */
-
+.main .choose dl:first-child{
+    border-bottom: 1px dotted #dfdfdf;
+}
+.main .choose dl dt{
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    color: #666;
+}
+.main .choose dl ul{
+    width: 850px;
+    margin-left: 105px;
+}
+.main .choose dl ul li{
+    float: left;
+    height: 35px;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+.main .choose dl ul li a{
+    color: #000;
+}
+.main .choose dl ul li a:hover{
+    color: #f10180;
+}
+.main .choose dl ul li .agio{
+    color: #f10180;
+    border-color: #f10180;
+    padding: 3px 10px;
+}
 /* 选项结束 */
 
 
 
-/* 选项开始 */
+/* 排序开始 */
 .main .sort{
     height: 48px;
     background-color: #F5F5F5;
 }
-/* 选项结束 */
+.main .sort ul li{
+    float: left;
+    text-align: center;
+    min-width: 67px;
+    line-height: 48px;
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+}
+.main .sort ul li input{
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+.main .sort ul li:nth-child(4){
+    width: 140px;
+}
+.main .sort ul li:nth-child(5){
+    float: right;
+    border:none;
+}
+.main .sort ul li:nth-child(5) span{
+    margin: 3px;
+}
+.main .sort ul li:nth-child(5):last-child{
+    margin-right: 20px;
+}
+.main .sort ul li:nth-child(5) .agio{
+    padding: 5px 10px;
+    color: #dfdfdf;
+    background-color: #fff;
+    border-color: #dfdfdf;
+}
+.main .sort ul li:nth-child(5) .next{
+    color: #333;
+}
+.main .sort ul li small,.main .sort ul li strong{
+    color: #f10180;
+    font-size: 12px;
+    font-weight: normal;
+}
+.main .sort ul li strong{
+    color: #333;
+}
+/* 当他们hover的时候 */
+.main .sort ul li span:hover{
+    color: #f10180;
+    cursor: pointer;
+}
+.main .sort ul li:active{
+    border-color:#f10180;
+}
+.main .sort ul li:nth-child(5) .next:hover,.main .btn a:hover{
+    color: #f10180;
+    border-color:#ffbde0;
+    background-color: #fcf5f7;
+}
+.main .sort ul li:nth-child(5) .next:active,.main .btn a:active{
+    background-color: #f10180;
+    border-color: #f10180;
+    color: #fff;
+}
+/* 排序结束 */
 
 
 
@@ -110,6 +206,7 @@
     width: 235px;
     height: 373px;
     font-size: 12px;
+    margin-top: 20px;
     margin-right: 20px;
 }
 .main .show ul li:nth-child(4n){
@@ -125,12 +222,9 @@
 .main .show ul li div big{
     font-size: 22px;
 }
-.main .show ul li div .agio{
-    float: right;
+.main .show .agio{
     color: #f1b13b;
-    padding: 0px 3px;
-    margin-top: 5px;
-    border: 1px solid #f1b13b;
+    float: right;
 }
 .main .show ul li div del{
     color: #999;
@@ -153,10 +247,6 @@
     color: #848585;
     border: 1px solid #b8b8b8;
 }
-.main .btn a:hover{
-    color: #f10180;
-    border-color: #ffbde0;
-}
 /* 分页按钮结束 */
 
 /* 你可能喜欢的品牌开始 */
@@ -167,16 +257,61 @@
     text-indent: 12px;
     background-color: #F10180;
 }
+.main .hobby h2 p{
+    font-weight: normal;
+    float: right;
+    font-size: 12px;
+}
+.main .hobby h2 p a{
+    color:#fff;
+    margin: 10px;
+}
 .main .hobby ul li{
     float: left;
     width: 320px;
     height: 193px;
+    font-size: 14px;
     margin-top: 20px;
     margin-right: 20px;
-    background-color: darkgray;
+}
+.main .hobby ul li p{
+    margin-top: 5px;
+    text-indent: 12px;
+}
+.main .hobby ul li span{
+    float: right;
+    margin-top: -2px;
+    margin-right: 10px;
+}
+.main .hobby ul li big{
+    color: #F10180;
 }
 .main .hobby ul li:nth-child(3n){
     margin-right: 0;
+}
+.main .hobby ul li:hover{
+    cursor: pointer;
+}
+/* 两个小箭头 */
+.main .hobby{
+    position: relative;
+}
+.main .hobby>a{
+    position: absolute;
+    /* margin-top: -270px; */
+    top:41%;
+    font-size: 20px;
+    padding: 30px 10px;
+    font-weight: bold;
+    color: #dfdfdf;
+    background-color: rgba(0,0,0,.3);
+    display: none;
+}
+.main .hobby .prev{
+    left: 0;
+}
+.main .hobby .next{
+    right: 0;
 }
 /* 你可能喜欢的品牌结束 */
 
