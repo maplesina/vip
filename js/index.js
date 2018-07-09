@@ -12,5 +12,5 @@
                 nav.removeClass("fixednav");
             }
         })
-    })
+    });
 })(jQuery)

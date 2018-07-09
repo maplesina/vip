@@ -26,3 +26,10 @@ a{
 .mt{
 	margin-top: 20px;
 }
+/*自定义动画 hover效果*/
+
+@keyframes blink{
+	from{opacity: 1;}
+	50%{opacity: .6;}
+	to{opacity: 1;}
+}
