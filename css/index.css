@@ -37,6 +37,7 @@ li{
 }
 
 .main-nav-atag {
+	position: relative;
 	padding: 0 20px;
 	color: #fff;
 }
@@ -45,7 +46,9 @@ li{
 }
 
 .head-inner .icon-desc {
-	position: relative;
+	position: absolute;
+	top: 13px;
+	right: -15px;
 	font-style: normal;
 	display: inline-block;
 	height: 0;
