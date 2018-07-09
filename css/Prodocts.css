@@ -422,10 +422,9 @@
     margin-top: 20px;    
 }
 .footer-pic{
-    /* background-color: red; */
     height: 40px;
     width: 100%;
-    margin-top: 20px;
+    padding-top:50px;
 }
 .footer-pic p{
     height: 40px;
