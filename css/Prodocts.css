@@ -144,7 +144,7 @@
 .product-excel h1{
     font-size: 20px;
     text-align: left;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 .product-excel h1 span:nth-child(1){
     color: #f10180;
@@ -152,6 +152,13 @@
 }
 .product-excel h1 span:nth-child(2){
     color:#999999;
+}
+.product-excel p{
+    display: inline-block;
+    width:100%;
+    height: 20px;
+    /* background-color: #333; */
+    background: url(../img/zxx-021.png) 0 0 repeat;
 }
 .pr-table {
     border-collapse: collapse;
@@ -186,7 +193,7 @@
 .list-title{
     background-color: #EAE8EB;
     height: 40px;
-    /* width: 100%; */
+    width: 100%;
 }
 .list-title h3{
     line-height:40px;
@@ -194,12 +201,26 @@
     padding-left: 20px;
     font-size: 14px;
 }
+
 .question-text{
     padding-left: 20px;
     font-size: 14px;
 }
 .question-text p{
-    margin-top: 20px;
+    margin-top: 10px;
+    font-weight: 700;
+
+}
+.question-text p span{
+    display: inline-block;
+    width: 65px;
+    height: 35px;
+    background: url(../img/zxx-100.png) -555px -63px no-repeat;
+    margin-left: 10px;
+    vertical-align: middle;
+    padding-left: 40px;
+    line-height: 35px;
+    color: #f10180;
 }
 .question-text ul{
     margin-top: 20px;
@@ -209,6 +230,20 @@
 }
 .question ul li:nth-child(1){
     font-weight: 700
+}
+.question ul li:nth-child(1) i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/zxx-100.png) -600px -150px no-repeat;
+    vertical-align: middle;
+}
+.question ul li:nth-child(2) i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/zxx-100.png) -618px -150px no-repeat;
+    vertical-align: middle;
 }
 /* 商品咨询结束 */
 /* 关于我们开始 */
