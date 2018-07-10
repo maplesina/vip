@@ -33,6 +33,7 @@ li {
 	height: 40px;
 	z-index: 999;
 }
+
 .main-nav {
 	min-width: 1000px;
 }
@@ -120,7 +121,7 @@ li {
 	position: absolute;
 	top: 40px;
 	right: 0;
-	background: red;
+	background: white;
 	width: 558px;
 	padding: 26px 10px 11px 26px;
 	z-index: 2;
@@ -223,8 +224,23 @@ li {
 }
 
 .r-head>ul>li {
-	padding: 0 10px;
+	padding: 0 15px;
 	float: left;
+	position: relative;
+}
+.r-head>ul .head-item:hover .head-icon{
+	display: none;
+}
+.r-head .head-icon:after {
+	content: "";
+	background-image: url(../img/q-ind-jingling1.png);
+	background-position: -246px -184px;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 6px;
+	right: -5px;
+	z-index: 1;
 }
 
 .r-head>ul>li .phone {
@@ -405,9 +421,11 @@ li {
 .footer-list {
 	height: 150px;
 }
-.font-weight{
+
+.font-weight {
 	font-weight: 600 !important;
 }
+
 .footer-list ul {
 	color: grey;
 	width: 194px;
@@ -424,10 +442,12 @@ li {
 	list-style: square;
 	transition: all .2s;
 }
-.footer-list .list-icon>li:hover{
+
+.footer-list .list-icon>li:hover {
 	margin-left: 20px;
 	color: #f10180;
 }
+
 .footer-infor {
 	width: 100%;
 	height: 30px;
