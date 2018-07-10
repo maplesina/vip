@@ -472,6 +472,57 @@ li {
 .footer-infor p:nth-child(1) {
 	margin-top: 20px;
 }
-
+.footer-pic{
+    /* background-color: red; */
+    height: 40px;
+    width: 100%;
+   	padding-top: 80px;
+}
+.footer-pic p{
+    height: 40px;
+    width: 70%;
+    margin: 0 auto;
+}
+.footer-pic p span{
+    display: inline-block;
+    height: 40px;
+    margin-right: 20px;
+}
+.footer-pic p span i{
+    display: inline-block;
+    height: 40px;
+    
+}
+.footer-pic p span:nth-child(1){
+    margin-left: 25px;
+}
+.footer-pic p span:nth-child(1) i{
+    width: 110px;
+    background: url(../img/zxx-th1.png) 0 0 no-repeat;
+}
+.footer-pic p span:nth-child(2) i{
+    width: 100px;
+    background: url(../img/zxx-th1.png) 0 -155px no-repeat;
+}
+.footer-pic p span:nth-child(3) i{
+    width: 80px;
+    background: url(../img/zxx-th1.png) 0 -205px no-repeat;
+}
+.footer-pic p span:nth-child(4) i{
+    width: 80px;
+    background: url(../img/zxx-th1.png) 0 -255px no-repeat;
+}
+.footer-pic p span:nth-child(5) i{
+    width: 80px;
+    background: url(../img/zxx-th1.png) 0 -307px no-repeat;
+}
+.footer-pic p span:nth-child(6) i{
+    width: 80px;
+    background: url(../img/zxx-th1.png) 0 -405px no-repeat;
+}
+.footer-pic p span:nth-child(7) i{
+    width: 80px;
+    background: url(../img/zxx-th1.png) 0 -458px no-repeat;
+}
 
 /* 详情页底部结束 */
