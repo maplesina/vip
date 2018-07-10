@@ -6,7 +6,7 @@
 }
 .head{
     width: 1000px;
-    height: 40px;
+    /* height: 40px; */
     margin: 0 auto;
     position: relative;
 }
@@ -24,6 +24,117 @@
 }
 /* 头部结束 */
 
+/* 重写背景图片部分 */
+.vip-items {
+    background: url(../img/gy1.jpg) 50% 50% no-repeat;
+    position: relative;
+}
+.items-height {
+    height: 200px;
+}
+.layout {
+    width: 1002px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.vip-search {
+    border-radius: 5px;
+    position: absolute;
+    left: 91px;
+    bottom: 45px;
+    background: rgba(0,0,0,.35);
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000, endcolorstr=#7F000000);
+    padding: 15px 22px 33px;
+}
+.hot-search {
+    color: #fff;
+}
+.vip-query {
+    margin-top: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+.my-porduct {
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.vip-query {
+    margin-top: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+.vip-query-input {
+    height: 24px;
+    line-height: 24px;
+    width: 540px;
+    float: left;
+    border-radius: 3px 0 0 3px;
+    padding: 7px 0 7px 13px;
+    color: #aaa;
+    border: 1px solid #eee;
+}
+
+.query-button {
+    display: inline-block;
+    width: 100px;
+    background: #f10180;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    height: 40px;
+    cursor: pointer;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.vip-query {
+    margin-top: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.my-porduct a {
+    display: block;
+    background: #fff;
+    width: 124px;
+    border-radius: 3px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #eee;
+}
+a {
+    color: #333;
+    text-decoration: none;
+} 
+.my-porduct span {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    background: #f30082;
+    color: #fff;
+    display: none;
+}
+
+
+
+/* 重写背景图片部分结束 */
 /* 图片背景开始 */
 .items{
     width: 100%;
@@ -130,7 +241,7 @@
 }
 .vip-wrapper {
     border: 1px solid #eaeaea;
-    height: 202px;
+    height: 215px;
     border-radius: 3px;
     position: relative;
     overflow: hidden;
@@ -148,3 +259,32 @@
 }
 /* 我的账号结束 */
 
+h3{
+    font-size: 16px;
+    color: #333;
+}
+.pt30 {
+    padding-top: 20px;
+    float: left;
+}
+#selfService li{
+    float: left;
+    width: 200px;
+    margin-top:20px;
+    font-size: 12px;
+    text-align: center;
+}
+#selfService li p{
+    color: #333;
+}
+#selfService li :hover{
+    color: pink;
+}
+.self-service li a {
+    display: block;
+    background: #fafafa;
+    padding: 18px 0;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    font-size: 14px;
+}
