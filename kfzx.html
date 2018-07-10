@@ -6,9 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/kfzx.css">
+	<link rel="stylesheet" href="css/kfzx.css">
+	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+	<script src="js/public.js"></script>
+	<script src="js/jquery-1.12.4.js"></script>
+		<!-- 头部导航开始 -->
+		<!-- <div class="top-head"></div> -->
+		<div class="head"></div>
+		<div class="head-bg">
+				<div class="wraper clearfix">
+					<div class="location">省份</div>
+					<div class="r-head">
+						<ul>
+							<li>
+								<a href="">
+									<span>登录</span>
+								</a>
+								<a href="">
+									<span>注册</span>
+								</a>
+							</li>
+							<li>
+								<img src="img/q-ind-h1.gif" /> 签到有礼
+							</li>
+							<li>我的订单</li>
+							<li>我的特卖</li>
+							<li>会员俱乐部</li>
+							<li>客户服务</li>
+							<li class="clearfix">
+								<i class="phone"></i> 手机版
+							</li>
+							<li>更多</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="top-nav clearfix wraper">
+				<div class="logo">
+					<img src="img/q-ind-log1.png" />
+				</div>
+				<div class="c-nav">
+					<img src="img/q-ind-log2.png" />
+				</div>
+	
+				<div class="tool clearfix">
+					<span>
+						<input type="text" name="" id="" value="" placeholder="大家都在搜：连衣裙" />
+						<p class="search">
+							<img src="img/q-ind-log4.png" />
+						</p>
+					</span>
+					<div class="c-nav-r clearfix">
+						<a href="">
+							<i>
+								<img src="img/q-ind-log3.png" />
+							</i>
+							<span>购物袋</span>
+							<b class="c-nav-icon">0</b>
+						</a>
+	
+					</div>
+				</div>
+			</div>
+
+
     <!-- 服务中心头部开始 -->
     <div class="main">
         <div class="head">
@@ -35,59 +98,43 @@
 		</div>
 	</div>
 </div>
-    <!-- <div class="items">
-        <img src="img/gy1.jpg" alt="">
-        <div class="head height">
-            <div class="search">
-                <div class="layout">
-                     热门查询：
-                    <span>配送服务</span>
-                    <span>唯品花</span>
-                    <span>快捷支付</span>
-                    <span>密码</span>
-                    <span>换货</span>
-                </div>
-                <div>
-                    <input type="text" value="请输入查找的关键字" id="input">
-                    <a href="" id="btn">我的问题解决进度</a>
-                    <div class="porduct">
-                        <a href="" id="porduct">查询</a>
-                    </div>
-                </div>
-                
-                    
-                
-            </div>
-        </div>
-    </div> -->
 <!-- 图片背景结束 -->
 
 <!-- 我的账号开始 -->
     <div class="head">
         <div class="left clearfix">
-            <h3>我的账号</h3>
+            <h1>我的账号</h1>
             <div class="vip">
                 <div id="notLogin" class="not-login" style="">
                     <p class="not-login-sm">尊敬的会员，你好！<br>登陆后可享受更好更贴心的服务哦~~</p>
                     <a href="" class="already-login-button" id="alreadyLoginButton">立即登录</a>
                 </div>
             </div>
-        </div>
-        <div class="vip-layout-right">
-			<h3>猜你需要</h3>
+		</div>
+		<div class="vip-layout-right">
+			<h1 class="vip-title">猜你需要</h1>
 			<div class="vip-layout-need">
-			<div class="vip-wrapper onactive" id="vipWrapper">
+				<div class="vip-wrapper onactive" id="vipWrapper">
+					<div class="welcom-name">欢迎光临</div>
+			<img src="../vip-1/img/gy2.png">
+					</div>
+			</div>
+		</div>
+        <!-- <div class="vip-layout-right">
+			<h1>猜你需要</h1>
+			<div class="vip-layout-need">
+				<div class="vip-wrapper onactive" id="vipWrapper">
 	            <div class="welcom-name">欢迎光临</div>
 	            <img src="img/gy2.png">
-            </div>
-		</div>
-	</div>
+            	</div>
+			</div>
+		</div> -->
     </div>
 <!-- 我的账号结束 -->
 
 <!-- 自助服务开始 -->
     <div class="head clearfix">
-        <h3>自助服务</h3>
+        <h1>自助服务</h1>
         <ul class="self-service clearfix" id="selfService">
 				<li>
 					<a href="" target="_blank">
@@ -152,6 +199,255 @@
 
 			</ul>
     </div>
+<!-- 自助服务结束 -->
 
+<!-- 热点问题开始 -->
+<div class="head">
+	<div class=" head pt30 clearfix">
+	<h1 class="vip-title">热点问题</h1>
+	<ul class="hot-problem clearfix" id="hotProblem">
+
+<li>
+	<div class="hot-questions-box">
+		<span>[售后服务]</span>
+		<a href="//help.vip.com/themelist.php?type=commonques&amp;id=24" target="_blank" mars_sead="v_hotProblem_0">唯品会提供换货服务吗？</a>
+	</div>
+</li>
+
+<li>
+	<div class="hot-questions-box">
+		<span>[购物指南]</span>
+		<a href="//help.vip.com/themelist.php?type=commonques&amp;id=25" target="_blank" mars_sead="v_hotProblem_1">结算不及时 购物袋被清空？</a>
+	</div>
+</li>
+
+<li>
+	<div class="hot-questions-box">
+		<span>[售后服务]</span>
+		<a href="//help.vip.com/themelist.php?type=commonques&amp;id=20" target="_blank" mars_sead="v_hotProblem_2">退款说明</a>
+	</div>
+</li>
+
+<li>
+	<div class="hot-questions-box">
+		<span>[售后服务]</span>
+		<a href="//help.vip.com/themelist.php?type=commonques&amp;id=19" target="_blank" mars_sead="v_hotProblem_3">退货寄件地址</a>
+	</div>
+</li>
+
+<li>
+	<div class="hot-questions-box">
+		<span>[会员中心]</span>
+		<a href="//help.vip.com/themelist.php?type=commonques&amp;id=15" target="_blank" mars_sead="v_hotProblem_4">账号登录密码、支付密码找回自助操作说明</a>
+	</div>
+</li>
+
+<li>
+	<div class="hot-questions-box">
+		<span>[配送方式]</span>
+		<a href="//help.vip.com/themelist.php?type=commonques&amp;id=16" target="_blank" mars_sead="v_hotProblem_5">特卖会常见问题说明</a>
+	</div>
+</li>
+
+<li>
+	<div class="hot-questions-box">
+		<span>[掌上唯品会]</span>
+		<a href="//help.vip.com/themelist.php?type=commonques&amp;id=17" target="_blank" mars_sead="v_hotProblem_6">掌上唯品会常见问题说明</a>
+	</div>
+</li>
+
+<li>
+	<div class="hot-questions-box">
+		<span>[售后服务]</span>
+		<a href="//help.vip.com/themelist.php?type=commonques&amp;id=23" target="_blank" mars_sead="v_hotProblem_7">商品不合适，退货细则看这里</a>
+	</div>
+</li>
+
+<li>
+	<div class="hot-questions-box">
+		<span>[购物指南]</span>
+		<a href="//help.vip.com/themelist.php?type=commonques&amp;id=28" target="_blank" mars_sead="v_hotProblem_8">唯品国际常见问题</a>
+	</div>
+</li>
+
+</ul>
+	</div>
+</div>
+
+<!-- 热点问题结束 -->
+
+<!-- 帮助中心开始 -->
+<div class="head">
+	<div class=" pt30 clearfix">
+	<h1 class="vip-title">帮助中心</h1>
+	<ul class="classify-guide clearfix" id="classifyGuide">
+
+<li style="height: 291px;">
+	<div class="classify-name">会员中心</div>
+	<div class="classify-main">
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=139" target="_blank" mars_sead="v_hotProblem_0_0">唯品币</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=62" target="_blank" mars_sead="v_hotProblem_0_1">账户管理</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=63" target="_blank" mars_sead="v_hotProblem_0_2">邮件通知</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=69" target="_blank" mars_sead="v_hotProblem_0_3">会员成长体系</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=156" target="_blank" mars_sead="v_hotProblem_0_4">掌上唯品会</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=160" target="_blank" mars_sead="v_hotProblem_0_5">客服电话语音流程</a>
+			</dd>
+		
+	</div>
+</li>
+
+<li style="height: 291px;">
+	<div class="classify-name">购物指南</div>
+	<div class="classify-main">
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=67" target="_blank" mars_sead="v_hotProblem_1_0">特卖会专区</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=138" target="_blank" mars_sead="v_hotProblem_1_1">唯品国际</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=68" target="_blank" mars_sead="v_hotProblem_1_2">尺码换算</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=116" target="_blank" mars_sead="v_hotProblem_1_3">发票</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=119" target="_blank" mars_sead="v_hotProblem_1_4">品牌直发</a>
+			</dd>
+		
+	</div>
+</li>
+
+<li style="height: 291px;">
+	<div class="classify-name">支付方式</div>
+	<div class="classify-main">
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=39" target="_blank" mars_sead="v_hotProblem_2_0">在线支付</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=43" target="_blank" mars_sead="v_hotProblem_2_1">优惠方式</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=37" target="_blank" mars_sead="v_hotProblem_2_2">货到付款 </a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=137" target="_blank" mars_sead="v_hotProblem_2_3">联名卡</a>
+			</dd>
+		
+	</div>
+</li>
+
+<li style="height: 291px;">
+	<div class="classify-name">配送方式</div>
+	<div class="classify-main">
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=50" target="_blank" mars_sead="v_hotProblem_3_0">配送服务</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=51" target="_blank" mars_sead="v_hotProblem_3_1">商品验货与签收</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=73" target="_blank" mars_sead="v_hotProblem_3_2">收货样品</a>
+			</dd>
+		
+	</div>
+</li>
+
+<li style="height: 291px;">
+	<div class="classify-name">售后服务</div>
+	<div class="classify-main">
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=74" target="_blank" mars_sead="v_hotProblem_4_0">退货政策</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=75" target="_blank" mars_sead="v_hotProblem_4_1">退货流程</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=76" target="_blank" mars_sead="v_hotProblem_4_2">退款方式和时效</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=77" target="_blank" mars_sead="v_hotProblem_4_3">维修服务</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=78" target="_blank" mars_sead="v_hotProblem_4_4">保险理赔</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=82" target="_blank" mars_sead="v_hotProblem_4_5">投诉及建议</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=146" target="_blank" mars_sead="v_hotProblem_4_6">换货服务</a>
+			</dd>
+		
+	</div>
+</li>
+
+<li style="height: 291px;">
+	<div class="classify-name">唯品金融</div>
+	<div class="classify-main">
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=161" target="_blank" mars_sead="v_hotProblem_5_0">唯品花</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=162" target="_blank" mars_sead="v_hotProblem_5_1">唯品宝</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=163" target="_blank" mars_sead="v_hotProblem_5_2">唯品理财</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=164" target="_blank" mars_sead="v_hotProblem_5_3">唯品保险</a>
+			</dd>
+		
+			<dd>
+				<a href="//help.vip.com/themelist.php?cid=166" target="_blank" mars_sead="v_hotProblem_5_4">唯品金融隐私政策</a>
+			</dd>
+		
+	</div>
+</li>
+
+</ul>
+</div>
+</div>
+
+<!-- 帮助中心结束 -->
 </body>
 </html>
