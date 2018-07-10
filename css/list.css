@@ -339,6 +339,22 @@ li{
 }
 /* 头部结束 */
 
+/* <!-- 悬浮的红包（左上）开始 --> */
+ .list-sider{
+     position: fixed;
+     top: 237px;
+     width: 85px;
+     z-index: 2;
+     height: 90px;
+     background-image: url(../img/xy-fix.png);
+     background-position: -124px 0px;
+ }
+ .list-sider:hover{
+     cursor: pointer;
+ }
+/* <!-- 悬浮的红包（左上）结束 --> */
+
+
 /* 购物袋开始 */
 /* .side{
     position: fixed;
