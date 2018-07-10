@@ -340,7 +340,7 @@ li{
 /* 头部结束 */
 
 /* 购物袋开始 */
-.side{
+/* .side{
     position: fixed;
     right: 0;
     top: 0;
@@ -353,7 +353,7 @@ li{
     right: 0;
     top: 0px;
     height: 100%;
-    /* display: none; */
+    display: none;
     text-align: center;
     width: 40px;
     background-color: #262626;
@@ -424,13 +424,13 @@ li{
     text-align: center;
     display: block;
 }
-/* 当鼠标浮上去时显示出来的东西 */
+
 .side .login{
     position: absolute;
     width: 68px;
     height: 68px;
     background-color: #fff;
-}
+} */
 /* 购物袋结束 */
 
 
