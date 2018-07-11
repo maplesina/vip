@@ -248,18 +248,22 @@ h1{
     padding-top: 20px;
     float: left;
 }
-#selfService li{
-    float: left;
-    width: 200px;
-    margin-top:20px;
-    font-size: 12px;
+.vip-title {
+    height: 18px;
+    line-height: 18px;
+    font-size: 16px;
+    border-left: 2px solid #f0027e;
+    padding-left: 5px;
+}
+.self-service {
+    margin-right: -10px;
     text-align: center;
 }
-#selfService li p{
-    color: #333;
-}
-#selfService li :hover{
-    color:  #f10180;
+.self-service li {
+    float: left;
+    width: 192px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 .self-service li a {
     display: block;
@@ -268,6 +272,77 @@ h1{
     border: 1px solid #eaeaea;
     border-radius: 3px;
     font-size: 14px;
+    color: #333;
+}
+.self-service li a:hover {
+    background: #ff679a;
+    color: #fff;
+}
+.gn-dd-icon0 {
+    background: url(../img/gyservice-icon-a.png) 50% 0 no-repeat;
+}
+.self-service li a:hover i.gn-dd-icon0 {
+    background: url(../img/gyservice-icon-a-hover.png) 50% 0 no-repeat;
+}
+.self-service li i {
+    display: block;
+    width: 60px;
+    height: 52px;
+    margin: 0 auto 11px;
+}
+.gn-dd-icon1 {
+    background: url(../img/gyservice-icon-b.png) 50% 0 no-repeat;
+}
+.self-service li a:hover i.gn-dd-icon1 {
+    background: url(../img/gyservice-icon-b-hover.png) 50% 0 no-repeat;
+}
+.gn-dd-icon2 {
+    background: url(../img/gyservice-icon-c.png) 50% 0 no-repeat;
+}
+.self-service li a:hover i.gn-dd-icon2 {
+    background: url(../img/gyservice-icon-c-hover.png) 50% 0 no-repeat;
+}
+.gn-dd-icon3 {
+    background: url(../img/gyservice-icon-d.png) 50% 0 no-repeat;
+}
+.self-service li a:hover i.gn-dd-icon3 {
+    background: url(../img/gyservice-icon-d-hover.png) 50% 0 no-repeat;
+}
+.gn-dd-icon4 {
+    background: url(../img/gyservice-icon-e.png) 50% 0 no-repeat;
+}
+.self-service li a:hover i.gn-dd-icon4 {
+    background: url(../img/gyservice-icon-e-hover.png) 50% 0 no-repeat;
+}
+.gn-dd-icon5 {
+    background: url(../img/gyservice-icon-f.png) 50% 0 no-repeat;
+}
+.self-service li a:hover i.gn-dd-icon5 {
+    background: url(../img/gyservice-icon-f-hover.png) 50% 0 no-repeat;
+}
+.gn-dd-icon6 {
+    background: url(../img/gyservice-icon-g.png) 50% 0 no-repeat;
+}
+.self-service li a:hover i.gn-dd-icon6 {
+    background: url(../img/gyservice-icon-g-hover.png) 50% 0 no-repeat;
+}
+.gn-dd-icon7 {
+    background: url(../img/gyservice-icon-h.png) 50% 0 no-repeat;
+}
+.self-service li a:hover i.gn-dd-icon7 {
+    background: url(../img/gyservice-icon-h-hover.png) 50% 0 no-repeat;
+}
+.gn-dd-icon8 {
+    background: url(../img/gyservice-icon-i.png) 50% 0 no-repeat;
+}
+.self-service li a:hover i.gn-dd-icon8 {
+    background: url(../img/gyservice-icon-i-hover.png) 50% 0 no-repeat;
+}
+.gn-dd-icon9 {
+    background: url(../img/gyservice-icon-j.png) 50% 0 no-repeat;
+}
+.self-service li a:hover i.gn-dd-icon9 {
+    background: url(../img/gyservice-icon-j-hover.png) 50% 0 no-repeat;
 }
 /* 自助服务结束 */
 
