@@ -23,9 +23,13 @@ a{
 .clearfix{
 	*zoom: 1;
 }
-<<<<<<< HEAD
-=======
 .mt{
 	margin-top: 20px;
 }
->>>>>>> 548685503558c4124a84febf80f05a7c6ade4299
+/*自定义动画 hover效果*/
+
+@keyframes blink{
+	from{opacity: 1;}
+	50%{opacity: .6;}
+	to{opacity: 1;}
+}
