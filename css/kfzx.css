@@ -1,14 +1,27 @@
+
+
+
+
 /* 头部开始 */
+
 .main{
     height: 40px;
     /* line-height: 40px; */
     background: #f10582;
 }
-.head{
+.headr{
     width: 1000px;
-    height: 40px;
+    /* height: 40px; */
     margin: 0 auto;
     position: relative;
+}
+h1{
+    height: 18px;
+    line-height: 18px;
+    font-size: 16px;
+    border-left: 2px solid #f0027e;
+    padding-left: 5px;
+    margin-top: 20px;
 }
 .link{
     font-size: 14px;
@@ -17,6 +30,9 @@
 .link li a{
     color: #fff;
 }
+.link li :hover{
+    color: #2f2f2f;
+}
 .link li{
     width: 88px;
     line-height: 40px;
@@ -24,86 +40,134 @@
 }
 /* 头部结束 */
 
-/* 图片背景开始 */
-.items{
-    width: 100%;
-    height: 200px;;
+/* 重写背景图片部分 */
+.vip-items {
+    background: url(../img/gy1.jpg) 50% 50% no-repeat;
     position: relative;
 }
-.height{
+.items-height {
     height: 200px;
+}
+.layout {
+    width: 1002px;
+    margin: 0 auto;
     overflow: hidden;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    position: relative;
 }
-.search{
-    width:835px;
-    height:114px;
+.vip-search {
     border-radius: 5px;
-    /* position: absolute; */
-    /* left: 300px; */
+    position: absolute;
+    left: 91px;
     bottom: 45px;
-    margin: 0 auto;
-    background:rgba(0, 0, 0, .35)
+    background: rgba(0,0,0,.35);
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000, endcolorstr=#7F000000);
+    padding: 15px 22px 33px;
 }
-.layout{
-    /* position: relative; */
-    margin: 0 auto;
-    font-size: 12px;
+.hot-search {
     color: #fff;
 }
-.layout span{
-    margin-right: 16px;
+.hot-search span {
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-size: 14px;
 }
-#input{
-    height: 20px;
+.hot-search{
+    font-size: 14px;
+}
+
+.hot-search span:hover{
+    color:  #f10180;
+}
+.vip-query {
+    margin-top: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+.my-porduct {
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.vip-query {
+    margin-top: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+.vip-query a{
+    font-size: 14px;
+}
+
+.vip-query-input {
+    height: 24px;
     line-height: 24px;
     width: 540px;
     float: left;
     border-radius: 3px 0 0 3px;
     padding: 7px 0 7px 13px;
     color: #aaa;
-    border: 1px solid #eee; 
+    border: 1px solid #eee;
 }
-#btn{
+
+.query-button {
     display: inline-block;
-    width: 126px;
-    background: #Fff;
-    /* float: left; */
-    text-align: center;
-    line-height: 34px;
-    color: rgb(10, 10, 10);
-    font-size: 12px;
-    border-radius: 0 3px 3px 0;
-    height: 34px;
-    margin-left: 10px;
-}
-.porduct{
-    width: 126px;
-    height: 34px;
+    width: 100px;
+    background: #f10180;
     float: left;
     text-align: center;
-    line-height: 34px;
-    border: 1px solid #F10180; 
-    border-radius: 0 3px 3px 0;
-    background-color: #F10180;
-}
-#porduct{
+    color: #fff;
     font-size: 18px;
-    color:#FFF; 
-    
+    border-radius: 0 3px 3px 0;
+    height: 40px;
+    cursor: pointer;
 }
-/* 图片背景结束 */
+.query-button:hover{
+    background:rgba(250, 245, 245, 0.35);
+}
+
+.my-porduct a {
+    display: block;
+    background: #fff;
+    width: 130px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 3px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #eee;
+} 
+.my-porduct a:hover{
+    color: #f0027e;
+    border: 1px solid #f0027e
+}
+
+.my-porduct span {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    background: #f30082;
+    color: #fff;
+    display: none;
+}
+
+
+
+/* 重写背景图片部分结束 */
 
 
 /* 我的账号开始 */
-.head .left{
+.headr .left{
     width: 320px;
     float: left;
 
 }
-.head .left .vip{
+.headr .left .vip{
     border:1px solid #eaeaea;
     height: 202px;
     margin-top: 10px;
@@ -130,7 +194,7 @@
 }
 .vip-wrapper {
     border: 1px solid #eaeaea;
-    height: 202px;
+    height: 215px;
     border-radius: 3px;
     position: relative;
     overflow: hidden;
@@ -146,5 +210,157 @@
     line-height: 42px;
     text-align: center;
 }
+
+/* 修改我的账号 猜你需要开始*/
+.vip-layout-right {
+    float: right;
+    width: 670px;
+    margin-left: 10px;
+}
+.vip-layout-need {
+    padding-top: 10px;
+}
+.vip-wrapper {
+    border: 1px solid #eaeaea;
+    height: 202px;
+    border-radius: 3px;
+}
+.welcom-name {
+    color: #fff;
+    position: absolute;
+    font-size: 16px;
+    left: 257px;
+    top: 45px;
+    width: 154px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+/* img {
+    vertical-align: bottom;
+} */
+/* 修改我的账号 猜你需要结束 */
+
 /* 我的账号结束 */
 
+/* 自助服务开始 */
+.pt30 {
+    padding-top: 20px;
+    float: left;
+}
+#selfService li{
+    float: left;
+    width: 200px;
+    margin-top:20px;
+    font-size: 12px;
+    text-align: center;
+}
+#selfService li p{
+    color: #333;
+}
+#selfService li :hover{
+    color:  #f10180;
+}
+.self-service li a {
+    display: block;
+    background: #fafafa;
+    padding: 18px 0;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    font-size: 14px;
+}
+/* 自助服务结束 */
+
+/* 热点问题开始 */
+.pt30 {
+    padding-top: 20px;
+    float: left;
+}
+.vip-title {
+    height: 18px;
+    line-height: 18px;
+    font-size: 16px;
+    border-left: 2px solid #f0027e;
+    padding-left: 5px;
+}
+.hot-problem {
+    padding: 23px 0;
+    border: 1px solid #eee;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.hot-problem li {
+    float: left;
+    width: 490px;
+}
+.hot-questions-box {
+    margin: 0 50px;
+    width: 400px;
+    height: 26px;
+    line-height: 26px;
+    position: relative;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    zoom: 1;
+    color: #666;
+}
+.hot-problem li span{
+    font-weight: 700;
+    margin-right: 10px;
+    display:inline-block;
+    font-size: 14px;
+    color: #333;
+}
+.hot-problem li a {
+    font-size: 12px;
+    color: #666;
+}
+.hot-problem li a:hover{
+    color:  #f10180;
+}
+/* 热点问题结束 */
+
+/* 帮助中心开始 */
+.pt30 {
+    padding-top: 20px;
+    float: left;
+}
+.classify-guide {
+    margin-right: -8px;
+    text-align: center;
+    margin-top: 10px;
+}
+.classify-guide li{
+  width: 158px;
+  border: 1px solid #eee;
+  float: left;
+  margin-right: 8px;
+  border-radius: 3px;
+}
+.classify-name{
+    background: #fafafa;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #2f2f2f;
+    font-weight: 800;
+}
+.classify-main {
+    padding: 23px 0;
+    overflow: hidden;
+}
+.classify-main dd {
+    height: 29px;
+    line-height: 29px;
+    display: block;
+    float: left;
+    width: 100%;
+}
+.classify-main dd a {
+    font-size: 12px;
+    color: #666;
+}
+.classify-main dd a:hover{
+    color: #f10180;
+}
+/* 帮助中心结束  */
