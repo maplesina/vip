@@ -179,11 +179,30 @@
 }
 .product-right-02{
     width: 550px;
-    background-color: #000;
+    
 }
-
-
-
+.recommend-txt{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.recommend-warper{
+    background-color: #000;
+    height: 400px;
+    font-size: 12px;
+}
+.rec-p{
+    background-color: #f10180;
+    height: 30px;
+}
+.rec-p p{
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.recommend-pr
 /* 右侧商品介绍结束 */
 /* 产品详细简介开始 */
 .product-nav{
