@@ -9,7 +9,7 @@
     /* line-height: 40px; */
     background: #f10582;
 }
-.head{
+.headr{
     width: 1000px;
     /* height: 40px; */
     margin: 0 auto;
@@ -77,7 +77,7 @@ h1{
 }
 
 .hot-search span:hover{
-    color:  rgb(223, 80, 104);
+    color:  #f10180;
 }
 .vip-query {
     margin-top: 10px;
@@ -162,12 +162,12 @@ h1{
 
 
 /* 我的账号开始 */
-.head .left{
+.headr .left{
     width: 320px;
     float: left;
 
 }
-.head .left .vip{
+.headr .left .vip{
     border:1px solid #eaeaea;
     height: 202px;
     margin-top: 10px;
@@ -236,9 +236,9 @@ h1{
     line-height: 42px;
     text-align: center;
 }
-img {
+/* img {
     vertical-align: bottom;
-}
+} */
 /* 修改我的账号 猜你需要结束 */
 
 /* 我的账号结束 */
@@ -259,7 +259,7 @@ img {
     color: #333;
 }
 #selfService li :hover{
-    color:  rgb(223, 80, 104);
+    color:  #f10180;
 }
 .self-service li a {
     display: block;
@@ -316,7 +316,7 @@ img {
     color: #666;
 }
 .hot-problem li a:hover{
-    color:  rgb(223, 80, 104);
+    color:  #f10180;
 }
 /* 热点问题结束 */
 
@@ -361,6 +361,6 @@ img {
     color: #666;
 }
 .classify-main dd a:hover{
-    color: rgb(223, 80, 104);
+    color: #f10180;
 }
 /* 帮助中心结束  */
