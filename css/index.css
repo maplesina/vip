@@ -492,6 +492,10 @@
 	background-color: #F10582;
 	color: white;
 }
+.iconfont {
+	
+	font-size: 12px !important;
+}
 .product-list .jp-list .jp-list-inner .enter {
 	float: right;
 	width: 118px;
@@ -599,10 +603,17 @@
 	color: white;
 }
 .list-item .list-item-pos>i {
+	background: url(../img/q-ind-wm2-bg.png);
+	position: absolute;
+    left: 0px;
+    top: 11px;
+    width: 8px;
+    height: 9px;
+    content: ' ';
 	margin: 0 10px;
 }
 .list-item .list-item-pos>span {
-	float: left;
+	margin-left: 25px;
 	color: white;
 }
 .list-item .list-item-pos .like {
@@ -647,6 +658,13 @@
 	font-size: 14px;
 	top: 10px;
 	color: #333;
+}
+.list-item .price-info .brand-time>i{
+	display: inline-block;
+	margin-right: 5px;
+    width: 16px;
+    height: 16px;
+	background: url(../img/q-ind-wm2-bg.png) no-repeat -50px 0;
 }
 .list-item .more-list {
 	border-top: 1px solid #e8e8e8;
