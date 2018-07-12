@@ -20,3 +20,108 @@
     display: inline-block;
     padding: 0 42px;
 }
+.g-row {
+    width: 1170px;
+    }
+.c-floor-goods{
+    margin-top: 30px;
+}
+.c-floor-goods-group{
+    margin-bottom: 30px;
+    /* background: pink; */
+}
+.c-floor-goods-content{
+    margin-top: 10px;
+    border: 1px solid #e5e5e5;
+    border-top-color: #514b59;
+}
+.c-floor-goods-left{
+    width: 754px;
+    margin-left: 38px;
+    /* height: 100px; */
+}
+.c-category-goods{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    /* background: #f10582; */
+}
+.c-category-goods-pho img{
+    width: 70px;
+    height: 80px;
+}
+.c-category-goods-pho, .c-category-goods-info{
+    float: left;
+}
+.c-category-goods-info{
+    margin-left: 15px;
+    width: 660px;
+}
+.c-category-goods-list{
+    margin-left: -15px;
+    margin-top: 10px;
+}
+.c-category-goods-info li{
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #666;
+}
+.c-more-goods{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.c-more-goods-btn{
+    min-width: 72px;
+    padding: 0 35px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 18px;
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: top;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+    background-color: #f10180;
+    border: 1px solid #f10180;
+    color: #ffffff;
+}
+.c-more-goods-btn:hover{
+    background-color: #f43499;
+    border-color: #f43499;
+}
+
+.c-floor-goods-nav {
+    position: fixed;
+    top: 110px;
+    bottom: auto;
+    left: 50%;
+    margin-left: -695px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 90px;
+    background-color: #fafafa;
+    border-radius: 0;
+    font-size: 0;
+    text-align: center;
+    display: none;
+}
+.c-floor-goods-nav-item {
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 6px; 
+    color: #999999;
+    line-height: 24px;
+    font-size: 14px;
+}
+.c-floor-goods-nav-list li.current{
+    background: #f10180;
+    color: #ffffff;
+}
+.c-floor-goods-nav-item:hover{
+    color: #f43499;
+}
