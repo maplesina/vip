@@ -3,6 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
@@ -15,12 +16,32 @@
 		<div class="head">
 			<div class="head-bg">
 				<div class="wraper clearfix">
-					<div class="location">省份</div>
+					<div class="location">
+						<span>省份</span>
+						<i class="ico-dis"></i>
+						<div class="province">
+							
+						</div>
+					</div>
 					<div class="r-head">
-						<ul>
-							<li class="head-item">
+						<ul class="clearfix">
+							<li class="head-item item-active head-user">
 								<a href="">
 									<span>请登录</span>
+									<div class="user-info">
+										<div class="top-userinfo">
+											<span class="top-userinfo-pic"></span>
+											<div><a href="">您好！ [请登录]</a></div>
+										</div>
+										<ul class="cent-userinfo">
+											<li>我的收藏</li>
+											<li>我的订单</li>
+											<li>零钱</li>
+											<li>我的优惠券</li>
+											<li>我的唯品币</li>
+											<li>唯品金融</li>
+										</ul>
+									</div>
 									<i class="head-icon"></i>
 								</a>
 							</li>
@@ -30,24 +51,50 @@
 									<i class="head-icon"></i>
 								</a>
 							</li>
-							<li>
+							<li class="head-item">
 								<img src="img/q-ind-h1.gif" /> 签到有礼
 								<i class="head-icon"></i>
-
+								
 							</li>
-							<li class="head-item">我的订单</li>
-							<li class="head-item">我的特卖
+							<li>我的订单
 								<i class="head-icon"></i>
 							</li>
-							<li class="head-item">会员俱乐部
-								<i class="head-icon"></i></li>
-							<li class="head-item">客户服务
-								<i class="head-icon"></i></li>
-							<li class="head-item clearfix">
+							<li class="head-item item-active head-dis">我的特卖
+								<i class="head-icon"></i>
+								<i class="ico-dis"></i>
+								<div class="top-nav-dis">
+									<p>品牌收藏(0)</p>
+									<p>商品收藏(0)</p>
+									<p>我的足迹(0)</p>
+								</div>
+							</li>
+							<li class="head-item item-active head-club">会员俱乐部
+								<i class="head-icon"></i>
+								<i class="ico-dis"></i>
+								<div class="head-vip">
+									<p>俱乐部首页</p>
+									<p>唯品币兑换</p>
+									<p>免费抽大奖</p>
+								</div>
+							</li>
+							<li class="head-item item-active head-service">客户服务								
+								<i class="head-icon"></i>
+								<i class="ico-dis"></i>
+								<div class="head-service-infor">
+									<p>联系客服</p>
+									<p>帮助中心</p>
+									<p>服务中心</p>
+									<p>知识产权投诉</p>
+								</div>
+							</li>
+							<li class="head-item clearfix head-phone-in">
 								<i class="phone"></i> 手机版
 								<i class="head-icon"></i>
+								<div class="head-phone">
+									<img src="img/q-ind-saoma.png" width="186"/>
+								</div>
 							</li>
-							<li>更多</li>
+							<li class=" item-active">更多</li>
 						</ul>
 					</div>
 				</div>
@@ -181,9 +228,9 @@
 			<i class="bg"><img src="img/q-ind-bg1.jpg"/></i>
 			<div class="banner">
 				<ul>
-					<li><img src="img/q-ind-b1.jpg" alt="" /></li>
-					<li><img src="img/q-ind-b2.jpg" alt="" /></li>
-					<li><img src="img/q-ind-b3.jpg" alt="" /></li>
+					<li><img src="img/q-ind-b1.jpg" alt="" class="banner-pic"/></li>
+					<li><img src="img/q-ind-b2.jpg" alt="" class="banner-pic"/></li>
+					<li><img src="img/q-ind-b3.jpg" alt="" class="banner-pic"/></li>
 				</ul>
 				<div class="banner-list wraper">
 					<ul>
