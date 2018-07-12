@@ -8,47 +8,6 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
-
-
-
-		<style>
-			*{
-			margin: 0;
-			padding: 0;
-		}
-		body{
-			height: 6000px;
-		}
-		.lift-nav{
-			position: fixed;
-			top: 100px;
-			left: 30px;
-			z-index: 3;
-			/* display: none; */
-		}
-		.lift-nav li{
-			width: 30px;
-			height: 30px;
-			text-align: center;
-			line-height: 30px;
-			color: #fff;
-			padding: 10px 10px;
-			margin-bottom: 10px;
-			background: skyblue;
-			cursor: pointer;
-		}
-
-		.lift-nav li.current{
-			background: tomato;
-		}
-
-		
-
-
-
-		</style>
-
-
 	</head>
 
 	<body>
@@ -313,48 +272,24 @@
 			</div>
 		</div>
 
-
-
-
-
-
-
-
-
+		<!-- 电梯导航部分 -->
 		<div class="lift-nav">
 			<ul class="lift">
-				<li>1楼</li>
-				<li>2楼</li>
-				<li>3楼</li>
-				<li>4楼</li>
-				<li>5楼</li>
-				<li>6楼</li>
-				<li>2楼</li>
-				<li>3楼</li>
-				<li>4楼</li>
-				<li>5楼</li>
-				<li>6楼</li>
+				<li class="current"><span class="lift-nav-icon iconfont icon-xingxing"></span>精选</li>
+				<li><span class="lift-nav-icon iconfont icon-nvzhuang"></span>女装</li>
+				<li><span class="lift-nav-icon iconfont icon-xiebao"></span>鞋包</li>
+				<li><span class="lift-nav-icon iconfont icon-nanzhuang"></span>男装</li>
+				<li><span class="lift-nav-icon iconfont icon-Cxiexue-yundongxie"></span>运动</li>
+				<li><span class="lift-nav-icon iconfont icon-cloud-watch"></span>饰品</li>
+				<li><span class="lift-nav-icon iconfont icon-meizhuang"></span>美妆</li>
+				<li><span class="lift-nav-icon iconfont icon-muying"></span>母婴</li>
+				<li><span class="lift-nav-icon iconfont icon-jujia"></span>居家</li>
+				<li><span class="lift-nav-icon iconfont icon-guojihua"></span>国际</li>
+				<li><span class="lift-nav-icon iconfont icon-yingtao"></span>生活</li>
 			</ul>
 		</div>
 
-
-
-
-
-
-
-
-
-
-		<!-- 电梯导航部分 -->
 		<div class="new-shop-target">
-
-
-
-
-
-
-
 
 		<!--新特卖开始-->
 			<div class="new-shop wraper t1">
@@ -786,16 +721,13 @@
 			<!--鞋包开始-->
 
 			<div class="shoes t3">
-
-
-
 			<div class="shoes-bg">
-				<a href="" class="shoes-inner">
-					<img src="img/q-ind-xie1.jpg" />
-					<div class="shoes-inner-con">
-						<img src="img/q-ind-xie2.png" />
-					</div>
-				</a>
+					<a href="" class="shoes-inner">
+						<img src="img/q-ind-xie1.jpg" />
+						<div class="shoes-inner-con">
+							<img src="img/q-ind-xie2.png" />
+						</div>
+					</a>
 			</div>
 			<div class="shoes-bags warper">
 				<div class="title">
@@ -963,6 +895,8 @@
 					</div>
 				</div>
 			</div>
+			</div>
+
 			<!--鞋包结束-->
 
 			<!--男装开始-->
@@ -2409,108 +2343,7 @@
 
 		<script src="js/jquery-1.12.4.js"></script>
 		<script src="js/index.js"></script>
-
-
-
-
-
-		<script>
-			
-			function LiftEffect(json) {
-
-					var array = [];
-
-					for (var i = 0; i < json.target.length; i++) {
-						var t = $(json.target[i]).offset().top;
-						console.log(t);
-						array.push(t);
-
-					}
-
-					function Selected(index) {
-						$(json.control2).children().eq(index).addClass(json.current).siblings().removeClass(json.current);
-					}
-
-
-					$(window).on("scroll", Check);
-
-					function Check() {
-
-						var wst = $(window).scrollTop();
-
-						// console.log(wst);
-
-
-						if (wst >= $(json.target[0]).offset().top - 100) {
-							$(json.control1).fadeIn(500);
-						} else {
-							$(json.control1).fadeOut(500);
-						}
-
-						var key = 0;
-						var flag = true;
-						for (var i = 0; i < array.length; i++) {
-							key++;
-							if (flag) {
-
-								if (wst >= array[array.length - key] - 300) {
-									var index = array.length - key;
-									console.log(index)
-									flag = false;
-								} else {
-									flag = true;
-								}
-
-							}
-						}
-						Selected(index);
-					}
-
-					$(json.control2).children().on("click", function () {
-
-						$(window).off("scroll");
-						var index = $(this).index();
-						Selected(index);
-
-
-						var flag = true;
-						for (var i = 0; i < array.length; i++) {
-
-							if (flag) {
-
-								if (index == i) {
-									$("html,body").stop().animate({
-										"scrollTop": array[i] - 50
-									}, 500, function () {
-										$(window).on("scroll", Check);
-									});
-									flag = false;
-								} else {
-									flag = true;
-								}
-
-							}
-						}
-
-					});
-
-
-
-				}
-			
-		</script>
-		<script>
-			$(function () {
-					LiftEffect({
-						"control1": ".lift-nav", 						  //侧栏电梯的容器
-						"control2": ".lift",                           //需要遍历的电梯的父元素
-						"target": [".t1", ".t2", ".t3", ".t4", ".t5", ".t6", ".t7", ".t8", ".t9", ".t10", ".t11"], //监听的内容，注意一定要从小到大输入
-						"current": "current" 						  //选中的样式
-					});
-
-
-			})
-		</script>
+		<script src="js/LeftEffect.js"></script>
 	</body>
 
 </html>
