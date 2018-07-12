@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/Prodocts.css">
     <link rel="stylesheet" href="css/public.css">
+    <link href="css/hizoom.min.css" rel="stylesheet">
+    <script src='js/jquery.min.js'></script>
+    
     <script src="js/jquery-1.12.4.js"></script>
     <!-- <script src="js/index.js"></script> -->
 </head>
@@ -75,7 +78,7 @@
                 <div class="head-inner">
                     <ul class="clearfix">
                         <li class="first-page">
-                            <a href="###" class="main-nav-atag">首页</a>
+                            <a href="index.html" class="main-nav-atag">首页</a>
                         </li>
                         <li>
                             <a href="###" class="main-nav-atag">女装</a>
@@ -172,20 +175,34 @@
         <div class="product-01">
             <!-- 产品位置导航开始 -->
             <div class="product-top">
-                <a href="###">首页 > </a>
-                <a href="#"> SK-II化妆品专场</a>
+                <a href="index.html">首页 > </a>
+                <a href="list.html"> SK-II化妆品专场</a>
                 <span> >SK-II 神仙水曜白焕亮美肌挚选礼盒 神仙水 小灯泡 护肤套装 面部精华 保湿 亮肤</span>
             </div>
             <!-- 产品位置导航结束 -->
             <!-- 产品左侧图片及简介开始 -->
             <div class="product-left">
-                <div class="p-img">
+                <!-- <div class="p-img">
                     <img src="img/zxx-002.jpg" alt="图片">
+                </div> -->
+                <div class='hizoom gakki'>
+                    <img src='img/zxx-002.jpg'>
                 </div>
+
                 <div class="p-text">
                     <span>商品编码：18225061602</span>
                     <span><i></i>收藏商品</span>
-                    <span>分享到:</span>
+                    <span>
+                        <i></i>分享到:
+                        <ul class="vips-bshare">
+                                <li><i></i></li>
+                                <li><i></i></li>
+                                <li><i></i></li>
+                                <li><i></i></li>
+                        </ul>
+                    </span>   
+                    
+                    
                 </div>
                 
                 <div class="p-safe mt">
@@ -557,6 +574,8 @@
             <!-- 底部版心结束 -->
     </div> 
     <!-- 详情页底部结束 -->
+
     <script src=js/Prodocts.js></script>
+    <script src='js/hizoom.min.js'></script>
 </body>
 </html>

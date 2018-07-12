@@ -1,5 +1,6 @@
 //详情页tab切换
-var divs=document.querySelectorAll(".about-imgtab");
+;(function(){
+    var divs=document.querySelectorAll(".about-imgtab");
     console.log(divs)
 var lis=document.querySelectorAll(".about-img li i");
 var len=lis.length;
@@ -14,3 +15,7 @@ for(var i=0;i<len;i++){
         divs[this.index].className="about-imgtab active"
     }
 }
+
+}());
+
+
