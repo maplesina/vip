@@ -378,6 +378,23 @@
 	position: relative;
 	width: 1170px;
 }
+.lift-nav{
+	z-index: 999;
+	position: fixed;
+	top: 20%;
+	left: 0px;
+	width: 76px;
+	height: 448px;
+	border: 1px solid #333;
+	border-radius: 12px;
+	background-color: pink;
+}
+.lift-nav>ul>li{
+	padding: 0 6px;
+	line-height: 30px;
+}
+
+
 .new-shop .top-content>img {
 	width: 1170px;
 }
@@ -679,7 +696,9 @@
 	text-align: center;
 	margin: 0 auto 50px;
 }
-
+.list-item .more-list>a>i{
+	margin-left: 15px;
+}
 /*女装品牌结束*/
 
 /*鞋包开始*/
