@@ -311,11 +311,9 @@ li{
 }
 
 .tool .c-nav-r a {
-	/*line-height: 100px;*/
 	width: 40px;
 	height: 34px;
 	color: #333333;
-	/*float: left;*/
 }
 
 .tool .c-nav-r a>i {
@@ -339,21 +337,156 @@ li{
 }
 /* 头部结束 */
 
+/* 悬浮红包开始 */
+.list-sider{
+    position: fixed;
+    top: 237px;
+    z-index: 2;
+    width: 85px;
+    left: 16%;
+    height: 650px;
+    animation: move;
+}
+/* 悬浮红包结束 */
 /* <!-- 悬浮的红包（左上）开始 --> */
- .list-sider{
-     position: fixed;
-     top: 237px;
-     width: 85px;
-     z-index: 2;
-     height: 90px;
-     background-image: url(../img/xy-fix.png);
-     background-position: -124px 0px;
- }
- .list-sider:hover{
-     cursor: pointer;
- }
-/* <!-- 悬浮的红包（左上）结束 --> */
+.list-sider-top{
+    height: 90px;
+    background: url(../img/xy-fix.png) -124px 0px;
+    display: none;
+    transition: all .5s;
+}
+.list-sider-top:hover{
+    cursor: pointer;
+}
 
+/* 显示出来的内容开始 */
+.advertisement{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: all 2s;
+}
+.advertisement ul{
+    width: 108px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+}
+.advertisement ul>li{
+    padding: 5px 5px;
+}
+.advertisement li:nth-child(1){
+    position: relative;
+    width: 115px;
+    height: 88px;
+    z-index: 1;
+    margin-left: -7px;
+    background-image: url(../img/xy-fix.png);
+    background-position: -231px 0px;
+}
+.advertisement li:nth-child(1) p{
+    width: 92px;
+    height: 44px;
+    background-color: #fff;
+    margin-left: 10px;
+    margin-top: 14px;
+}
+.advertisement li:nth-child(1) p img{
+    width: 70px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.advertisement li:nth-child(3){
+    border-top: 1px dashed #dcdcdc;
+    border-bottom: 1px dashed #dcdcdc;
+}
+.advertisement li span:first-child{
+    color: #FEFFE0;
+    padding: 0px 3px;
+    background-color: #F3B241;
+}
+.advertisement-bottom .close{
+    position: absolute;
+    right: -5px;
+    top: 5px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #000;
+    display: none;
+}
+.advertisement-bottom .close:hover{
+    color: red;
+    cursor: pointer;
+}
+/* 右上的小箭头 */
+.advertisement ul li i{
+    position: absolute;
+    top: 22px;
+    left: 121px;
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+    background: url(../img/xy-fix.png) -210px -84px;
+}
+ /* 显示出来的内容结束 */
+/* <!-- 悬浮的红包（左上）结束 --> */
+/* 悬浮在右下角的红包开始 */
+.advertisement-bottom{
+    position: absolute;
+    bottom: 0;
+}
+.advertisement-bottom .hide-bottom{
+    position: absolute;
+    bottom: 50px;
+}
+.advertisement-bottom .hide-bottom:hover{
+    cursor: pointer;
+}
+/* 悬浮在右下角的红包结束 */
+
+/* 当窗口宽度小于1300的时候advertisement隐藏,list-sider的left值等于0 */
+@media (max-width:1300px){
+    .list-sider{
+        left: 0;
+    }
+    .list-sider-top{
+        display: block;
+    }
+    .advertisement{
+        display: none;
+    }
+    .reveal-bottom{
+        display: none;
+    }
+    .hide-bottom{
+        display: block;
+    }
+}
+@media (min-width:1300px){
+    .list-sider{
+        left: 16%;
+    }
+    .list-sider-top{
+        display: none;
+    }
+    .advertisement{
+        display: block;
+    }
+    .reveal-bottom{
+        display: block;
+    }
+    .hide-bottom{
+        display: none;
+    }
+}
 
 /* 购物袋开始 */
 /* .side{

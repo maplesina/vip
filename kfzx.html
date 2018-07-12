@@ -4,14 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>服务中心</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/kfzx.css">
+	<link rel="stylesheet" href="css/kfzx.css">
+	<link rel="stylesheet" href="css/public.css">
 </head>
 <body>
+	<script src="js/public.js"></script>
+	<script src="js/jquery-1.12.4.js"></script>
+
+		<!-- 头部导航开始 -->
+		<div class="head">
+			<div class="head-bg">
+				<div class="wraper clearfix">
+					<div class="location">省份</div>
+					<div class="r-head">
+						<ul>
+							<li class="head-item">
+								<a href="">
+									<span>请登录</span>
+									<i class="head-icon"></i>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>注册</span>
+									<i class="head-icon"></i>
+								</a>
+							</li>
+							<li>
+								<img src="img/q-ind-h1.gif" /> 签到有礼
+								<i class="head-icon"></i>
+
+							</li>
+							<li class="head-item">我的订单</li>
+							<li class="head-item">我的特卖
+								<i class="head-icon"></i>
+							</li>
+							<li class="head-item">会员俱乐部
+								<i class="head-icon"></i></li>
+							<li class="head-item">客户服务
+								<i class="head-icon"></i></li>
+							<li class="head-item clearfix">
+								<i class="phone"></i> 手机版
+								<i class="head-icon"></i>
+							</li>
+							<li>更多</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="top-nav clearfix wraper">
+				<div class="logo">
+					<img src="img/q-ind-log1.png" />
+				</div>
+				<div class="c-nav">
+					<img src="img/q-ind-log2.png" />
+				</div>
+
+				<div class="tool clearfix">
+					<span>
+						<input type="text" name="" id="" value="" placeholder="大家都在搜：连衣裙" />
+						<p class="search">
+							<img src="img/q-ind-log4.png" />
+						</p>
+					</span>
+					<div class="c-nav-r clearfix">
+						<a href="">
+							<i>
+								<img src="img/q-ind-log3.png" />
+							</i>
+							<span>购物袋</span>
+							<b class="c-nav-icon">0</b>
+						</a>
+
+					</div>
+				</div>
+			</div>
     <!-- 服务中心头部开始 -->
     <div class="main">
-        <div class="head">
+        <div class="headr">
             <ul class="link">
                 <li><a href="">服务中心</a></li>
                 <li><a href="">反馈平台</a></li>
@@ -24,123 +96,455 @@
 <!-- 头部结束 -->
 
 <!-- 图片背景开始 -->
-    <div class="items">
-        <img src="img/gy1.jpg" alt="">
-        <div class="head height">
-            <div class="search">
-                <div class="layout">
-                     热门查询：
-                    <span>配送服务</span>
-                    <span>唯品花</span>
-                    <span>快捷支付</span>
-                    <span>密码</span>
-                    <span>换货</span>
-                </div>
-                <div>
-                    <input type="text" value="请输入查找的关键字" id="input">
-                    <a href="" id="btn">我的问题解决进度</a>
-                    <div class="porduct">
-                        <a href="" id="porduct">查询</a>
-                    </div>
-                </div>
-                
-                    
-                
-            </div>
-        </div>
-    </div>
+	<div class="vip-items">
+		<div class="layout items-height">
+			<div class="vip-search">
+				<div class="hot-search" id="hotSearch">热门查询：<span>配送服务</span><span>唯品花</span><span>快捷支付</span><span>密码</span><span>换货</span></div>
+				<div class="vip-query clearfix">
+					<input type="text" class="vip-query-input" value="请输入查找的关键字" id="vipSearch"><a href="javascript:;" class="query-button" id="queryButton" mars_sead="v_search_btn">查询</a>
+					<div class="my-porduct" id="myPorduct"><a href="//feedback.vip.com/feedback/myfeedback.html" target="_blank" mars_sead="v_myproduct_btn">我的问题解决进度<span href="javascript:;" style="display: none;">0</span></a></div>
+				</div>
+			</div>
+		</div>
+	</div>
 <!-- 图片背景结束 -->
 
 <!-- 我的账号开始 -->
-    <div class="head">
+    <div class="headr">
         <div class="left clearfix">
-            <h3>我的账号</h3>
+            <h1>我的账号</h1>
             <div class="vip">
                 <div id="notLogin" class="not-login" style="">
                     <p class="not-login-sm">尊敬的会员，你好！<br>登陆后可享受更好更贴心的服务哦~~</p>
                     <a href="" class="already-login-button" id="alreadyLoginButton">立即登录</a>
                 </div>
             </div>
-        </div>
-        <div class="vip-layout-right">
-			<h3>猜你需要</h3>
+		</div>
+		<div class="vip-layout-right">
+			<h1 class="vip-title">猜你需要</h1>
 			<div class="vip-layout-need">
-			<div class="vip-wrapper onactive" id="vipWrapper">
+				<div class="vip-wrapper onactive" id="vipWrapper">
+					<div class="welcom-name">欢迎光临</div>
+			<img src="img/gy2.png">
+					</div>
+			</div>
+		</div>
+        <!-- <div class="vip-layout-right">
+			<h1>猜你需要</h1>
+			<div class="vip-layout-need">
+				<div class="vip-wrapper onactive" id="vipWrapper">
 	            <div class="welcom-name">欢迎光临</div>
 	            <img src="img/gy2.png">
-            </div>
-		</div>
-	</div>
+            	</div>
+			</div>
+		</div> -->
     </div>
 <!-- 我的账号结束 -->
 
 <!-- 自助服务开始 -->
-    <div class="head clearfix">
-        <h3>自助服务</h3>
-        <ul class="self-service clearfix" id="selfService">
-				<li>
-					<a href="" target="_blank">
-						<i class="gn-dd-icon0"></i>
-						<p>修改/取消订单</p>
-					</a>
-				</li>
-				<li>
-					<a href="" class="look-logistics">
-						<i class="gn-dd-icon1"></i>
-						<p>查看物流</p>
-					</a>
-				</li>
-				<li>
-					<a href="" class="acs-delivery">
-						<i class="gn-dd-icon2"></i>
-						<p>催促配送</p>
-					</a>
-				</li>
-				<li>
-					<a href="" class="qxps-onclick">
-						<i class="gn-dd-icon3"></i>
-						<p>取消配送</p>
-					</a>
-				</li>
-				<li>
-					<a href="" target="_blank" class="acs-acsCash-1">
-						<i class="gn-dd-icon4"></i>
-						<p>提现查询</p>
-					</a>
-				</li>
-				<li>
-					<a href="//order.vip.com/order/orderlist" target="_blank" mars_sead="v_buffet_btn">
-						<i class="gn-dd-icon5"></i>
-						<p>自助退货</p>
-					</a>
-				</li>
-				<li>
-					<a href="javascript:;" class="acs-refund">
-						<i class="gn-dd-icon6"></i>
-						<p>催促退款</p>
-					</a>
-				</li>
-				<li>
-					<a href="javascript:;" class="acs-receipt">
-						<i class="gn-dd-icon7"></i>
-						<p>补寄发票</p>
-					</a>
-				</li>
-				<li>
-					<a href="//myi.vip.com/coupons.html">
-						<i class="gn-dd-icon9"></i>
-						<p>激活卡券</p>
-					</a>
-				</li>
-				<li>
-					<a href="https://safe.vip.com/profile/safe_center">
-						<i class="gn-dd-icon8"></i>
-						<p>修改密码</p>
-					</a>
-				</li>
+	<div class="headr">
+		<div class=" pt30 acss clearfix">
+		<h1 class="vip-title">自助服务</h1>
+		<ul class="self-service clearfix" id="selfService">
+			<li>
+				<a href="" target="_blank">
+					<i class="gn-dd-icon0"></i>
+					<p>修改/取消订单</p>
+				</a>
+			</li>
+			<li>
+				<a href="" class="look-logistics">
+					<i class="gn-dd-icon1"></i>
+					<p>查看物流</p>
+				</a>
+			</li>
+			<li>
+				<a href="" class="acs-delivery">
+					<i class="gn-dd-icon2"></i>
+					<p>催促配送</p>
+				</a>
+			</li>
+			<li>
+				<a href="" class="qxps-onclick">
+					<i class="gn-dd-icon3"></i>
+					<p>取消配送</p>
+				</a>
+			</li>
+			<li>
+				<a href=""class="acs-acsCash-1">
+					<i class="gn-dd-icon4"></i>
+					<p>提现查询</p>
+				</a>
+			</li>
+			<li>
+				<a href="" target="_blank">
+					<i class="gn-dd-icon5"></i>
+					<p>自助退货</p>
+				</a>
+			</li>
+			<li>
+				<a href="" class="acs-refund">
+					<i class="gn-dd-icon6"></i>
+					<p>催促退款</p>
+				</a>
+			</li>
+			<li>
+				<a href="" class="acs-receipt">
+					<i class="gn-dd-icon7"></i>
+					<p>补寄发票</p>
+				</a>
+			</li>
+			<li>
+				<a href="" target="_blank">
+					<i class="gn-dd-icon9"></i>
+					<p>激活卡券</p>
+				</a>
+			</li>
+			<li>
+				<a href="" target="_blank">
+					<i class="gn-dd-icon8"></i>
+					<p>修改密码</p>
+				</a>
+			</li>
 
-			</ul>
-    </div>
+		</ul>
+	</div>
+	</div>
+
+<!-- 自助服务结束 -->
+
+<!-- 热点问题开始 -->
+	<div class="headr">
+		<div class=" headr pt30 clearfix">
+		<h1 class="vip-title">热点问题</h1>
+		<ul class="hot-problem clearfix" id="hotProblem">
+
+	<li>
+		<div class="hot-questions-box">
+			<span>[售后服务]</span>
+			<a href="">唯品会提供换货服务吗？</a>
+		</div>
+	</li>
+
+	<li>
+		<div class="hot-questions-box">
+			<span>[购物指南]</span>
+			<a href="">结算不及时 购物袋被清空？</a>
+		</div>
+	</li>
+
+	<li>
+		<div class="hot-questions-box">
+			<span>[售后服务]</span>
+			<a href="">退款说明</a>
+		</div>
+	</li>
+
+	<li>
+		<div class="hot-questions-box">
+			<span>[售后服务]</span>
+			<a href="">退货寄件地址</a>
+		</div>
+	</li>
+
+	<li>
+		<div class="hot-questions-box">
+			<span>[会员中心]</span>
+			<a href="">账号登录密码、支付密码找回自助操作说明</a>
+		</div>
+	</li>
+
+	<li>
+		<div class="hot-questions-box">
+			<span>[配送方式]</span>
+			<a href="">特卖会常见问题说明</a>
+		</div>
+	</li>
+
+	<li>
+		<div class="hot-questions-box">
+			<span>[掌上唯品会]</span>
+			<a href="">掌上唯品会常见问题说明</a>
+		</div>
+	</li>
+
+	<li>
+		<div class="hot-questions-box">
+			<span>[售后服务]</span>
+			<a href="">商品不合适，退货细则看这里</a>
+		</div>
+	</li>
+
+	<li>
+		<div class="hot-questions-box">
+			<span>[购物指南]</span>
+			<a href="">唯品国际常见问题</a>
+		</div>
+	</li>
+
+	</ul>
+		</div>
+	</div>
+
+<!-- 热点问题结束 -->
+
+<!-- 帮助中心开始 -->
+	<div class="headr">
+		<div class=" pt30 clearfix">
+		<h1 class="vip-title">帮助中心</h1>
+		<ul class="classify-guide clearfix" id="classifyGuide">
+
+	<li style="height: 291px;">
+		<div class="classify-name">会员中心</div>
+		<div class="classify-main">
+			
+				<dd>
+					<a href="">唯品币</a>
+				</dd>
+			
+				<dd>
+					<a href="">账户管理</a>
+				</dd>
+			
+				<dd>
+					<a href="">邮件通知</a>
+				</dd>
+			
+				<dd>
+					<a href="">会员成长体系</a>
+				</dd>
+			
+				<dd>
+					<a href="">掌上唯品会</a>
+				</dd>
+			
+				<dd>
+					<a href="">客服电话语音流程</a>
+				</dd>
+			
+		</div>
+	</li>
+
+	<li style="height: 291px;">
+		<div class="classify-name">购物指南</div>
+		<div class="classify-main">
+			
+				<dd>
+					<a href="">特卖会专区</a>
+				</dd>
+			
+				<dd>
+					<a href="">唯品国际</a>
+				</dd>
+			
+				<dd>
+					<a href="">尺码换算</a>
+				</dd>
+			
+				<dd>
+					<a href="">发票</a>
+				</dd>
+			
+				<dd>
+					<a href="">品牌直发</a>
+				</dd>
+			
+		</div>
+	</li>
+
+	<li style="height: 291px;">
+		<div class="classify-name">支付方式</div>
+		<div class="classify-main">
+			
+				<dd>
+					<a href="">在线支付</a>
+				</dd>
+			
+				<dd>
+					<a href="">优惠方式</a>
+				</dd>
+			
+				<dd>
+					<a href="">货到付款 </a>
+				</dd>
+			
+				<dd>
+					<a href="">联名卡</a>
+				</dd>
+			
+		</div>
+	</li>
+
+	<li style="height: 291px;">
+		<div class="classify-name">配送方式</div>
+		<div class="classify-main">
+			
+				<dd>
+					<a href="">配送服务</a>
+				</dd>
+			
+				<dd>
+					<a href="">商品验货与签收</a>
+				</dd>
+			
+				<dd>
+					<a href="">收货样品</a>
+				</dd>
+			
+		</div>
+	</li>
+
+	<li style="height: 291px;">
+		<div class="classify-name">售后服务</div>
+		<div class="classify-main">
+			
+				<dd>
+					<a href="">退货政策</a>
+				</dd>
+			
+				<dd>
+					<a href="">退货流程</a>
+				</dd>
+			
+				<dd>
+					<a href="">退款方式和时效</a>
+				</dd>
+			
+				<dd>
+					<a href="">维修服务</a>
+				</dd>
+			
+				<dd>
+					<a href="">保险理赔</a>
+				</dd>
+			
+				<dd>
+					<a href="">投诉及建议</a>
+				</dd>
+			
+				<dd>
+					<a href="">换货服务</a>
+				</dd>
+			
+		</div>
+	</li>
+
+	<li style="height: 291px;">
+		<div class="classify-name">唯品金融</div>
+		<div class="classify-main">
+			
+				<dd>
+					<a href="">唯品花</a>
+				</dd>
+			
+				<dd>
+					<a href="">唯品宝</a>
+				</dd>
+			
+				<dd>
+					<a href="">唯品理财</a>
+				</dd>
+			
+				<dd>
+					<a href="">唯品保险</a>
+				</dd>
+			
+				<dd>
+					<a href="">唯品金融隐私政策</a>
+				</dd>
+			
+			</div>
+		</li>
+
+		</ul>
+		</div>
+	</div>
+<!-- 帮助中心结束 -->
+
+		<!--底部菜单开始-->
+	<div class="P-footer">
+            <!-- 底部版心开始 -->
+            <div class="footer-center wraper">
+                <ul class="footer-vip mt">
+                    <!-- <li><img src="img/zxx-list.png" alt=""></li> -->
+                    <li><i></i></li>
+                    <li><i></i></li>
+                    <li><i></i></li>
+                    <li><i></i></li>
+                    <li><i></i></li>
+                    <li><i></i></li>
+                    <li><i></i></li>
+                    <li><i></i></li>
+                    <li><i></i></li>
+                    <li><i></i></li>
+                </ul>
+                <div class="footer-list">
+                    <ul class="list-icon">服务保障                  
+                        <li>正品保证</li>
+                        <li>7天无理由放心退</li>
+                        <li>退货返运费</li>
+                        <li>7x15小时客户服务</li>
+                        <li>7天无理由随心换</li>
+                    </ul>
+                    <ul class="list-icon">购物指南
+                      
+                        <li>导购演示</li>
+                        <li>订单操作</li>
+                        <li>会员注册</li>
+                        <li>账户管理</li>
+                        <li>收货样品</li>
+                        <li>会员等级</li>
+                    </ul>
+                    <ul class="list-icon">支付方式
+                        
+                        <li>快捷支付</li>
+                        <li>23家主流网银支付</li>
+                        <li>货到付款</li>
+                        <li>支付宝、银联等支付</li>
+                        <li>信用卡支付</li>
+                        <li>零钱支付</li>
+                    </ul>
+                    <ul class="list-icon">配送方式
+                        
+                        <li>全场满288元免运费</li>
+                        <li>配送范围及运费</li>
+                        <li>验货与签收</li>
+                        
+                    </ul>
+                    <ul class="list-icon">售后服务
+                        <li>退货政策</li>
+                        <li>退货流程</li>
+                        <li>退款方式和时效</li>
+                        <li>退货返运费</li>
+                        
+                    </ul>
+                    <ul>
+                        <li style="list-style: none;">唯品会APP二维码</li>
+                        <li style="list-style: none;"><img src="img/zxx-weixin.png" alt=""></li>
+                        <li style="list-style: none;">下载唯品会移动APP</li>
+                    </ul>
+                </div>
+                <div class="footer-infor">
+                    <p>关于我们| About us| Investor Relations| 媒体报道| 品牌招商| 隐私条款| 唯品诚聘| 365爱心基金| 唯品卡| 联系我们</p>
+                    <p>Copyright © 2008-2018 vip.com，All Rights Reserved  使用本网站即表示接受唯品会用户协议。版权所有 广州唯品会电子商务有限公司</p>
+                    <p>粤公网安备 44010302111111号  粤ICP备08114786号 增值业务经营许可证：粤B2-20170777 网络文化经营许可证：粤网文〔2015〕1528-229</p>
+                    <p>自营主体经营证照  风险监测信息  互联网药品交易服务资格证（粤C20140002）</p>
+                </div>
+                <div class="footer-pic">
+                    <p>
+                        <span><i></i></span>
+                        <span><i></i></span>
+                        <span><i></i></span>
+                        <span><i></i></span>
+                        <span><i></i></span>
+                        <span><i></i></span>
+                        <span><i></i></span>
+                    </p>
+                </div>
+            </div>
+            <!-- 底部版心结束 -->
+    </div> 
+    <!-- 详情页底部结束 -->
 
 </body>
 </html>
