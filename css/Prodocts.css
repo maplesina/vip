@@ -30,10 +30,19 @@
     float: left;
     position: relative;
 }
-.hizoom{
-    width: 420px;
-    height: 420px;
+/* 放大镜的样式开始 */
+.htmleaf-content{
+    width: 700px;
+    margin:50px auto;
 }
+/* sample CSS to set the initial dimensions of images that will be zoomable */
+.sampleimage{
+    width: 420px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* 放大镜样式结束 */
 .p-safe{
     width: 420px;
     height: 59px;

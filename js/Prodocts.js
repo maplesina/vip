@@ -18,4 +18,8 @@ for(var i=0;i<len;i++){
 
 }());
 
+//放大镜效果
+$(function(){
+    $(".sampleimage").zoomio();
+})
 
