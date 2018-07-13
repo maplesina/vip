@@ -1,7 +1,6 @@
-//详情页tab切换
+//详情页关于我们的tab切换
 ;(function(){
     var divs=document.querySelectorAll(".about-imgtab");
-    console.log(divs)
 var lis=document.querySelectorAll(".about-img li i");
 var len=lis.length;
 for(var i=0;i<len;i++){
@@ -23,3 +22,26 @@ $(function(){
     $(".sampleimage").zoomio();
 })
 
+//商品详情的tab切换
+;(function(){
+    var divs=document.querySelectorAll(".product-list>div");
+    console.log(divs)
+    var lis=document.querySelectorAll(".product-nav li");
+    console.log(lis)
+    var len=lis.length;
+    
+    $(lis).on("click",function(){
+        // 获取点击的li的索引
+        // 当li的索引为0时
+        if($(this).index()==0){
+            // 将所有的div显示出来   display:block;
+            $(divs).css("display","block");
+        }else{
+            // 获取点击li对应索引的div    将其显示出来    将除它之外的所有div隐藏
+            $(divs).eq($(this).index()).css("display","block").siblings("div").css("display","none");
+        }
+        // 将被点击的li改变成激活状态
+        $(this).addClass("active-tab").siblings("li").removeClass("active-tab");
+    })
+
+}());
