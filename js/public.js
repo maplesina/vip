@@ -20,3 +20,46 @@ function lxfEndtime(){
   });
 setTimeout("lxfEndtime()",1000);
 };
+
+
+// 购物袋
+$(".side .shop").on("mouseenter",function(){
+  $(".gouwu").show();
+})
+//当鼠标进入shop的时候gouwu出现，当鼠标离开的时候gouwu隐藏
+$(".side .shop").on("mouseleave",function(){
+  $(".gouwu").hide();
+})
+$(".side .gouwu").on("mouseenter",function(){
+  $(".gouwu").show();
+})
+$(".side .gouwu").on("mouseleave",function(){
+  $(".gouwu").hide();
+})
+// 进入登录窗口的时候让他的父元素上的hover样式消失
+$(".login").on("mouseenter",function(){
+  $(this).parents(".user").css("backgroundColor","#333")
+})
+// 当浮上右边的图标的时候让他对应的p出来
+$(".side i").on("mouseenter",function(){
+  $(this).children().css("display","block")
+  $(this).children().css("right","40px")
+})
+$(".side  i").on("mouseleave",function(){
+  $(this).children().css("display","none")
+  $(this).children().css("right","-60px")
+})
+$(".side .shop").on("click",function(){
+  $(this).children(".head-portrait").css("display","block")
+})
+$(".side .shop").on("mouseleave",function(){
+  $(this).children(".head-portrait").css("display","none")
+})
+
+//回到顶部
+$('#top').click(function () {
+  $('html,body').animate({ 
+      scrollTop: 0 
+  }, 500);
+});
+//购物袋结束

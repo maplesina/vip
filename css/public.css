@@ -1,5 +1,7 @@
 /* 头部菜单css样式 */
-
+a{
+	color: inherit;
+}
 li {
 	cursor: pointer;
 }
@@ -215,19 +217,29 @@ li {
 }
 
 .r-head {
-	width: 844px;
+	width: 770px;
 	float: right;
 }
 
 .r-head>ul {
-	width: 844px;
+	width: 775px;
 }
-
+.head-user:hover .user-info{
+	display: block;
+}
 .r-head>ul>li {
-	padding: 0 15px;
+	z-index: 9;
+	padding: 0 17px;
 	float: left;
 	position: relative;
 }
+.r-head>ul>li:nth-child(2):hover{
+	color: #F10180;
+}
+.r-head>ul .head-item:hover{
+	color: #F10180;
+}
+
 .r-head>ul .head-item:hover .head-icon{
 	display: none;
 }
@@ -252,6 +264,158 @@ li {
 	margin-right: 2px;
 	background: url(../img/q-ind-h3.png) no-repeat;
 }
+
+.item-active:hover {
+	background-color: white;
+}
+
+.user-info {
+	color: #777;
+	position: absolute;
+	top: 27px;
+	left: -5px;
+	width: 270px;
+	height: 175px;
+	background-color:white;
+	padding: 15px 0 10px;
+	border: 1px solid #777777;
+	display: none;
+}
+
+.top-userinfo {
+
+	padding: 15px 20px 0;
+	position: relative;
+}
+
+.user-info .top-userinfo div {
+	width: 175px;
+	height: 32px;
+	position: absolute;
+	left: 64px;
+	top: 20px;
+	border-bottom: 1px dotted #333;
+}
+.user-info .top-userinfo div:hover{
+	color: #F10180;
+}
+.top-userinfo-pic {
+	
+	display: block;
+	background: url(../img/q-ind-h2.png) no-repeat -164px -142px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+}
+
+.cent-userinfo {
+	width: 100%;
+	padding: 10px 20px 0;
+}
+
+.cent-userinfo>li {
+	float: left;
+	width: 120px;
+}
+.cent-userinfo>li:hover{
+	color: #F10180;
+}
+.head-dis:hover .top-nav-dis{
+	display: block;
+}
+.top-nav-dis{
+	position: absolute;
+	top: 27px;
+	left: -2px;
+	background-color: white;
+	padding: 0px 15px 20px;
+	width: 70px;
+	height: 96px;
+	color: #333;
+	border: 1px solid #777;
+	display: none;
+}
+.top-nav-dis>p{
+	line-height: 35px;
+}
+.top-nav-dis>p:hover{
+	color: #F10180;
+}
+.ico-dis{
+	float: right;
+	right: 1px;
+	margin-top: 13px;
+	margin-left: 2px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    vertical-align: middle;
+    border-width: 4px;
+    border-color: #999 transparent transparent transparent;
+    border-style: solid dashed dotted dashed;
+}
+.r-head>ul .head-item:hover .ico-dis{
+		position: absolute;
+		top: -5px;
+		right: 6px;
+	  /*margin-top: 13px;*/
+    margin-bottom: 5px;
+    border-style: solid;
+    border-color: transparent transparent #f10180 transparent;
+}
+.head-club:hover .head-vip{
+	display: block;
+}
+.head-service:hover .head-vip{
+	display: block;
+}
+.head-vip{
+	display: none;
+	position: absolute;
+	left: -3px;
+	width: 80px;	
+	padding: 0px 15px 20px;
+	color: #777;
+	background-color: white;
+	border: 1px solid #333;
+}
+.head-vip>p{
+	line-height: 35px;
+}
+.head-vip>p:hover{
+	color: #F10180;
+}
+.head-service-infor{
+	position: absolute;
+	left: -3px;
+	width: 80px;	
+	padding: 0px 15px 20px;
+	color: #777;
+	display: none;
+	background-color: white;
+	border: 1px solid #333;
+}
+.head-service-infor>p{
+	line-height: 35px;
+}
+.head-service-infor>p:hover{
+	color: #F10180;
+}
+.head-service:hover .head-service-infor{
+	display: block;
+}
+.head-phone{
+	position: absolute;
+	top: 27px;
+	right: 0;
+	display: none;
+}
+.head-phone-in:hover .head-phone{
+	display: block;
+}
+
+
+
 
 .top-nav {
 	width: 1170px;
