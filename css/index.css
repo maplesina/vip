@@ -32,55 +32,41 @@
 }*/
 .banner-bg {
 	width: 100%;
-	min-width: 1200px;
-	/* height: 510px; */
-	height: 460px;
-	margin-bottom: 20px;
+	min-width: 1170px;
+	background: url(../img/q-ind-bg1.jpg) no-repeat center center;
+	height: 500px;
+	/*margin-bottom: 20px;*/
 	position: relative;
 }
-.banner-bg .bg{
-	width: 1440px;
-	
-}
-.banner-bg .bg>img {
-	width: 100%;
-	min-width: 1440px;
-	height: 440px;
-}
+
 
 .banner-bg .banner {
-	position: absolute;
 	width: 1170px;
-	height: 420px;
-	top: 20px;
-	left: 50%;
-	margin-left: -585px;
+	height: 470px;
+	margin: 0 auto;
+	padding: 12px;
 }
 
 .banner>ul {
-	position: absolute;
-	top: 30px;
+	height: 400px;
+	margin: 45px 0 0 25px;
 }
 
 .banner>ul>li {
 	position: absolute;
-	/*width: 1145px;*/
-	overflow: hidden;
 }
 
 .banner>ul>li>img {
-	width: 1170px;
-	height: 340px;
+	width: 1120px;
+	height: 385px;
 }
-
-.banner .banner-list {
+.banner-list{
 	position: absolute;
-	bottom: -30px;
+	bottom: 10px;
 }
-
 .banner-list>ul {
 	font-size: 0;
-	width: 1220px;
+	width: 100%;
 	padding: 15px 0;
 	text-align: center;
 	border-bottom: 1px solid #A9A9A9;
@@ -89,6 +75,7 @@
 .banner-list>ul>li {
 	display: inline-block;
 	width: 195px;
+	
 	border-right: 1px solid #777777;
 	/*line-height: 40px;*/
 	font-size: 12px;
@@ -102,8 +89,12 @@
 .banner-list .selected {
 	border-bottom: 2px solid #E6057D;
 }
-
-
+.banner-pic{
+	opacity: 0;
+}
+.banner-list .active{
+	color: #e6057d;
+}
 /*banner图结束*/
 
 
