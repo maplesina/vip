@@ -52,7 +52,10 @@ li {
 }
 
 .head-inner .icon-desc {
-	position: relative;
+	/* position: relative; */
+	position: absolute;
+	top: 10px;
+	left: 57px;
 	font-style: normal;
 	display: inline-block;
 	height: 0;
@@ -61,7 +64,6 @@ li {
 	border-right: 5px solid transparent;
 	border-top: 5px solid #fff;
 }
-
 .more-wrap::after {
 	position: absolute;
 	top: 22px;

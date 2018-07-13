@@ -1,0 +1,229 @@
+.g-nav{
+    width: 100%;
+    height: 66px;
+    box-shadow: 1px 1px 3px rgba(225,226,220,.8);
+}
+.top-nav-main a{
+    font-size: 20px;
+    color: black;
+}
+.top-nav-item{
+    display: inline-block;
+    margin-top: 20px;
+    height: 43px;
+    line-height: 43px;
+}
+.top-nav-main .another{
+    border-bottom: 3px solid #f10582;
+}
+.top-nav-divide{
+    display: inline-block;
+    padding: 0 42px;
+}
+.g-row {
+    width: 1170px;
+    }
+.c-floor-goods{
+    margin-top: 30px;
+}
+.c-floor-goods-group{
+    margin-bottom: 30px;
+    /* background: pink; */
+}
+.c-floor-goods-content{
+    margin-top: 10px;
+    border: 1px solid #e5e5e5;
+    border-top-color: #514b59;
+}
+.c-floor-goods-left{
+    width: 754px;
+    margin-left: 38px;
+    /* height: 100px; */
+}
+.c-category-goods{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    /* background: #f10582; */
+}
+.c-category-goods-pho img{
+    width: 70px;
+    height: 80px;
+}
+.c-category-goods-pho, .c-category-goods-info{
+    float: left;
+}
+.c-category-goods-info{
+    margin-left: 15px;
+    width: 660px;
+}
+.c-category-goods-list{
+    margin-left: -15px;
+    margin-top: 10px;
+}
+.c-category-goods-info li{
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #666;
+}
+.c-more-goods{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.c-more-goods-btn{
+    min-width: 72px;
+    padding: 0 35px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 18px;
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: top;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+    background-color: #f10180;
+    border: 1px solid #f10180;
+    color: #ffffff;
+}
+.c-more-goods-btn:hover{
+    background-color: #f43499;
+    border-color: #f43499;
+}
+
+.c-floor-goods-nav {
+    position: fixed;
+    top: 110px;
+    bottom: auto;
+    left: 50%;
+    margin-left: -695px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 90px;
+    background-color: #fafafa;
+    border-radius: 0;
+    font-size: 0;
+    text-align: center;
+    display: none;
+}
+.c-floor-goods-nav-item {
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 6px; 
+    color: #999999;
+    line-height: 24px;
+    font-size: 14px;
+}
+.c-floor-goods-nav-list li.current{
+    background: #f10180;
+    color: #ffffff;
+}
+.c-floor-goods-nav-item:hover{
+    color: #f43499;
+}
+.g-content{
+    min-width: 1170px;
+}
+.g-flagship-box{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    border: 1px solid #dfdfdf;
+}
+.g-flagship-hd{
+    padding: 0 34px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #f2f2f2;
+}
+.g-flagship-sort{
+    line-height: 50px;
+}
+.g-flagship-sort li:hover{
+    color: #f43499;
+}
+.g-flagship-sort-item{
+    float: left;
+    margin-right: 15px;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 800;
+    line-height: 50px;
+}
+.g-flagship-content{
+    position: relative;
+    height: 388px;
+    padding: 30px 30px 0;
+    overflow: hidden;
+}
+.g-flagship-choiceness .flagship-store{
+    float: left;
+    margin-right: 29px;
+    margin-bottom: 30px;
+}
+.g-flagship-choiceness .flagship-store-logo{
+    width: 350px;
+    height: 170px;
+}
+.g-flagship-normal .flagship-store{
+    float: left;
+    margin-right: 29px;
+    margin-bottom: 30px;
+}
+.g-flagship-normal .flagship-store-logo{
+    width: 160px;
+    height: 158px;
+}
+.g-flagship-more{
+    cursor: pointer;
+    position: absolute;
+    background: #fff;
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    left: 50%;
+    margin-left: -66px;
+    text-align: center;
+    width: 132px;
+    line-height: 27px;
+    height: 28px;
+    bottom: -29px;
+    font-size: 12px;
+}
+/* .g-flagship-more p{
+    text-align: center;
+    width: 132px;
+    line-height: 27px;
+} */
+.g-flagship-more-he{
+     position: absolute;
+    bottom: 0px;
+    left: 34%;
+    display: none; 
+}
+#arrow-icon{
+    font-size: 12px;
+}
+.g-flagship-more:hover{
+    color: #f10180;
+}
+.g-act-footer{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.g-act-footer-btn{
+    display: inline-block;
+    padding: 0 35px;
+    min-width: 72px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 3px;
+    background: #f10180;
+
+}
