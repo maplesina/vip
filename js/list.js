@@ -12,23 +12,10 @@ $(function(){
 //     }(count-down))
 // }(window))
 
-// 购物袋
-// $(".side .shop").on("mouseenter",function(){
-//     $(".gouwu").show();
-// })
-// //当鼠标进入shop的时候gouwu出现，当鼠标离开的时候gouwu隐藏
-// $(".side .shop").on("mouseleave",function(){
-//     $(".gouwu").hide();
-// })
-// $(".side .gouwu").on("mouseenter",function(){
-//     $(".gouwu").show();
-// })
-// $(".side .gouwu").on("mouseleave",function(){
-//     $(".gouwu").hide();
-// })
 
 
-//左边悬浮的红包
+
+//悬浮的红包小窗口的时候显示和隐藏
 $(function(){
     $(window).scroll(function(){
         var h = $(window).scrollTop();
@@ -51,12 +38,11 @@ $(function(){
         $(".reveal-bottom").show();
         $(".advertisement-bottom .close").show()
     })
-    $("..advertisement-bottom .close").on("click",function(){
+    $(".advertisement-bottom .close").on("click",function(){
         $(".reveal-bottom").hide();
         $(".hide-bottom").show();
         $(".advertisement-bottom .close").hide()
     })
-    
-    
-    
 })
+
+
