@@ -6,6 +6,19 @@
  .main a:hover{
     color: #f10180;
 }
+select{
+    padding:5px 10px;
+    font-size: 12px;
+    color: #999;
+    line-height: 32px;
+    
+    margin-left: 20px;
+    }
+.outer{
+    width:500px;
+    /* float: left; */
+    }
+
 .main{
     margin: 0 auto;
     /* height: 800px; */
@@ -235,16 +248,19 @@
 .product-right-01 .pr-box p {
     line-height: 40px;
     margin-top: 15px;
+    height: 40px;
+
 }
-.product-right-01 .pr-box p span{
+.product-right-01 .pr-box p span,.outer span{
     font-size: 12px;
     color: #999;
     line-height: 32px;
     font-weight: normal;
+    
 }
-.product-right-01 .pr-box input{
+/* .product-right-01 .pr-box input{
     margin-left: 20px;
-}
+} */
 .product-right-01 .pr-box p:nth-child(2) span:nth-child(2){
     background-color: #F3B241;
     color: #fff;
@@ -545,10 +561,9 @@
 }
 .about-content{
     height: 650px;
-    /* background-color: #333; */
     float: left;
     width: 1170px;
-    /* overflow: hidden; */
+   
 }
 
 .about-imgtab{

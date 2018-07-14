@@ -17,6 +17,19 @@ for(var i=0;i<len;i++){
 
 }());
 
+// ;(function($){
+//     $(function(){
+
+//       // 给item绑定事件
+//       $('.about-img li i').on('click', function(){
+//         // 给自身添加active 在给同胞去除active 
+//         $(this).addClass('active').siblings().removeClass('active')
+//         $('.about-imgtab').removeClass('.about-imgtab active').eq($(this).index()).addClass('.about-imgtab active')
+//       })
+
+//     })
+//   }(jQuery))
+
 //放大镜效果
 $(function(){
     $(".sampleimage").zoomio();
@@ -42,6 +55,7 @@ $(function(){
         }
         // 将被点击的li改变成激活状态
         $(this).addClass("active-tab").siblings("li").removeClass("active-tab");
+       
     })
 
 }());
