@@ -16,19 +16,24 @@ for(var i=0;i<len;i++){
 }
 
 }());
+// 固定导航
+;(function($) {
+	$(function() {
+		var $nav = $(".nav-pr"); //得到导航对象
+		var $win = $(window); //得到窗口对象
+		var $sc = $(document); //得到document文档对象。
+		$win.scroll(function() {
+			if($sc.scrollTop() >= 1085) {
+				$nav.addClass("fixednav")
+				$($nav).css("display","block");
+			} else {
+                $nav.removeClass("fixednav")
+                $($nav).css("display","none");
+			}
+		})
+	});
+})(jQuery);
 
-// ;(function($){
-//     $(function(){
-
-//       // 给item绑定事件
-//       $('.about-img li i').on('click', function(){
-//         // 给自身添加active 在给同胞去除active 
-//         $(this).addClass('active').siblings().removeClass('active')
-//         $('.about-imgtab').removeClass('.about-imgtab active').eq($(this).index()).addClass('.about-imgtab active')
-//       })
-
-//     })
-//   }(jQuery))
 
 //放大镜效果
 $(function(){
