@@ -1,0 +1,226 @@
+/*头部开始*/
+
+* {
+	box-sizing: border-box;
+}
+
+.l-header {
+	height: 100px;
+	width: 100%;
+	background-color: white;
+	min-width: 1000px;
+}
+
+.header-inner {
+	width: 1000px;
+	height: 100px;
+}
+
+.header-inner .left-inner {
+	float: left;
+}
+
+.header-inner .right-inner {
+	float: right;
+	width: 296px;
+	height: 100px;
+	background: url(../img/q-login-h2.png) no-repeat 0 0;
+}
+
+
+/*登录开始*/
+
+.login-bg {
+	background: url(../img/q-login-bg1.jpg) no-repeat center center;
+	height: 650px;
+	min-width: 1170px;
+}
+
+.l-content {
+	width: 1060px;
+	height: 100%;
+	padding: 20px;
+}
+
+.l-login-panel {
+	float: right;
+	width: 360px;
+	height: 435px;
+	margin-top: 30px;
+	border-radius: 4px;
+	background-color: white;
+}
+
+.l-login-panel>h2 {
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+	color: #f10180;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.l-tab-content {
+	width: 300px;
+	height: 275px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.l-tab-content-user {
+	position: relative;
+	margin-top: 42px;
+	width: 300px;
+	height: 46px;
+	border: 1px solid #777;
+	border-radius: 4px;
+}
+
+.l-tab-content-user .user-bg {
+	position: absolute;
+	top: 12px;
+	left: 11px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/q-login-h2.png)no-repeat -348px -161px;
+}
+
+.l-tab-content-user .user-info {
+	padding-left: 40px;
+	width: 248px;
+	height: 44px;
+	line-height: 44px;
+	color: #333;
+	background-color: #fff;
+	border: none;
+	border-radius: 3px;
+	outline: medium;
+}
+
+.l-tab-content-pwd {
+	position: relative;
+	margin-top: 26px;
+	width: 300px;
+	height: 46px;
+	border: 1px solid #777;
+	border-radius: 4px;
+}
+
+.l-tab-content-pwd .pwd-bg {
+	position: absolute;
+	top: 12px;
+	left: 11px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/q-login-h2.png)no-repeat -372px -161px;
+}
+
+.l-tab-content-pwd .pwd-info {
+	padding-left: 40px;
+	width: 248px;
+	height: 44px;
+	line-height: 44px;
+	color: #333;
+	background-color: #fff;
+	border: none;
+	border-radius: 3px;
+	outline: medium;
+}
+
+.l-info-item {
+	font-size: 12px;
+	color: #333;
+	width: 300px;
+	height: 20px;
+	margin-top: 26px;
+}
+
+.l-info-item>input {
+	width: 13px;
+	height: 13px;
+	font-size: 0;
+	line-height: 0;
+	background-color: #333;
+	margin-right: 10px;
+	vertical-align: text-top;
+}
+
+.l-info-item>p {
+	float: right;
+}
+
+.l-info-item>p>a {
+	color: #333;
+}
+
+.l-info-item>p>a:hover {
+	color: #F10180;
+}
+
+.l-tab-content>button {
+	margin-top: 26px;
+	width: 300px;
+	line-height: 46px;
+	color: white;
+	font-size: 18px;
+	background-color: #f10180;
+	border: 1px solid #f10180;
+	border-radius: 3px;
+	text-decoration: none;
+	text-align: center;
+}
+.l-login-foot{
+	width: 300px;
+	padding-top: 20px;
+}
+.l-login-foot a {
+	display: block;
+	color: #333;
+	float: left;
+	margin-right: 10px;
+	width: 24px;
+	height: 24px;
+	background-image: url(../img/q-login-h2.png);
+}
+.l-login-foot a:nth-child(6){
+	float: right;
+	margin-right: 24px;
+}
+.u-third-sina {
+	background-position: -580px -57px;
+}
+
+.u-third-qq {
+	background-position: -513px -121px;
+}
+
+.u-third-alipay {
+	background-position: -569px -121px;
+}
+
+.u-third-wechat {
+	background-position: -580px -85px;
+}
+
+.u-third {
+	font-size: 12px;
+	white-space: nowrap;
+	line-height: 24px;
+}
+.r-register{
+	white-space: nowrap;
+	font-size: 12px;
+	line-height: 24px;
+}
+.u-third:hover{
+	color: #F10180;
+}
+.r-register:hover{
+	color: #F10180;
+}
+/*底部*/
+
+.l-footer {
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+	line-height: 88px;
+}
