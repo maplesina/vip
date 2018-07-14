@@ -45,4 +45,48 @@ $(function(){
     })
 })
 
+//固定顶部菜单
+;(function($) {
+	$(function() {
+        var $nav = $(".main .sort"); //得到导航对象
+        var $h = $(".main .sort").offset().top;//得到导航的高度
+		var $win = $(window); //得到窗口对象
+		var $sc = $(document); //得到document文档对象。
+		$win.scroll(function() {
+			if($sc.scrollTop() > $h) {
+                $nav.addClass("fixednav")
+                $nav.css("marginTop","0")
+			} else {
+				$nav.removeClass("fixednav")
+			}
+		})
+	});
+})(jQuery);
 
+//点击下一页转换
+function doMove(direction){
+    var llength = list.length;//li的个数，用来做边缘判断
+    var lwidth = $(list[0]).width();//每个li的长度，ul每次移动的距离
+    var uwidth = llength * lwidth;//ul的总宽度
+    //向右按钮
+    if (direction =="next") {
+        index++;
+        if ( index< llength) {
+            uwidth = lwidth *index;
+            ulist.css('left',-uwidth);
+            //ulist.animate({left: -uwidth}, 1000);
+        }else{
+            ulist.css('left','0px');
+            index = 0;
+        }; 
+    //向左按钮           
+    }else if(direction =="prev"){
+        index--;
+        if ( index < 0) {
+            index = llength - 1;                
+        }
+        uwidth = lwidth *index;
+        ulist.css('left',-uwidth);
+        //ulist.animate({left: -uwidth}, "slow");    
+    }
+}
