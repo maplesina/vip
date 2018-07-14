@@ -1190,6 +1190,10 @@ li {
     color:#fff;
     margin: 10px;
 }
+.main .hobby ul{
+    width: 1000px;
+    height: 426px;
+}
 .main .hobby ul li{
     float: left;
     width: 320px;
@@ -1215,6 +1219,7 @@ li {
 }
 .main .hobby ul li:hover{
     cursor: pointer;
+    color: #f10180;
 }
 .main .hobby ul li img:hover{
     animation: blink 1.5s;
@@ -1225,7 +1230,6 @@ li {
 }
 .main .hobby>a{
     position: absolute;
-    /* margin-top: -270px; */
     top:41%;
     font-size: 20px;
     padding: 30px 10px;
@@ -1240,7 +1244,7 @@ li {
 .main .hobby .next{
     right: 0;
 }
-.main .hobby ul:hover .hobby>a{
+.hobby:hover .hobby a{
     display: block;
 }
 /* 你可能喜欢的品牌结束 */
