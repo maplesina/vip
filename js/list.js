@@ -12,17 +12,81 @@ $(function(){
 //     }(count-down))
 // }(window))
 
-// 购物袋
-// $(".side .shop").on("mouseenter",function(){
-//     $(".gouwu").show();
-// })
-// //当鼠标进入shop的时候gouwu出现，当鼠标离开的时候gouwu隐藏
-// $(".side .shop").on("mouseleave",function(){
-//     $(".gouwu").hide();
-// })
-// $(".side .gouwu").on("mouseenter",function(){
-//     $(".gouwu").show();
-// })
-// $(".side .gouwu").on("mouseleave",function(){
-//     $(".gouwu").hide();
-// })
+
+
+
+//悬浮的红包小窗口的时候显示和隐藏
+$(function(){
+    $(window).scroll(function(){
+        var h = $(window).scrollTop();
+        if(h >=230){
+            $(".advertisement").css("top","-190px");
+        }else if(h == 0){
+            $(".advertisement").css("top","0px");
+        }
+    })
+    $(".list-sider-top").on("click",function(){
+        $(this).hide();
+        $(".advertisement").show();
+    })
+    $(".advertisement ul li i").on("click",function(){
+        $(".advertisement").hide();
+        $(".list-sider-top").show();
+    })
+    $(".hide-bottom").on("click",function(){
+        $(this).hide();
+        $(".reveal-bottom").show();
+        $(".advertisement-bottom .close").show()
+    })
+    $(".advertisement-bottom .close").on("click",function(){
+        $(".reveal-bottom").hide();
+        $(".hide-bottom").show();
+        $(".advertisement-bottom .close").hide()
+    })
+})
+
+//固定顶部菜单
+;(function($) {
+	$(function() {
+        var $nav = $(".main .sort"); //得到导航对象
+        var $h = $(".main .sort").offset().top;//得到导航的高度
+		var $win = $(window); //得到窗口对象
+		var $sc = $(document); //得到document文档对象。
+		$win.scroll(function() {
+			if($sc.scrollTop() > $h) {
+                $nav.addClass("fixednav")
+                $nav.css("marginTop","0")
+			} else {
+				$nav.removeClass("fixednav")
+			}
+		})
+	});
+})(jQuery);
+
+//点击下一页转换
+function doMove(direction){
+    var llength = list.length;//li的个数，用来做边缘判断
+    var lwidth = $(list[0]).width();//每个li的长度，ul每次移动的距离
+    var uwidth = llength * lwidth;//ul的总宽度
+    //向右按钮
+    if (direction =="next") {
+        index++;
+        if ( index< llength) {
+            uwidth = lwidth *index;
+            ulist.css('left',-uwidth);
+            //ulist.animate({left: -uwidth}, 1000);
+        }else{
+            ulist.css('left','0px');
+            index = 0;
+        }; 
+    //向左按钮           
+    }else if(direction =="prev"){
+        index--;
+        if ( index < 0) {
+            index = llength - 1;                
+        }
+        uwidth = lwidth *index;
+        ulist.css('left',-uwidth);
+        //ulist.animate({left: -uwidth}, "slow");    
+    }
+}

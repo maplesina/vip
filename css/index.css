@@ -1,92 +1,131 @@
 
-
-
 /*banner图开始*/
+/*@media (max-width: 1921px){
+	.banner-bg>.bg>img{
+		width: 1920px;
+		height: 460px;
+	}
+	.banner-pic{
+		width: 1170px;
+	}
+}
+@media (max-width: 1671px){
+	.banner-bg>.bg>img{
+		width: 1671px;
+		height: 430px;
+	}	
+	.banner-pic{
+		width: 1170px;
+	}
+}
+@media (max-width: 1441px){
+	.banner-bg>.bg>img{
+		width: 1440px;
+		height: 420px;
+	}	
+}
+@media (max-width: 1201px){
+	.banner-bg>.bg>img{
+		width: 1170px;
+		height: 400px;
+	}	
+}*/
 .banner-bg {
 	width: 100%;
-	min-width: 1400px;
-	/* height: 510px; */
-	
-	height: 440px;
+	min-width: 1170px;
+	background: url(../img/q-ind-bg1.jpg) no-repeat center center;
+	height: 500px;
+	/*margin-bottom: 20px;*/
 	position: relative;
 }
-.banner-bg .bg>img {
-	width: 100%;
-	height: 440px;
-}
+
+
 .banner-bg .banner {
-	position: absolute;
-	width: 1000px;
-	height: 400px;
-	top: 0px;
-	left: 50%;
-	margin-left: -500px;
+	width: 1170px;
+	height: 470px;
+	margin: 0 auto;
+	padding: 12px;
 }
+
 .banner>ul {
-	position: absolute;
-	top: 50px;
+	height: 400px;
+	margin: 45px 0 0 25px;
 }
+
 .banner>ul>li {
 	position: absolute;
-	width: 1145px;
-	overflow: hidden;
 }
+
 .banner>ul>li>img {
-	width: 975px;
-	height: 340px;
+	width: 1120px;
+	height: 385px;
 }
-.banner .banner-list {
+.banner-list{
 	position: absolute;
-	bottom: -30px;
+	bottom: 10px;
 }
 .banner-list>ul {
 	font-size: 0;
-	width: 976px;
+	width: 100%;
 	padding: 15px 0;
 	text-align: center;
 	border-bottom: 1px solid #A9A9A9;
 }
+
 .banner-list>ul>li {
 	display: inline-block;
 	width: 195px;
+	
 	border-right: 1px solid #777777;
 	/*line-height: 40px;*/
-	
 	font-size: 12px;
 	color: #333333;
 }
+
 .banner-list .border-r {
 	border: none;
 }
+
 .banner-list .selected {
 	border-bottom: 2px solid #E6057D;
 }
-
+.banner-pic{
+	opacity: 0;
+}
+.banner-list .active{
+	color: #e6057d;
+}
 /*banner图结束*/
 
+
 /* 新人优选好货样式开始 */
+
 .index-new-inner {
 	margin-top: 10px;
 	/* background: pink; */
-	
 	height: 736px;
 	overflow: hidden;
 }
+
 .index-new-title {
 	margin: 10px 0 25px;
 	text-align: center;
 	height: 30px;
 	background: url(../img/w-00007.png) no-repeat center;
 }
+
 .index-new-sec {
 	margin-bottom: 5px;
 }
+
 .index-new-sec-title {
 	font-size: 20px;
 }
+
 .index-new-sec-title-left {
 	float: left;
 }
+
 .clock {
 	width: 28px;
 	height: 28px;
@@ -94,13 +133,16 @@
 	vertical-align: top;
 	background: url(../img/w-00008.png) no-repeat;
 }
+
 .index-new-sec-cate {
 	float: right;
 	height: 30px;
 }
+
 .index-new-sec-cate-right {
 	line-height: 30px;
 }
+
 .index-new-sec-cate-right>li {
 	position: relative;
 	float: left;
@@ -110,6 +152,7 @@
 	height: 18px;
 	cursor: pointer;
 }
+
 .borders-right-line:after {
 	position: absolute;
 	top: 7px;
@@ -120,15 +163,18 @@
 	width: 1px;
 	background: #777777;
 }
+
 .index-new-sec-con {
 	height: 601px;
 }
+
 .index-new-sec-con-link {
 	position: relative;
 	float: left;
 	overflow: hidden;
 	width: 286px;
 }
+
 .index-new-sec-btn {
 	webkit-transition: -webkit-transform 1s ease;
 	transition: -webkit-transform 1s ease;
@@ -147,15 +193,16 @@
 	margin-left: -87px;
 	top: 55%;
 }
+
 @keyframes light {
 	0% {
 		left: -100px
 	}
-	
 	to {
 		left: 180px
 	}
 }
+
 .index-new-sec-btn::before {
 	content: "";
 	width: 60px;
@@ -174,73 +221,71 @@
 	-webkit-animation: light 4s ease-out -2s infinite backwards;
 	animation: light 4s ease-out -6s infinite backwards;
 }
+
 .index-new-sec-btn:hover {
 	transform: scale(1.1);
 }
+
 @keyframes secAni {
 	0% {
 		-webkit-transform: translate(0, 0);
 		transform: translate(0, 0);
 	}
-	
 	50% {
 		-webkit-transform: translate(10px, 5px);
 		transform: translate(10px, 5px);
 	}
-	
 	100% {
 		-webkit-transform: translate(0, 0);
 		transform: translate(0, 0);
 	}
 }
+
 @keyframes secAni2 {
 	0% {
 		-webkit-transform: translate(0, 0);
 		transform: translate(0, 0);
 	}
-	
 	50% {
 		-webkit-transform: translate(-10px, -3px);
 		transform: translate(-10px, -3px);
 	}
-	
 	100% {
 		-webkit-transform: translate(0, 0);
 		transform: translate(0, 0);
 	}
 }
+
 @keyframes secAni3 {
 	0% {
 		-webkit-transform: translate(0, 0);
 		transform: translate(0, 0);
 	}
-	
 	50% {
 		-webkit-transform: translate(10px, -4px);
 		transform: translate(10px, -4px);
 	}
-	
 	100% {
 		-webkit-transform: translate(0, 0);
 		transform: translate(0, 0);
 	}
 }
+
 @keyframes secAni4 {
 	0% {
 		-webkit-transform: translate(0, 0);
 		transform: translate(0, 0);
 	}
-	
 	50% {
 		-webkit-transform: translate(-10px, -3px);
 		transform: translate(-10px, -3px);
 	}
-	
 	100% {
 		-webkit-transform: translate(0, 0);
 		transform: translate(0, 0);
 	}
 }
+
 .index-new-sec-ani {
 	position: absolute;
 	-webkit-animation: secAni ease 6s infinite;
@@ -249,12 +294,14 @@
 	transform: translate3d(0, 0, 0);
 	will-change: transform;
 }
+
 .index-new-sec-ani1 {
 	width: 10%;
 	height: 130px;
 	top: 15%;
 	left: 0%;
 }
+
 .index-new-sec-ani2 {
 	height: 176px;
 	top: 2%;
@@ -266,6 +313,7 @@
 	animation-delay: 1s;
 	animation-duration: 7s;
 }
+
 .index-new-sec-ani3 {
 	height: 310px;
 	top: 64%;
@@ -277,6 +325,7 @@
 	animation-delay: -4s;
 	animation-duration: 7s;
 }
+
 .index-new-sec-ani4 {
 	height: 154px;
 	top: 63%;
@@ -286,6 +335,7 @@
 	animation-name: secAni3;
 	animation-delay: .5s;
 }
+
 .index-new-sec-text-wrap {
 	width: 176px;
 	position: absolute;
@@ -293,38 +343,37 @@
 	top: 45.4%;
 	margin-left: -88px;
 }
+
 @keyframes textAni {
 	80% {
 		-webkit-transform: translateX(10px);
 		transform: translateX(10px);
 	}
-	
 	100% {
 		-webkit-transform: translateX(0);
 		transform: translateX(0);
 	}
 }
+
 @keyframes textAni2 {
 	0% {
 		-webkit-transform: rotate(0);
 		transform: rotate(0);
 	}
-	
 	33% {
 		-webkit-transform: rotate(2deg);
 		transform: rotate(2deg);
 	}
-	
 	66% {
 		-webkit-transform: rotate(0);
 		transform: rotate(0);
 	}
-	
 	100% {
 		-webkit-transform: rotate(-2deg);
 		transform: rotate(-2deg);
 	}
 }
+
 .index-new-sec-text {
 	width: 44px;
 	height: 44px;
@@ -338,76 +387,141 @@
 	-webkit-animation: textAni linear .6s forwards .3s, textAni2 ease .3s forwards 2.2s infinite;
 	animation: textAni linear .6s forwards .3s, textAni2 ease .3s forwards 2.2s infinite;
 }
+
 .index-new-sec-text1 {
 	-webkit-animation-delay: .3s, 2.2s;
 	animation-delay: .3s, 2.2s;
 }
+
 .index-new-sec-text2 {
 	background-position: -44px center;
 	left: 44px;
 	-webkit-animation-delay: .5s, 2.2s;
 	animation-delay: .5s, 2.2s;
 }
+
 .index-new-sec-text3 {
 	background-position: -88px center;
 	left: 88px;
 	-webkit-animation-delay: .7s, 2.2s;
 	animation-delay: .7s, 2.2s;
 }
+
 .index-new-sec-text4 {
 	background-position: -132px center;
 	left: 132px;
 	-webkit-animation-delay: .9s, 2.2s;
 	animation-delay: .9s, 2.2s;
 }
+
 .index-new-sec-cate-con {
 	float: left;
 	width: 884px;
 }
+
 .index-new-sec-cate-con li {
 	float: left;
 	border: 1px solid gray;
 }
+
 .index-new-sec-cate-con img {
 	width: 219px;
 	height: 295px;
 }
 
+
 /*新特卖开始*/
+
 .new-shop {
 	position: relative;
 	width: 1170px;
 }
+/* 电梯导航侧栏样式 */
+.lift-nav {
+    position: fixed;
+    top: 112px;
+    width: 78px;
+    left: 13%;
+    background: #fff;
+    z-index: 100;
+	border: 1px solid #d6d6d6;
+	border-radius: 3px;
+	display: none;
+}
+.lift-nav .lift{
+	padding: 5px 7px 0;
+    margin-bottom: 5px;
+}
+.lift-nav li{
+    padding: 8px 5px;
+    height: 20px;
+    border-bottom: 1px solid #eaeaea;
+	color: #666;
+	border-radius: 4px;
+	font-size: 14px;
+}
+.lift-nav li:hover{
+	color: #E6057D;
+}
+.lift-nav li.current{
+	background: #f10180;
+	color: #666;
+}
+.lift-nav-icon{
+	display: inline-block;
+	vertical-align: top;
+	line-height: 20px;
+	cursor: pointer;
+	margin-right: 3px;
+    width: 20px;
+    height: 20px;
+	color: #949494;
+	font-size: 16px;
+}
+
+
+
+
+/*新特卖开始*/
+
 .new-shop .top-content>img {
 	width: 1170px;
 }
+
 .product-list {
 	width: 1170px;
 	/*height: 1500px;*/
 }
+
 .product-list .top-list {
 	width: 1170px;
 	font-size: 0;
 	margin-bottom: 20px;
 }
+
 .product-list .top-list>li {
 	display: inline-block;
 	width: 370px;
 	margin-right: 28px;
 }
+
 .product-list .top-list>li:nth-child(3) {
 	margin-right: 0;
 }
+
 .product-list .top-list>li>img {
 	width: 370px;
 }
+
 .product-list .jp-list {
 	width: 1170px;
 	font-size: 0;
 }
+
 .product-list .jp-list .mr {
 	margin-right: 0;
 }
+
 .product-list .jp-list>li {
 	position: relative;
 	width: 570px;
@@ -415,15 +529,19 @@
 	margin-right: 20px;
 	margin-bottom: 20px;
 }
+
 .product-list .jp-list>li:hover .jp-list-inner {
 	display: block;
 }
+
 .product-list .jp-list>li:hover .jp-list-shadow {
 	display: block;
 }
+
 .product-list .jp-list>li>img {
 	width: 570px;
 }
+
 .product-list .jp-list .jp-list-shadow {
 	background-color: rgba(229, 212, 203, 0.7);
 	height: 350px;
@@ -432,6 +550,7 @@
 	top: 0;
 	display: none;
 }
+
 .product-list .jp-list .jp-list-inner {
 	position: absolute;
 	top: 20px;
@@ -442,24 +561,29 @@
 	display: none;
 	background-color: white;
 }
+
 .product-list .jp-list .jp-list-inner>ul {
 	width: 410px;
 	height: 185px;
 	padding: 20px 20px 0;
 	border-bottom: 1px dotted #666;
 }
+
 .product-list .jp-list .jp-list-inner>ul>li {
 	width: 120px;
 	margin-right: 20px;
 	float: left;
 	color: #333333;
 }
+
 .product-list .jp-list .jp-list-inner>ul>li:hover {
 	animation: blink 1s;
 }
+
 .product-list .jp-list .jp-list-inner>ul>li>img {
 	width: 120px;
 }
+
 .product-list .jp-list .jp-list-inner>ul>li>p {
 	line-height: 30px;
 	font-weight: 700;
@@ -467,15 +591,18 @@
 	color: #333;
 	text-align: center;
 }
+
 .product-list .jp-list .jp-list-inner .inner-log {
 	width: 100px;
 	float: left;
 }
+
 .product-list .jp-list .jp-list-inner .inner-log>img {
 	width: 100px;
 	height: 50px;
 	margin: 2px 30px 0;
 }
+
 .product-list .jp-list .jp-list-inner .like {
 	float: left;
 	background-color: white;
@@ -488,14 +615,15 @@
 	margin-left: 46px;
 	font-size: 12px;
 }
+
 .product-list .jp-list .jp-list-inner .like:hover {
 	background-color: #F10582;
 	color: white;
 }
-.iconfont {
-	
+.icon {	
 	font-size: 12px !important;
 }
+
 .product-list .jp-list .jp-list-inner .enter {
 	float: right;
 	width: 118px;
@@ -509,35 +637,43 @@
 	font-size: 14px;
 	text-align: center;
 }
+
 .product-list .jp-list .jp-list-inner .enter:hover {
 	color: white;
 	background-color: #333;
 }
 
+
 /*新特卖结束*/
 
+
 /*女装品牌开始*/
+
 .women-fashion {
 	margin-top: 30px;
 	width: 1170px;
 }
+
 .title {
 	height: 42px;
 	margin-bottom: 20px;
 	padding-bottom: 5px;
 	border-bottom: 2px solid #333;
 }
+
 .title>h2 {
 	font-size: 34px;
 	font-weight: 700;
 	color: #333;
 }
+
 .title>span {
 	font-size: 14px;
 	color: #555;
 	margin-top: 20px;
 	margin-left: 10px;
 }
+
 .title>a {
 	width: 102px;
 	height: 22px;
@@ -546,14 +682,17 @@
 	margin-top: 20px;
 	margin-right: 15px;
 }
+
 .women-fashion .title-list {
 	position: relative;
 	width: 1170px;
 }
+
 .women-fashion .title-list>img {
 	width: 1170px;
 	margin: 0 auto;
 }
+
 .women-fashion .title-list .list-wrap {
 	position: absolute;
 	top: 0;
@@ -562,37 +701,46 @@
 	left: 50%;
 	margin-left: -585px;
 }
+
 .women-fashion .title-list .list-wrap>img {
 	width: 1170px;
 }
+
 .women-fashion .title-list .list-wrap>ul {
 	width: 1150px;
 	height: 255px;
 	padding: 0 30px;
 }
+
 .women-fashion .title-list .list-wrap>ul>li {
 	float: left;
 	margin-right: 17px;
 	width: 174px;
 }
+
 .women-fashion .title-list .list-wrap>ul>li img {
 	width: 155px;
 }
+
 .list-item>ul {
 	width: 1200px;
 }
+
 .list-item>ul>li {
 	width: 570px;
 	float: left;
 	margin-right: 30px;
 	position: relative;
 }
+
 .list-item>ul>li:hover {
 	animation: blink 1s;
 }
+
 .list-item>ul>li:hover .like {
 	display: block;
 }
+
 .list-item .list-item-pos {
 	width: 570px;
 	line-height: 30px;
@@ -602,20 +750,23 @@
 	font-size: 12px;
 	color: white;
 }
+
 .list-item .list-item-pos>i {
 	background: url(../img/q-ind-wm2-bg.png);
 	position: absolute;
-    left: 0px;
-    top: 11px;
-    width: 8px;
-    height: 9px;
-    content: ' ';
+	left: 0px;
+	top: 11px;
+	width: 8px;
+	height: 9px;
+	content: ' ';
 	margin: 0 10px;
 }
+
 .list-item .list-item-pos>span {
 	margin-left: 25px;
 	color: white;
 }
+
 .list-item .list-item-pos .like {
 	float: right;
 	width: 88px;
@@ -629,28 +780,34 @@
 	display: none;
 	color: #333;
 }
+
 .list-item .list-item-pos .like:hover {
 	background-color: #F10582;
 	color: white;
 }
+
 .list-item .list-item-pos .like>span {
 	color: #333;
 }
+
 .list-item .price-info {
 	position: relative;
 	height: 40px;
 	padding: 0 20px;
 }
+
 .list-item .price-info>h3 {
 	font-size: 24px;
 	color: #f10582;
 	margin-right: 0px;
 	display: inline-block;
 }
+
 .list-item .price-info>span {
 	font-size: 14px;
 	color: #4d4d4d;
 }
+
 .list-item .price-info .brand-time {
 	position: absolute;
 	right: 0;
@@ -659,16 +816,19 @@
 	top: 10px;
 	color: #333;
 }
-.list-item .price-info .brand-time>i{
+
+.list-item .price-info .brand-time>i {
 	display: inline-block;
 	margin-right: 5px;
-    width: 16px;
-    height: 16px;
+	width: 16px;
+	height: 16px;
 	background: url(../img/q-ind-wm2-bg.png) no-repeat -50px 0;
 }
+
 .list-item .more-list {
 	border-top: 1px solid #e8e8e8;
 }
+
 .list-item .more-list>a {
 	display: block;
 	width: 323px;
@@ -680,15 +840,23 @@
 	margin: 0 auto 50px;
 }
 
+.list-item .more-list>a>i {
+	margin-left: 15px;
+}
+
+
 /*女装品牌结束*/
 
+
 /*鞋包开始*/
+
 .shoes-bg {
 	background: url(../img/q-ind-xie-bg.jpg)no-repeat center top;
 	position: relative;
 	min-width: 1170px;
 	height: 410px;
 }
+
 .shoes-bg .shoes-inner {
 	position: absolute;
 	top: 40px;
@@ -698,13 +866,16 @@
 	height: 410px;
 	overflow: hidden;
 }
-.shoes-bg .shoes-inner>img{
+
+.shoes-bg .shoes-inner>img {
 	position: absolute;
 	transition: all .5s;
 }
-.shoes-bg .shoes-inner:hover >img{
+
+.shoes-bg .shoes-inner:hover>img {
 	transform: scale(1.1);
 }
+
 .shoes-bg .shoes-inner .shoes-inner-con {
 	position: absolute;
 	left: 50%;
@@ -713,20 +884,32 @@
 	height: 160px;
 	bottom: 20px;
 }
+
 .shoes-bg .shoes-inner .shoes-inner-con>img {
 	width: 318px;
 	height: 160px;
 }
-.shoes-bags{
+
+.shoes-bags {
 	width: 1170px;
-	margin: 100px auto 0;	
+	margin: 100px auto 0;
 }
+
+
 /*鞋包结束*/
+
+
 /*男装开始*/
-.men-fashion{
+
+.men-fashion {
 	width: 1170px;
 }
+
+
 /*男装结束*/
+
+
 /*饰品品牌开始*/
+
 
 /*饰品品牌结束*/
