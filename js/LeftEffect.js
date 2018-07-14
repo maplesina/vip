@@ -1,34 +1,20 @@
 function LiftEffect(json) {
-
     var array = [];
-
     for (var i = 0; i < json.target.length; i++) {
         var t = $(json.target[i]).offset().top;
-        console.log(t);
         array.push(t);
-
     }
-
     function Selected(index) {
         $(json.control2).children().eq(index).addClass(json.current).siblings().removeClass(json.current);
     }
-
-
     $(window).on("scroll", Check);
-
     function Check() {
-
         var wst = $(window).scrollTop();
-
-        // console.log(wst);
-
-
         if (wst >= $(json.target[0]).offset().top - 100) {
             $(json.control1).fadeIn(500);
         } else {
             $(json.control1).fadeOut(500);
         }
-
         var key = 0;
         var flag = true;
         for (var i = 0; i < array.length; i++) {
@@ -50,7 +36,7 @@ function LiftEffect(json) {
 
     $(json.control2).children().on("click", function () {
 
-        $(window).off("scroll");
+        $(window).off("scroll",Check);
         var index = $(this).index();
         Selected(index);
 
