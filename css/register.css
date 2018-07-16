@@ -1,0 +1,217 @@
+/*注册*/
+*{
+	box-sizing: border-box;
+}
+.register-bg{
+	width: 100%;
+	height: 655px;
+	min-width: 1170px;
+	background: url(../img/q-login-bg1.jpg) no-repeat center center;
+}
+.c-register{
+	    width: 360px;
+    border-radius: 2px;
+    background-color: #fff;
+        float: right;
+        margin-right: 50px;
+        margin-top: 30px;
+}
+.c-register-header{
+	width: 300px;
+	padding-right: 30px;
+    padding-left: 30px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+.c-register-header>h3{
+	font-size: 18px;
+    color: #666;
+    float: left;
+}
+.c-register-header>div{
+	float: right;
+    font-size: 14px;
+
+}
+.c-register-header>div>a{
+	color:#f10180 ;
+}
+.c-register-body{
+	width: 300px;
+	height: 414px;
+}
+.l-tab-content-phone{
+		position: relative;
+	margin-top: 42px;
+	width: 300px;
+	height: 46px;
+	border: 1px solid #777;
+	border-radius: 4px;
+}
+.l-tab-content-phone .phone-icon {
+	position: absolute;
+	top: 12px;
+	left: 11px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/q-login-h2.png)no-repeat -300px -161px;
+}
+
+.l-tab-content-phone .phone-info {
+	padding-left: 40px;
+	width: 248px;
+	height: 44px;
+	line-height: 44px;
+	color: #333;
+	background-color: #fff;
+	border: none;
+	border-radius: 3px;
+	outline: medium;
+}
+.regs-content-code{
+	float: left;
+		position: relative;
+	margin-top: 30px;
+	width: 178px;
+	height: 46px;
+	border: 1px solid #777;
+	border-radius: 4px;
+}
+.regs-content-code .code-bg {
+	position: absolute;
+	top: 12px;
+	left: 11px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/q-login-h2.png)no-repeat -324px -161px;
+}
+
+.regs-content-code .phone-code {
+	padding-left: 40px;
+	padding-right: 10px;
+	width: 136px;
+	height: 44px;
+	line-height: 44px;
+	color: #333;
+	background-color: #fff;
+	border: none;
+	border-radius: 3px;
+	outline: medium;
+}
+.get-code{
+	
+	padding: 0 12px;
+    width: 106px;
+    font-size: 14px;
+    height: 44px;
+    line-height: 44px;
+		float: right;
+	margin-top: 30px;
+	color: #999;
+	border: 1px solid #d0d0d0;
+	background-color: #d0d0d0;
+	border-radius: 4px;
+}
+.regs-content-pwd{
+		position: relative;
+	margin-top: 30px;
+	width: 300px;
+	height: 46px;
+	border: 1px solid #777;
+	border-radius: 4px;
+}
+.regs-content-pwd .pwd-bg {
+	position: absolute;
+	top: 12px;
+	left: 11px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/q-login-h2.png)no-repeat -372px -161px;
+}
+
+.regs-content-pwd .pwd-val {
+	padding-left: 40px;
+	width: 248px;
+	height: 44px;
+	line-height: 44px;
+	color: #333;
+	background-color: #fff;
+	border: none;
+	border-radius: 3px;
+	outline: medium;
+}
+.reg-agree{
+	position: relative;
+	display: block;
+	margin-top: 20px;
+	width: 298px;
+	height: 54px;	
+}
+.reg-agree .agree-icon{
+	position: absolute;
+	width: 19px;
+	height: 16px;
+	background: url(../img/q-login-h3.png) no-repeat -24px -21px;
+}
+.reg-agree>input{
+	display: none;
+}
+.reg-agree>label{
+	margin-left: 20px;
+	font-size: 12px;
+	color: #333;
+}
+.reg-agree>label>a{
+	font-size: 12px;
+	color: #1d94d1;
+}
+
+.regsiter-btn{
+	font-size: 16px;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+        color: #fff;
+        background-color: #f10180;
+    border: 1px solid #f10180;
+}
+.regsiter-btn:hover{
+	cursor: pointer;
+	background-color: #f43499;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
