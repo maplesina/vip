@@ -26,7 +26,7 @@
             check_appear_throttle_time  : 300,
             url_rewriter_fn             : emptyFn,
             no_fake_img_loader          : false,
-            placeholder_data_img        : 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC',
+            placeholder_data_img:'img/af484c7a1d964e129bb7bcf3147835bb_th.gif',                    //这个地方写需要预加载图片的地址
             // for IE6\7 that does not support data image
             placeholder_real_img        : 'http://ditu.baidu.cn/yyfm/lazyload/0.0.1/img/placeholder.png'
             // todo : 灏嗘煇浜涘睘鎬х敤global鏉ラ厤缃紝鑰屼笉鏄瘡娆″湪$(selector).lazyload({})鍐呴厤缃�
