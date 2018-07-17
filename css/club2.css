@@ -1,0 +1,53 @@
+/* 共有部分 */
+.bg{
+    background-color: #fff;
+}
+body{
+    background-color: #FFF4EF;
+}
+
+
+
+/* 头部、尾部开始 */
+.logo>img {
+	width: auto;
+	height: 100px;
+}   
+.r-head>ul>li{
+    padding: 0 12px;
+}
+.footer-list ul{
+    width: 165px;
+}
+/* 头部、尾部结束 */
+
+
+
+/* 头部开始 */
+.content{
+    width: 1000px;
+    margin: 0 auto;
+    /* position: absolute; */
+    /* top: 0; */
+}
+
+/* 头部结束 */
+
+/* 上下的大图开始 */
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+    
+    
+}
+.wrap{
+    height: 400px;
+    background: url(../img/xy-club2-img1.jpg) no-repeat;
+}
+.wrapper .wrap1{
+    height: 400px;
+    padding-top: 100px;
+    background-color: #FFE5EC;
+}
+/* 上下的大图结束 */
+
