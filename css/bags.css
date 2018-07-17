@@ -1,0 +1,198 @@
+/*banner*/
+
+
+.lady-bg {
+	width: 100%;
+	min-width: 1200px;
+	height: 360px;
+	margin-bottom: 50px;
+	background: url(../img/q-bags-bg1.jpg) no-repeat center center;
+}
+
+
+/*热门分类开始*/
+
+.cms-dress-hot-cate-wrap {
+	box-sizing: content-box;
+	width: 1000px;
+	height: 374px;
+	position: relative;
+	padding-bottom: 40px;
+	/*overflow: hidden;*/
+}
+
+.cms-dress-hot-cate-title {
+	text-align: center;
+	height: 52px;
+	width: 1170px;
+	position: relative;
+	margin-bottom: 14px;
+}
+
+.cms-dress-hot-cate-title .cms-dress-hot-cate-line {
+	height: 1px;
+	width: 378px;
+	background-color: #d9d9d9;
+	position: absolute;
+	left: 50%;
+	top: 14px;
+	margin-left: -190px;
+}
+
+.cms-dress-hot-cate-title .cms-dress-hot-cate-img {
+	width: 120px;
+	display: inline-block;
+	height: 30px;
+	padding: 0 20px;
+	background-color: white;
+	background-size: 120px auto;
+	position: relative;
+	z-index: 2;
+}
+
+.cms-dress-hot-cate-title .cms-dress-hot-cate-txt {
+	font-family: Arial;
+	font-size: 12px;
+	color: #ccc;
+}
+
+.cms-dress-hot-cate-inner {
+	width: 1000px;
+	height: 304px;
+	border: 1px solid #ff6f8a;
+	margin-bottom: 40px;
+	/*overflow: hidden;*/
+}
+
+.hot-cate-leftbags {
+	width: 180px;
+	/*height: 302px;*/
+	float: left;
+	box-sizing: border-box;
+}
+
+.hot-cate-leftbags>ul>li {
+	font-size: 16px;
+	color: #666;
+	text-align: center;
+	line-height: 60px;
+	height: 60px;
+	border-top: 1px solid #fff;
+	background-color: #f4f4f4;
+	cursor: pointer;
+	position: relative;
+}
+
+.hot-cate-leftbags>ul>li:hover {
+	background-color: #fff;
+	color: #ff6f8a;
+}
+
+.hot-cate-leftbags>ul>li:hover .left-cont-icon {
+	right: 16px;
+	color: #ff6f8a;
+	opacity: 1;
+}
+
+.hot-cate-leftbags .active1 {
+	background-color: #fff;
+	color: #ff6f8a;
+}
+
+.hot-cate-leftbags .active2 {
+	right: 16px;
+	color: #ff6f8a;
+	opacity: 1;
+}
+
+.hot-cate-leftbags .left-cont-icon {
+	font-style: normal;
+	position: absolute;
+	color: #000;
+	z-index: 2;
+	opacity: 0;
+	height: 12px;
+	top: 0px;
+	right: 40px;
+	transition: all .2s;
+}
+
+.hot-cate-right-cont {
+	width: 988px;
+	overflow: hidden;
+	height: 100%;
+	float: left;
+}
+
+.hot-cate-right-cont-wrap {
+	width: 990px;
+	/*margin-top: -290px;*/
+}
+
+.hot-cate-right-cont .right-cont-inner {
+	/*height: 302px;*/
+}
+
+.hot-cate-right-cont .right-cont-inner>li {
+	text-align: center;
+	float: left;
+	width: 20%;
+	margin-top: 15px;
+}
+
+.hot-cate-right-cont .right-cont-inner>li>img:hover {
+	animation: blink 1s, 100ms;
+}
+
+.hot-cate-right-cont .right-cont-inner>li>p {
+	font-size: 14px;
+	line-height: 26px;
+	color: #ff6f8a;
+	white-space: nowrap;
+}
+
+
+/*<!--头部固定导航navbar开始-->*/
+
+.navbar {
+	line-height: 36px;
+	width: 100%;
+	min-width: 1170px;
+	height: 36px;
+	background-color: #fff;
+	border-bottom: 1px solid #d6d6d6;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	transition: .2s linear;
+	position: fixed;
+	top: -45px;
+	/*top: 0;*/
+	left: 0;
+	z-index: 10;
+}
+
+.navbar>ul {
+	padding-left: 100px;
+}
+
+.navbar>ul>li {
+	padding: 0 20px;
+	float: left;
+	font-size: 12px;
+	color: #333;
+	line-height: 36px;
+	margin-left: 10px;
+}
+
+.navbar>ul>li:hover {
+	color: #DE6958;
+}
+.shownav{
+	top: 0;
+}
+.navbar>ul>li>i {
+	display: block;
+	width: 100px;
+	height: 44px;
+	margin-left: -100px;
+	background: url(../img/q-bags-font.png);
+}
