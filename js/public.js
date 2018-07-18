@@ -63,3 +63,38 @@ $('#top').click(function () {
   }, 500);
 });
 //购物袋结束
+
+
+//Tab列表切换
+//对应的列表切换函数
+function liTab(obj1, obj2, obj3, obj4) {
+	function init() {
+		for(var i = 0; i < obj1.length; i++) {
+			obj2[0].style.display = "block";
+			obj1[0].className = "active";
+		}
+	};
+	init();
+	for(var i = 0; i < obj1.length; i++) {
+		obj1[i].index = i;
+		obj1[i].onclick = function() {
+			for(var j = 0; j < obj1.length; j++) {
+				obj2[j].style.display = "none";
+				obj1[j].className = "";
+			}
+			obj2[this.index].style.display = "block";
+			this.className = "active";
+		};
+	}
+};
+
+
+
+
+
+
+
+
+
+
+
