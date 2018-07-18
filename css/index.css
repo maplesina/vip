@@ -569,7 +569,7 @@
 	left: 50%;
 	margin-left: -225px;
 	width: 450px;
-	height: 260px;
+	height: 290px;
 	display: none;
 	background-color: white;
 }
@@ -577,6 +577,7 @@
 .product-list .jp-list .jp-list-inner>ul {
 	width: 410px;
 	height: 185px;
+	margin-bottom: 10px;
 	padding: 20px 20px 0;
 	border-bottom: 1px dotted #666;
 }
