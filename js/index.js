@@ -12,8 +12,9 @@
 			}
 		})
 		$win.on('load',function(){
-			if ($sc.scrollTop() >= 108) {
-				$('.top-menu-hidden').addClass("fixednav").slideDown();
+			if ($win.scrollTop() >= 108) {
+				console.log(111)
+				$('.top-menu-hidden').addClass("fixednav").css("visibility","visible").slideDown();
 			} else {
 				$('.top-menu-hidden').hide();
 			}
