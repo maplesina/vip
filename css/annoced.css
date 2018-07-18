@@ -1,0 +1,164 @@
+.bg-pho{
+    margin-bottom: 70px;
+    padding-top: 30px;
+    width: 100%;
+    height: 265px;
+    background:url(../img/w-00258.jpg) repeat top center;
+    background-size:cover;
+}
+.banner-board{
+    height: 300px;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(167,167,167,.4);
+}
+.banner-title{
+    position: absolute;
+    top: 93px;
+    left: 60px;
+    z-index: 1;
+    width: 220px;
+    height: 114px;
+    background-image: url(../img/w-00259.png);
+    background-size:cover;
+}
+.banner-board-right{
+    padding: 10px;
+    float: right;
+}
+.content-main{
+    /* background: pink; */
+}
+.content-main-right{
+    margin-bottom: 90px;
+}
+.content-main-right-title{
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    font-size: 32px;
+}
+.main-right-title-text{
+    position: relative;
+    width: 270px;
+    border-bottom: 2px solid #333;
+}
+.main-right-title-text em{
+    font-weight: 700;
+}
+.main-right-title-split{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.floor-brand{
+    width: 1200px;
+    /* background: pink; */
+}
+.floor-brand-desc{
+    position: relative;
+    display: block;
+    float: left;
+    width: 270px;
+    height: 179px;
+    margin-right: 30px;
+    margin-bottom: 24px;
+}
+.floor-brand-desc img{
+    display: block;
+    width: 270px;
+    height: 129px;
+    margin-bottom: 5px;
+}
+.brand-bottom-text{
+    width: 270px;
+    height: 27px;
+    /* background: grey; */
+}
+.brand-title{
+    float: left;
+    width: 192px;
+    line-height: 27px;
+    font-size: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.brand-discound{
+    float: left;
+    margin-right: 0;
+}
+.brand-discound .salebg{
+    margin-right: 5px;
+    color: #f10180;
+    font-size: 20px;
+}
+.floor-brand-hidden{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+.book-form{
+    position: relative;
+    margin-bottom: 0;
+}
+.remind-input{
+    padding: 3px 10px;
+    width: 166px;
+    line-height: 24px;
+    border: none;
+    border: 1px solid #e7e7e7;
+    font-size: 14px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.remind-submit{
+    position: absolute;
+    top: 0;
+    left: 184px;
+    width: 85px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #fff;
+    color: #42a7db;
+    font-size: 14px;
+    border: 1px solid #e7e7e7;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.floor-brand-desc:hover .brand-bottom-text{
+    display: none;
+}
+.floor-brand-desc:hover .floor-brand-hidden{
+    display: block;
+}
+.content-main-left{
+    position: fixed;
+    top: 112px;
+    margin-left: -144px;
+    padding: 3px;
+    border: 1px solid #d6d6d6;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 102px;
+    display: none;
+}
+.content-main-left-item{
+    border-top: 1px solid #eaeaea;
+}
+.line-special{
+    border-top: none;
+}
+.content-main-left-item{
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+}
+.main-active{
+    color: #fff;
+    background-color: #f10180;
+    border-radius: 3px;
+}
