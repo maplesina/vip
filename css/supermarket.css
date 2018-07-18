@@ -1,0 +1,125 @@
+.bannert img{
+    width: 1163px;
+    height: 100%;
+    margin-top: 20px;
+}
+.bannert div{
+    padding: 10px;
+    font-size: 16px;
+    height: 45px;
+    color: #333;
+    top: 100%;
+    text-indent: 10px;
+}
+.bannert div:hover{
+    color: black;
+    cursor:pointer;
+}
+
+
+.cms-home-hot-cate-inner {
+    height: 304px;
+    border: 1px solid #e8ebe4;
+    overflow: hidden;
+}
+.cms-home-hot-cate-left {
+    width: 190px;
+}
+.cms-home-hot-cate-left {
+    width: 193px;
+    float: left;
+    height: 100%;
+}
+.cms-home-hot-cate-tab-list {
+    height: 100%;
+}
+.cms-home-hot-cate-tab.current {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    color: #f93;
+    background-color: #fff;
+}
+.cms-home-hot-cate-tab {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    position: relative;
+}
+.cms-home-hot-cate-tab-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 32px;
+    margin-top: -10px;
+}
+.cms-home-hot-cate-tab.current .cms-home-hot-cate-tab-arrow {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    right: 20px;
+}
+.cms-home-hot-cate-tab-arrow {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    color: #f93;
+    font-size: 16px;
+    position: absolute;
+    right: 40px;
+    top: 0;
+}
+
+.cms-home-hot-cate-right {
+    width: 808px;
+    margin-left: 190px;
+    position: relative;
+}
+.cms-home-hot-cate-con-wrap {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.cms-home-hot-cate-con {
+    height: 304px;
+}
+.cms-home-hot-cate-list {
+    height: 100%;
+    overflow: hidden;
+}
+.cms-home-hot-cate-item {
+    text-align: center;
+    width: 20%;
+    height: 152px;
+    float: left;
+}
+.cms-home-hot-cate-item-link {
+    display: block;
+    padding-top: 20px;
+}
+.cms-home-hot-cate-item a{ 
+    background: 0 0;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+
+}
+.cms-home-hot-cate-item a:hover{
+    text-decoration: none;
+}
+.cms-home-hot-cate-item a img{
+    vertical-align: top;
+}
+.cms-home-hot-cate-item-img {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+.cms-home-hot-cate-item-name {
+    padding: 14px 10px 0;
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
