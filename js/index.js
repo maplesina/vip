@@ -11,6 +11,13 @@
 				$('.top-menu-hidden').hide();
 			}
 		})
+		$win.on('load',function(){
+			if ($sc.scrollTop() >= 108) {
+				$('.top-menu-hidden').addClass("fixednav").slideDown();
+			} else {
+				$('.top-menu-hidden').hide();
+			}
+		})
 	});
 
 
