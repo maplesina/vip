@@ -1,16 +1,22 @@
 ;(function($) {
 	$(function() {
+		$('.top-menu-hidden').hide();
 		var $nav = $(".top-menu"); //得到导航对象
 		var $win = $(window); //得到窗口对象
 		var $sc = $(document); //得到document文档对象。
 		$win.scroll(function() {
 			if($sc.scrollTop() >= 108) {
-				$nav.addClass("fixednav")
-				// .animate({
-				//     height: "40"
-				// }, 300)
+				$('.top-menu-hidden').addClass("fixednav").css("visibility","visible").slideDown();
 			} else {
-				$nav.removeClass("fixednav")
+				$('.top-menu-hidden').hide();
+			}
+		})
+		$win.on('load',function(){
+			if ($win.scrollTop() >= 108) {
+				console.log(111)
+				$('.top-menu-hidden').addClass("fixednav").css("visibility","visible").slideDown();
+			} else {
+				$('.top-menu-hidden').hide();
 			}
 		})
 	});
