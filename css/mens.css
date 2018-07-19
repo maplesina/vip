@@ -52,7 +52,7 @@
 
 /*时尚男装开始*/
 .fashoin-mens{
-	width: 100%;
+	/* width: 100%; */
 	min-width: 1000px;
 	
 }
@@ -61,8 +61,22 @@
 	height: 123px;
 	background: url(../img/q-mens-pic2.jpg) no-repeat center center;
 }
-
-
-
+.fashoin-mens-list{
+	float: left;
+    width: 226px;
+    height: 460px;
+    margin: 16px 16px 0 0;
+    border: solid 1px #e0e0e0;
+}
+.fashoin-mens-list-photo{
+	height: 288px;
+    overflow: hidden;
+    position: relative;
+}
+.fashoin-mens-list-text{
+	height: 116px;
+    padding: 39px 15px 10px;
+    position: relative;
+}
 
 /*时尚男装结束*/
