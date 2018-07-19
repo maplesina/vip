@@ -151,22 +151,75 @@
 	height: 123px;
 	background: url(../img/q-mens-pic2.jpg) no-repeat center center;
 }
-.fashoin-mens-list{
+.fashion-mens-list{
 	float: left;
     width: 226px;
     height: 460px;
     margin: 16px 16px 0 0;
     border: solid 1px #e0e0e0;
 }
-.fashoin-mens-list-photo{
+.fashion-mens-list-photo{
 	height: 288px;
     overflow: hidden;
     position: relative;
 }
-.fashoin-mens-list-text{
+.fashion-mens-list-text{
 	height: 116px;
     padding: 39px 15px 10px;
     position: relative;
 }
-
+.fashion-mens-list-logo{
+	position: absolute;
+    top: -25px;
+    left: 62px;
+	padding: 4px 9px;
+    background-color: #fff;
+    border: solid 1px #e0e0e0;
+    z-index: 3;
+}
+.fashion-mens-list-logo img{
+	width: 80px;
+    height: 40px;
+}
+.fashion-mens-list-name{
+	font-size: 16px;
+    height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.fashion-mens-list-pms{
+	color: #999;
+    height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.fashion-mens-list-attr{
+	height: 40px;
+	font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+.fashion-mens-list-attr .salebg2{
+	font-size: 26px;
+    color: #f10180;
+    margin-right: 3px;
+}
+.fashion-mens-list-icon{
+	font-size: 14px;
+    color: #f10180;
+    text-align: center;
+    line-height: 28px;
+    width: 100%;
+    height: 28px;
+    border: solid 1px #f10180;
+}
+.fashion-mens-list:hover{
+	border: 1px solid  #f10180;
+}
+.fashion-mens-list:hover .fashion-mens-list-icon{
+	background: #f10180;
+	color: #fff;
+}
 /*时尚男装结束*/
