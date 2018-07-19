@@ -50,6 +50,96 @@
 }
 
 
+
+
+
+
+/*<!--侧边菜单开始-->*/
+
+.mst-nav-global{
+	position: absolute;
+	
+	top: 172px;
+	left: 0;
+	bottom: 0;
+	width: 124px;
+	background-color: #000000;
+}
+.fixsidenav{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+}
+.mst-ng-head{
+	display: block;
+	height: 90px;
+}
+.mst-nav-global .mst-ng-r1{
+	font-size: 14px;
+	color: white;
+}
+.mst-nav-global .mst-ng-r1>li{
+	line-height: 30px;
+	padding: 0 10px 0 15px;
+}
+.mst-nav-global .mst-ng-r1>li>span{
+	float: right;
+}
+.mst-nav-global li:hover{
+	background-color: #52AEF7;
+}
+.mst-nav-global .mst-ng-r2{
+	font-size: 12px;
+	color: white;
+	margin-top:5px ;
+	margin-bottom:15px ;
+}
+.mst-nav-global .mst-ng-r2>li{
+	  line-height: 28px;
+    text-align: center;
+    width: 60px;
+    margin: 0 4px 2px 0;
+    float: left;
+}
+.mst-nav-global .mst-ng-r2>li:nth-child(2n){
+	margin-right: 0;
+}
+.mst-ng-btn{
+	display: block;
+	width: 124px;
+	height: 28px;
+	color: white;
+	font-size: 12px;
+	margin-top: 10px;
+	text-align: center;
+    line-height: 28px;
+    margin-bottom: 3px;
+}
+.mst-ng-btn:hover{
+	background-color: #52AEF7;
+}
+.mst-ng-top{
+	display: block;
+	width: 124px;
+	height: 36px;
+	color: white;
+	font-size: 16px;
+	/*margin-top: 10px;*/
+	text-align: center;
+    line-height: 36px;
+    /*margin-bottom: 3px;*/
+}
+.mst-ng-top:hover{
+	color: #52AEF7;
+}
+
+
+
+
+
+
+
+
 /*时尚男装开始*/
 .fashoin-mens{
 	/* width: 100%; */

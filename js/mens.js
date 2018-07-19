@@ -26,3 +26,29 @@ function lxfEndtime() {
 };
 lxfEndtime();
 m1= setInterval(lxfEndtime, 1000);
+
+
+(function($) {
+	
+	$(function  () {
+		$(window).on("load",function  () {
+			if ($(window).scrollTop()>175) {
+				$(".mst-nav-global").addClass("fixsidenav")
+			}
+			else{
+				$(".mst-nav-global").removeClass("fixsidenav")				
+			}
+		})
+		$(window).scroll(function  () {
+			if ($(window).scrollTop()>175) {
+				$(".mst-nav-global").addClass("fixsidenav")
+				
+			}else{
+				$(".mst-nav-global").removeClass("fixsidenav")		
+			}
+		})
+		$(".mst-ng-top").on("click",function  () {
+			$(window).scrollTop(0)
+		})
+	})
+})(jQuery)
