@@ -43,9 +43,8 @@ $(function(){
 //商品详情的tab切换
 ;(function(){
     var divs=document.querySelectorAll(".product-list>div");
-    console.log(divs)
     var lis=document.querySelectorAll(".product-nav li");
-    console.log(lis)
+    
     var len=lis.length;
     
     $(lis).on("click",function(){
@@ -64,3 +63,4 @@ $(function(){
     })
 
 }());
+

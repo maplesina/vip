@@ -331,11 +331,20 @@
 .leftnav li:last-child{
     margin-bottom: 15px;
 }
-.rightnav,.Security,.m-wrap-right{
+.tab-rig{
     float: left;
-    width: 1025px;
     margin-left: 15px;
     font-size: 12px;
+}
+.rightnav{
+    float: left;
+    width: 1025px;
+    display: block;
+}
+.Security,.m-wrap-right{
+    float: left;
+    display: none;
+    width: 1025px;
 }
 .rig-top{
     width: 100%;
