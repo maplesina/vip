@@ -142,14 +142,35 @@
 
 /*时尚男装开始*/
 .fashoin-mens{
-	/* width: 100%; */
+	width: 1000px;
 	min-width: 1000px;
-	
 }
 .title-wrap{
-	width: 100%;
+	width: 1000px;
 	height: 123px;
 	background: url(../img/q-mens-pic2.jpg) no-repeat center center;
+}
+.title-wrap-second{
+	width: 1000px;
+	height: 123px;
+	background: url(../img/w-00409.jpg) no-repeat center center;
+}
+.title-wrap-three{
+	width: 1000px;
+	height: 123px;
+	background: url(../img/w-00410.jpg) no-repeat center center;
+}
+.title-wrap-four{
+	width: 1000px;
+	height: 123px;
+	background: url(../img/w-00411.jpg) no-repeat center center;
+}
+.fashoin-mens-content-list{
+	width: 1000px;
+}
+.fashoin-mens-list-container{
+	width: 976px;
+	margin: 0 auto;
 }
 .fashion-mens-list{
 	float: left;
@@ -223,3 +244,69 @@
 	color: #fff;
 }
 /*时尚男装结束*/
+
+/* 电梯导航部分样式开始 */
+.mst-nav{
+	width: 120px;
+    position: fixed;
+    left: 81%;
+    top: 30%;
+	z-index: 11;
+	display: none;
+}
+.mst-nav-list{
+	width: 100px;
+	margin: 0 auto;
+	background: #000000;
+}
+.main-nav-item{
+	font-size: 12px;
+	cursor: pointer;
+	padding: 0 8px;
+	color: #fff;
+}
+.back-top-btn{
+	margin: 0 auto;
+	width: 84px;
+	padding: 0 8px;
+	font-size: 12px;
+	cursor: pointer;
+	color: #fff;
+	background: #000000;
+}
+.main-nav-item-link{
+	display: block;
+    line-height: 1.4;
+	padding: 8px;
+	border-bottom: 1px solid #fff; 
+}
+.iconfont {
+	font-size: 12px !important;
+}
+.mst-nav-list .current{
+	color: #fda931;
+}
+.main-nav-item:hover{
+	color: #fda931;
+}
+.back-top-btn:hover{
+	color: #fda931
+}
+.fashion-mens-list-photo a{
+	display: block;
+	text-align: center;
+	line-height: 288px;
+}
+/* 电梯导航部分样式结束 */
+
+/* 返回主会场样式 */
+.back-major{
+	width: 1000px;
+	margin: 50px auto;
+}
+.back-maior-link{
+	display: block;
+	width: 432px;
+	height: 92px;
+	margin: 0 auto;
+}
