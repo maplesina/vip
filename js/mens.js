@@ -52,3 +52,29 @@ m1= setInterval(lxfEndtime, 1000);
 		})
 	})
 })(jQuery)
+
+//电梯导航部分
+;(function($){
+	$(function () {
+		LiftEffect({
+			"control1": ".mst-nav", 						  //侧栏电梯的容器
+			"control2": ".mst-nav-list",                           //需要遍历的电梯的父元素
+			"target": [".t1", ".t2", ".t3", ".t4"], //监听的内容，注意一定要从小到大输入
+			"current": "current" 						  //选中的样式
+		});
+	})
+})(jQuery)
+
+//懒加载部分
+;(function($){
+    $(function(){
+        $("img.lazy").lazyload({ 
+            placeholder_data_img: "img/w-00408.gif",     //用图片提前占位
+            effect: "fadeIn",    //载入使用何种效果,effect(特效),值有show(直接显示),fadeIn(淡入),slideDown(下拉)等,常用fadeIn
+            // threshold: 50,    //提前开始加载
+            // event: "click",      //事件触发时才加载,event,值有click(点击),mouseover(鼠标划过),sporty(运动的),foobar(…).可以实现鼠标划过或点击图片才开始加载,后两个值未测试…
+            // failurelimit: 1,     //图片排序混乱时 ,
+            // failurelimit, 值为数字. 
+        });
+    })
+})(jQuery)
