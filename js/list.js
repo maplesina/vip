@@ -60,9 +60,8 @@ $(function() {
 		})
 	});
 
-	//list上480行点击下一页请求的Ajax
+	//list上点击下一页请求的Ajax
 	$("#nextagio").on("click", function() {
-		console.log(111)
 		var $img = $("#listimg"),
 			$newprice = $("#newprice"),
 			$old = $("#old"),
@@ -81,7 +80,6 @@ $(function() {
 				img: $img
 			},
 			success: function(data) {
-				console.log(data.result);
 				var result = data.result;
 				var html = "";
 				for(var i = 0; i < result.length; i++) {
