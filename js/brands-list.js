@@ -33,16 +33,34 @@
 ;(function($){
     $(function(){
         var $item = $('.g-flagship-sort-item');
-        var $itemDesc = $('.girl-flagship-normal');
-        var $itemLen = $item.length;
-        for(var i=0; i<$itemLen; i++){
+        var $clothesBox = $('.clothes-box');
+        for(var i=0; i<$item.length; i++){
             $item[i].index = i;
             $item[i].onclick = function(){
-                $($itemDesc).css('display', "block").siblings().css('display',"none");
-                // var $num = this.index;
-                // console.log($num)
-                $(this).css({'background':'#F10180',"color":"#FFF"}).siblings().css({'background':'none',"color":"black"});
+
+                //控制字体变化
+                $item.removeClass("active");
+                $clothesBox.removeClass("active");
+                $(this).addClass('active');
+                
+                var $num = this.index;
+                
+                // $(this).siblings().hover(
+                // function () {
+                //     $(this).css("color", "#f43499");
+                // },
+                // function(){
+                //     $(this).css("color", "black");
+                // }
+                // );
+                //控制对应的内容变化
+               
+                console.log($num);
+                $($clothesBox).eq($num).addClass('active')
+                
+                
             }
         }
     })
+    
 })(jQuery)

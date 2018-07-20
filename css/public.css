@@ -26,13 +26,21 @@ li {
 	line-height: 40px;
 	background-color: #f10180;
 }
-
-.fixednav {
-	position: fixed;
-	top: 0px;
-	left: 0px;
+.top-menu-hidden {
+	visibility: hidden;
 	width: 100%;
 	height: 40px;
+	min-width: 1170px;
+	line-height: 40px;
+	background-color: #f10180;
+}
+.fixednav {
+	position: fixed;
+	/* top: -40px; */
+	top:0;
+	left: 0px;
+	 width: 100%;
+	/* height: 40px; */
 	z-index: 999;
 }
 
@@ -594,7 +602,9 @@ li {
 
 .footer-list ul {
 	color:#000;
-	width: 194px;
+	width: 178px;
+    height: 146px;
+    padding-left: 16px;
 	float: left;
 	font-size: 14px;
 	border-left: 1px solid #EBEBEB;
@@ -732,6 +742,7 @@ li {
     margin-top: 165px;
 }
 .side .gouwu .user .icon-yonghutouxiang{
+	font-size: 28px;
     display: inline;
     background-color: rgba(0, 0, 0, 0) ;
 }

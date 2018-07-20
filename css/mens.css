@@ -1,0 +1,332 @@
+
+
+body{
+	overflow-x: hidden;
+}
+
+@media only screen and (max-width:1240px ) {
+	.mst-nav-global{
+		display: none;
+	}
+}
+
+
+/*banner部分*/
+.mens-banner-bg{
+	position: relative;
+	width: 100%;
+	min-width: 1170px;
+	height: 452px;
+	background: url(../img/q-men-bg.jpg) no-repeat center center;
+}
+
+/*倒计时*/
+.banner-time{
+	height: 50px;
+	width: 100%;
+	min-width: 1170px;
+	line-height: 50px;
+	    color: #fff;
+    text-align: center;
+    background-color: #000000;
+}
+.time-item{
+	color: rgb(254, 176, 28);
+	font-size: 30px;
+	vertical-align: top;
+    font-weight: 700;
+    margin: 0 5px;    
+    line-height: 48px;
+}
+/*<!--产品列表-->*/
+.mens-product-list{
+	width: 100%;
+	height: 316px;
+	min-width: 1000px;
+	background: url(../img/q-mens-pic1.jpg) no-repeat center center;
+}
+.mens-product-list .list-wrap{
+
+	height: 316px;
+	width: 880px;
+	padding: 20px 60px 0;
+}
+.mens-product-list .list-wrap a{
+	width: 286px;
+	height: 144px;
+	display: block;
+	float: left;	
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+/*<!--侧边菜单开始-->*/
+
+.mst-nav-global{
+	position: absolute;
+	
+	top: 172px;
+	left: 0;
+	bottom: 0;
+	width: 124px;
+	background-color: #000000;
+}
+.fixsidenav{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+}
+.mst-ng-head{
+	display: block;
+	height: 90px;
+}
+.mst-nav-global .mst-ng-r1{
+	font-size: 14px;
+	color: white;
+}
+.mst-nav-global .mst-ng-r1>li{
+	line-height: 30px;
+	padding: 0 10px 0 15px;
+}
+.mst-nav-global .mst-ng-r1>li>span{
+	float: right;
+}
+.mst-nav-global li:hover{
+	background-color: #52AEF7;
+}
+.mst-nav-global .mst-ng-r2{
+	font-size: 12px;
+	color: white;
+	margin-top:5px ;
+	margin-bottom:15px ;
+}
+.mst-nav-global .mst-ng-r2>li{
+	  line-height: 28px;
+    text-align: center;
+    width: 60px;
+    margin: 0 4px 2px 0;
+    float: left;
+}
+.mst-nav-global .mst-ng-r2>li:nth-child(2n){
+	margin-right: 0;
+}
+.mst-ng-btn{
+	display: block;
+	width: 124px;
+	height: 28px;
+	color: white;
+	font-size: 12px;
+	margin-top: 10px;
+	text-align: center;
+    line-height: 28px;
+    margin-bottom: 3px;
+}
+.mst-ng-btn:hover{
+	background-color: #52AEF7;
+}
+.mst-ng-top{
+	display: block;
+	width: 124px;
+	height: 36px;
+	color: white;
+	font-size: 16px;
+	/*margin-top: 10px;*/
+	text-align: center;
+    line-height: 36px;
+    /*margin-bottom: 3px;*/
+}
+.mst-ng-top:hover{
+	color: #52AEF7;
+}
+
+
+
+
+
+
+
+
+/*时尚男装开始*/
+.fashoin-mens{
+	width: 1000px;
+	min-width: 1000px;
+}
+.title-wrap{
+	width: 1000px;
+	height: 123px;
+	background: url(../img/q-mens-pic2.jpg) no-repeat center center;
+}
+.title-wrap-second{
+	width: 1000px;
+	height: 123px;
+	background: url(../img/w-00409.jpg) no-repeat center center;
+}
+.title-wrap-three{
+	width: 1000px;
+	height: 123px;
+	background: url(../img/w-00410.jpg) no-repeat center center;
+}
+.title-wrap-four{
+	width: 1000px;
+	height: 123px;
+	background: url(../img/w-00411.jpg) no-repeat center center;
+}
+.fashoin-mens-content-list{
+	width: 1000px;
+}
+.fashoin-mens-list-container{
+	width: 976px;
+	margin: 0 auto;
+}
+.fashion-mens-list{
+	float: left;
+    width: 226px;
+    height: 460px;
+    margin: 16px 16px 0 0;
+    border: solid 1px #e0e0e0;
+}
+.fashion-mens-list-photo{
+	height: 288px;
+    overflow: hidden;
+    position: relative;
+}
+.fashion-mens-list-text{
+	height: 116px;
+    padding: 39px 15px 10px;
+    position: relative;
+}
+.fashion-mens-list-logo{
+	position: absolute;
+    top: -25px;
+    left: 62px;
+	padding: 4px 9px;
+    background-color: #fff;
+    border: solid 1px #e0e0e0;
+    z-index: 3;
+}
+.fashion-mens-list-logo img{
+	width: 80px;
+    height: 40px;
+}
+.fashion-mens-list-name{
+	font-size: 16px;
+    height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.fashion-mens-list-pms{
+	color: #999;
+    height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.fashion-mens-list-attr{
+	height: 40px;
+	font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+.fashion-mens-list-attr .salebg2{
+	font-size: 26px;
+    color: #f10180;
+    margin-right: 3px;
+}
+.fashion-mens-list-icon{
+	font-size: 14px;
+    color: #f10180;
+    text-align: center;
+    line-height: 28px;
+    width: 100%;
+    height: 28px;
+    border: solid 1px #f10180;
+}
+.fashion-mens-list:hover{
+	border: 1px solid  #f10180;
+}
+.fashion-mens-list:hover .fashion-mens-list-icon{
+	background: #f10180;
+	color: #fff;
+}
+/*时尚男装结束*/
+
+/* 电梯导航部分样式开始 */
+.mst-nav{
+	width: 120px;
+    position: fixed;
+    right: 10%;
+    top: 30%;
+	z-index: 11;
+	display: none;
+}
+@media only screen and (max-width:1510px ) {
+	.mst-nav{
+		right: 0;
+	}
+}
+@media only screen and (max-width:1180px ) {
+	.mst-nav{
+		display: none;
+	}
+}
+.mst-nav-list{
+	width: 100px;
+	margin: 0 auto;
+	background: #000000;
+}
+.main-nav-item{
+	font-size: 12px;
+	cursor: pointer;
+	padding: 0 8px;
+	color: #fff;
+}
+.back-top-btn{
+	margin: 0 auto;
+	width: 84px;
+	padding: 0 8px;
+	font-size: 12px;
+	cursor: pointer;
+	color: #fff;
+	background: #000000;
+}
+.main-nav-item-link{
+	display: block;
+    line-height: 1.4;
+	padding: 8px;
+	border-bottom: 1px solid #fff; 
+}
+.iconfont {
+	font-size: 12px !important;
+}
+.mst-nav-list .current{
+	color: #fda931;
+}
+.main-nav-item:hover{
+	color: #fda931;
+}
+.back-top-btn:hover{
+	color: #fda931
+}
+.fashion-mens-list-photo a{
+	display: block;
+	text-align: center;
+	line-height: 288px;
+}
+/* 电梯导航部分样式结束 */
+
+/* 返回主会场样式 */
+.back-major{
+	width: 1000px;
+	margin: 50px auto;
+}
+.back-maior-link{
+	display: block;
+	width: 432px;
+	height: 92px;
+	margin: 0 auto;
+}
