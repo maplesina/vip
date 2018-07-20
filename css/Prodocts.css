@@ -51,10 +51,29 @@ select{
     float: left;
     position: relative;
 }
+.product-left .img-big{
+    position: relative;
+    width: 700px;
+}
+.productimg {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    position: absolute;
+    margin-left: 340px;
+    z-index: 10;
+}
+.productimg i{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background:url(../img/zxx-100.png) -230px -67px no-repeat;
+}
 /* 放大镜的样式开始 */
 .htmleaf-content{
     width: 700px;
     margin:50px auto;
+    position: relative;
 }
 /* sample CSS to set the initial dimensions of images that will be zoomable */
 .sampleimage{
@@ -180,11 +199,13 @@ select{
     width: 600px;
     float: left;
     margin-left: 30px;
+    
 }
 .product-right-01{
     height: 370px;
     border-bottom:1px dotted #BCB7BA; 
 }
+
 .product-right-01 p:nth-child(1){
     color: #999999;
     font-size: 12px;
@@ -266,9 +287,7 @@ select{
     font-weight: normal;
     
 }
-/* .product-right-01 .pr-box input{
-    margin-left: 20px;
-} */
+
 .product-right-01 .pr-box p:nth-child(2) span:nth-child(2){
     background-color: #F3B241;
     color: #fff;
