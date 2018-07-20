@@ -46,8 +46,20 @@ body{
 }
 .wrapper .wrap1{
     height: 400px;
-    padding-top: 100px;
+    position: relative;
     background-color: #FFE5EC;
+}
+.wrapper>span{
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    background:url(../img/xy-club2-img2.png) -886px 0px no-repeat;
+}
+.wrapper:first-child{
+    position: absolute;
+    top: -10px;
+    left: 0;
+    
 }
 /* 上下的大图结束 */
 
