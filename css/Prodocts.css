@@ -54,14 +54,15 @@ select{
 .product-left .img-big{
     position: relative;
     width: 700px;
+    
 }
 .productimg {
     width: 100px;
     height: 100px;
-    background-color: #fff;
+    margin-top: 45px;
     position: absolute;
-    margin-left: 340px;
-    z-index: 10;
+    margin-left: 345px;
+    z-index: 1001;
 }
 .productimg i{
     display: inline-block;
@@ -695,3 +696,6 @@ select{
 /* 页面结构结束 */
 /* 详情页底部开始 */
 /* 详情页底部结束 */
+.P-footer{
+    margin-top: 30px;
+}

@@ -1,5 +1,4 @@
-;
-(function($) {
+;(function($) {
 	var divs = $(".tab-rig>div");
 	var lis = $(".center-subnav li");
 	var len = lis.length;
