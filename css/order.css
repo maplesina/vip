@@ -1,3 +1,6 @@
+
+
+
 /* 头部开始 */
 .order-header{
     width: 100%;
@@ -305,6 +308,16 @@
     height: 11px;
     border: 1px solid #999;
     background: url(../img/zxx-109.png) -388px -49px no-repeat;
+}
+.leftnav ul li:first-child span{
+	z-index: -1;
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 10px;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #999;
+    background: url(../img/zxx-109.png) -388px -33px no-repeat;
 }
 
 .leftnav li{
