@@ -22,7 +22,6 @@
 		function autoclick () {
 			timer = setInterval(function() {
 			n++;
-			console.log(n)
 			$(".hot-cate-left-cont>ul>li").eq(n).click();
 			if (n==7) {
 				n=-1;

@@ -1,0 +1,104 @@
+
+/*banner开始*/
+
+.int-banner-bg{
+	width: 100%;
+	min-width: 1170px;
+	background: url(../img/q-int-bg.jpg) no-repeat center center;
+	height: 360px;
+}
+
+/*banner结束*/
+/*图片列表开始*/
+.img-list{
+	width: 1170px;
+	margin-top: 30px;
+}
+.img-list-item{
+	position: relative;
+}
+.img-list-item>a{
+	position: absolute;
+	/*top: 0;*/
+	display: block;
+	width: 100%;
+	height:200px;	
+	background-color: rgba(255,255,255,.2);
+}
+.img-list-item a:hover{
+	animation: blink 1s;
+}
+.img-list-item1{
+	margin-bottom: 20px;
+}
+.img-list-item1 a{
+	top: 0;
+	
+}
+.img-list-item2 img:nth-child(2){
+	float: right;
+}
+.img-list-item2 a:nth-child(3){
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 576px;
+	height: 266px;
+}
+.img-list-item2 a:nth-child(4){
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 576px;
+	height: 266px;
+}
+.img-list-item3>div{
+	position: absolute;
+	top:80px;
+	width: 100%;
+	height: 280px;
+}
+.img-list-item3>div>a{
+	display: inline-block;
+	width: 215px;
+	height: 280px;
+	margin-right: 18px;
+	background-color: rgba(255,255,255,.2);
+}
+.img-list-item3>div>a:hover{
+	animation: blink 1s;
+}
+.img-list-item4>div{
+	position: absolute;
+	top:70px;
+	width: 100%;
+	height: 280px;
+}
+.img-list-item4>div>a{
+	display: inline-block;
+	width: 215px;
+	height: 280px;
+	margin-right: 18px;
+	background-color: rgba(255,255,255,.2);
+}
+.img-list-item4>div>a:hover{
+	animation: blink 1s;
+}
+.img-list-item5{
+	margin: 30px 0;
+}
+
+
+
+/*图片列表结束*/
+
+/*热卖开始*/
+
+
+
+
+
+
+
+
+

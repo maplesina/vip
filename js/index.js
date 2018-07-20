@@ -6,7 +6,15 @@
 		var $sc = $(document); //得到document文档对象。
 		$win.scroll(function() {
 			if($sc.scrollTop() >= 108) {
-				$('.top-menu-hidden').addClass("fixednav").slideDown();
+				$('.top-menu-hidden').addClass("fixednav").css("visibility","visible").slideDown();
+			} else {
+				$('.top-menu-hidden').hide();
+			}
+		})
+		$win.on('load',function(){
+			if ($win.scrollTop() >= 108) {
+				console.log(111)
+				$('.top-menu-hidden').addClass("fixednav").css("visibility","visible").slideDown();
 			} else {
 				$('.top-menu-hidden').hide();
 			}
