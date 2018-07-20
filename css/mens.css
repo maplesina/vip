@@ -1,5 +1,15 @@
 
 
+body{
+	overflow-x: hidden;
+}
+
+@media only screen and (max-width:1240px ) {
+	.mst-nav-global{
+		display: none;
+	}
+}
+
 
 /*banner部分*/
 .mens-banner-bg{
@@ -249,10 +259,20 @@
 .mst-nav{
 	width: 120px;
     position: fixed;
-    left: 81%;
+    right: 10%;
     top: 30%;
 	z-index: 11;
 	display: none;
+}
+@media only screen and (max-width:1510px ) {
+	.mst-nav{
+		right: 0;
+	}
+}
+@media only screen and (max-width:1180px ) {
+	.mst-nav{
+		display: none;
+	}
 }
 .mst-nav-list{
 	width: 100px;
