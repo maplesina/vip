@@ -68,17 +68,17 @@ $(function() {
 			$agio = $("#agio"),
 			$info = $("#info")
 		$.ajax({
-			processData: false,
+
 			type: "get",
 			url: "http://localhost/vip/api/list.php",
 			dataType: "json",
-			data: {
+			/*data: {
 				newprice: $newprice,
 				old: $old,
 				agio: $agio,
 				info: $info,
 				img: $img
-			},
+			},*/
 			success: function(data) {
 				var result = data.result;
 				var html = "";
