@@ -37,7 +37,8 @@ body{
 /* 上下的大图开始 */
 .wrapper{
     width: 1000px;
-    margin: 0 auto;
+    height: 400px;
+    margin: -150px auto;
     
     
 }
@@ -48,7 +49,6 @@ body{
 .wrapper .wrap1{
     height: 400px;
     position: relative;
-    margin-top: -150px;
     margin-bottom: 50px;
     background-color: #FFE5EC;
 }
