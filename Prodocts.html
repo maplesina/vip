@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/zoomio.css">
     <link rel="stylesheet" href="iconfont/iconfont.css">
     <script src="js/jquery-1.12.4.js"></script>
+    
     <!-- <script src="js/index.js"></script> -->
 </head>
 <body>
@@ -466,21 +467,19 @@
                         </div>
                         
                     </div> 
-                    <div class="pr-box">
-                            <div class="outer">
-                                    <span>配送</span>
-                                   <select name="province" id="province">
-                                       <option value="请选择">请选择</option>
-                                   </select>
-                                   <select name="city" id="city">
-                                       <option value="请选择">请选择</option>
-                                   </select>
-                                   <select name="town" id="town">
-                                       <option value="请选择">请选择</option>
-                                   </select>
-                               </div>
+                    <div class="pr-box">                                                               
+                        <div style="width:420px;">
+                            <span style=" color:#777;font-size: 12px; margin-right: 20px;">配送</span>
+                            <input type="text" id="city"/>
+                        </div>
+                             
                             <p><span>运费</span>&nbsp;&nbsp;&nbsp;<span>免运费</span>&nbsp;&nbsp;&nbsp;<span>（订单满288免运费）</span></p>
                 
+                        </div>
+                        <div class="g-w">
+                            <div class="tab-button">
+                                <span><i class="iconfont">&#xe642;</i>加入购物车</span>
+                            </div>
                         </div>
                     </div>
                     <div class="product-right-02">
@@ -823,7 +822,17 @@
     <script src=js/Prodocts.js></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
     <script type="text/javascript" src="js/zoomio.js"></script>
+    <script src="js/Popt.js"></script>
+    <script src="js/cityJson.js"></script>
+    <script src="js/citySet.js"></script> 
+    <script type="text/javascript">
+        $("#city").click(function (e) {
+            SelCity(this,e);
+            console.log("inout",$(this).val(),new Date())
+        });
+    </script>
     <script src=js/public.js></script>
+   
 
 </body>
 </html>

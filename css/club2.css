@@ -8,6 +8,7 @@ body{
 
 
 
+
 /* 头部、尾部开始 */
 .logo>img {
 	width: auto;
@@ -36,7 +37,8 @@ body{
 /* 上下的大图开始 */
 .wrapper{
     width: 1000px;
-    margin: 0 auto;
+    height: 400px;
+    margin: -150px auto;
     
     
 }
@@ -47,19 +49,171 @@ body{
 .wrapper .wrap1{
     height: 400px;
     position: relative;
+    margin-bottom: 50px;
     background-color: #FFE5EC;
 }
-.wrapper>span{
+.wrapper .wrap1>span{
     display: inline-block;
-    width: 100%;
-    height: 10px;
-    background:url(../img/xy-club2-img2.png) -886px 0px no-repeat;
+    background:url(../img/xy-club2-img2.png) no-repeat;
 }
-.wrapper:first-child{
+.wrapper .wrap1 .hb{
+    width: 1000px;
+    height: 10px;
+    background-position:  -886px 0px ;
+}
+.wrapper .wrap1 .hb:first-child{
     position: absolute;
-    top: -10px;
+    margin-top: -10px;
+}
+.wrapper .wrap1 .hb2{
+    position: absolute;
+    transform: rotate(180deg);
+    margin-top: 400px;
+}
+.wrapper .wrap1 .left{
+    width: 40px;
+    height: 103px;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 30px;
+    background-position:  -886px -176px ;
+}
+.wrap1 .Personal{
+    position: absolute;
+    width: 360px;
+    height: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.wrap1 .Personal-left{
+    float: left;
+    width: 170px;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0px 5px 20px #666;
+    background-color: #FFFFFF;
+    border-right: 1px solid #ffc6d6;
+}
+.wrap1 .Personal-left img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 3px solid #FDE7ED;
+}
+
+.wrap1 .Personal-left button{
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 12px;
+    background-color: #F10180;
+}
+.wrap1 .Personal-left button:hover{
+    background-color: #f43499;
+    cursor: pointer;
+}
+
+.wrap1 .Personal-right{
+    width: 189px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    box-shadow: 10px 5px 20px #666;
+    background-color: #FFF6F8;
+}
+.wrap1 .Personal-right ul{
+    width: 150px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.wrap1 .Personal-right ul li i{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    vertical-align: -10px;
+    margin-left: 25px;
+    margin-right: -10px;
+    background: url(../img/xy-club2-img2.png) -1161px -175px no-repeat;
+    transform: scale(0.8);
+}
+.wrap1 .Personal-right ul li{
+    height: 30px;
+}
+.wrap1 .Personal-right ul li span small{
+    font-size: 14px;
+    color: #F10180;
+    margin: 0px 3px;
+}
+
+
+/* .wrap1 .luck{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    margin-top: -240px;
+    right: 0;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.wrap1 .luck .luck2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+.wrap1 .luck .bgc ul{
+    width: 1200px;
+    height: 300px;
+    background-color: #fff;
+}
+.wrap1 .luck .bgc li{
+    height: 100%;
+    width: 150px;
+    float: left;
+}*/
+.wrap1 .luck li:nth-child(n){
+    background-color: #fff;
+}
+.wrap1 .luck li:nth-child(2n){
+    background-color: #FEDD4C;
+} 
+.wrap1 .luck{
+    position: relative;
+    right: -398px;
+    top: -240px;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.wrap1 .luck ul li{
+    position: absolute;
+    transform-origin: left top;
+    left: 300px;
+    top: 300px;
+    height: 300px;
+    width: 300px;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+.wrap1 .luck img{
+    position: absolute;
+    top: 0;
     left: 0;
-    
+    z-index: 2;
+}
+.wrap1 .luck .luck2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
 }
 /* 上下的大图结束 */
 
