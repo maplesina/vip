@@ -37,7 +37,8 @@ body{
 /* 上下的大图开始 */
 .wrapper{
     width: 1000px;
-    height: 1000px;
+    height: 1100px;
+    background-color: #fff;
     margin: -200px auto;
 }
 .wrapper>h4{
@@ -172,14 +173,54 @@ body{
 }
 .wrap1 .winning ul{
     height: 190px;
-    border-top: 1px dashed hotpink;
-    border-bottom: 1px dashed hotpink;
 }
 .wrap1 .winning ul li{
     line-height: 30px;
 }
+.wrap1 .winning>p{
+    font-size: 16px;
+    color: #ec4674;
+}
+.wrap1 .winning>p i{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/xy-club2-img2.png);
+}
 .wrap1 .winning ul li span{
     margin: 20px;
+    font-size: 14px;
 }
 /* 上下的大图结束 */
+
+
+
+/* 第二部分 */
+.top-prize{
+    margin-right: 20px;
+    margin-left: 30px;
+}
+.top-prize h2{
+    font-weight: normal;
+    text-indent: 12px;
+    font-size: 20px;
+    border-left: 8px solid #f10180;
+}
+.top-prize h2 a{
+    color: inherit;
+    color: #1d94d1;
+    font-size: 14px;
+    float: right;
+}
+.top-prize h2 a:hover{
+    color: #3cbdff;
+}
+.top-prize img{
+    margin-top: 20px;
+    width: 460px;
+}
+.top-prize .img2{
+    margin-left: 23px;
+}
+
 
