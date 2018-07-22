@@ -32,20 +32,359 @@
     float: right;
     text-align: right;
 }
-.m-site-nav{
+.m-site-nav,.c-helper-small{
     height: 20px;
-    width: 100%;
     color: #333;
     margin-top: 10px;
-
-}
-.c-helper-small{
-    width: 100%;
-    height: 30px;
-    margin-top: 10px;
-}
-.c-helper-small li{
     float: right;
-    text-align: right;
+    margin-right: 20px;
+    
+}
+
+.c-helper-small>li{                                                                                                                                                                                                                                                                                                                                                                                                            
+    float: right;
+    padding-right: 10px;
+}
+
+
+.c-helper-small>li i{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.c-helper-small li:nth-child(1){
+    border: 1px solid #fff;
+}
+.m-site-nav span{
+    margin-left: 10px;
+}
+.helper{
+    height: 40px;
+    width: 500px;
+    float: right;
+    margin-top: 5px;
+    
+}
+
+.helper ul li{
+    float: right;
+    line-height: 40px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+.c-helper-small>li:nth-child(1){
+    width: 88px;
+}
+.c-helper-small>li:nth-child(1):hover{
+    border: 1px solid #666;
+    background-color: #fff;
+}
+.c-helper-small>li:nth-child(1):hover span{
+    color: #fff;
+}
+.c-helper-small li:nth-child(1):hover .service{
+    display: block;
+}
+.service{
+    display: inline-block;
+    width: 88px;
+    background-color: #fff;
+    display: none;
+    color: #000;
+    z-index: 100;
+    position: relative;
+}
+.service li{
+    line-height: 25px;
+}
+.service li:hover{
+   color:#f10180;
 }
 /* 头部结束 */
+/* 版心内容开始 */
+
+/* 购买物品开始 */
+.shop-row{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #D0D0D0;
+}
+.shop-row ul{
+    width: 250px;
+}
+.shop-row ul li{
+    float: left;
+    margin-top: 50px;
+    font-size: 16px;
+    padding: 15px 10px;
+    font-weight: 700;
+}
+.shop-row span{
+    margin-left: 10px;
+    color: #666;
+    font-weight: 400;
+}
+.Address{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+.Address span{
+    height: 50px;
+    line-height: 50px;
+}
+.Address span:nth-child(1){
+    font-size: 16px;
+     
+}
+
+.Address span:nth-child(2){
+    font-weight: 700;
+    margin-right: 20px;   
+}
+.Address span:last-child{
+    font-size: 14px;
+    margin-left: 20px;
+}
+.g-excle{
+    border: 1px solid #D0D0D0;
+    width: 100%;
+    margin-top: 20px;
+}
+.orders{
+    border-bottom: 1px solid #D0D0D0;
+    width: 100%;
+    
+}
+.orders ul li{
+    float: left;
+    width: 18%;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+.orders>ul li:nth-child(1){
+    width: 42%;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.g-excle div:first-child{
+   height: 40px;
+   border-left:2px solid #F3168A;
+   line-height: 40px;    
+}
+
+.g-excle div:first-child li:nth-child(1){
+    color:#F3168A;
+    font-size: 16px;
+}
+.g-excle div:nth-child(2){
+    height: 100px;
+    line-height: 100px;    
+ }
+
+.g-excle div:last-child{
+    border-bottom:none;
+    height: 40px;
+    line-height: 40px;  
+    font-size: 12px;
+    margin-left: 20px;
+}
+.g-excle div:last-child span:nth-child(1){
+    background-color: #FF9933;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 2px;
+    
+}
+.g-excle div:last-child span:nth-child(2){
+    margin-left: 20px;
+}
+/* 购买物品结束 */
+/* 优惠券开始 */
+.act-nav{
+    width: 100%;
+
+}
+.activities{
+    width: 300px;
+    height: 60px;
+    margin-top: 20px;
+    
+
+}
+.activities span{
+    display: inline-block;
+    color: #F3168A;
+    border: 1px solid #F3168A;
+    margin:20px;
+    padding:5px 15px;
+    border-radius: 5px;   
+}
+.message{
+    border: 1px solid #D0D0D0;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    background-color:#F5F5F5;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.mes-01{
+    margin:30px;
+    height: 200px;
+    border: 1px solid #D0D0D0;
+    background-color: #fff;
+}
+.message-center{
+    margin-top: 50px;
+    margin-left: 250px;
+}
+.circle{
+    width: 90px;
+    height: 90px;
+    float: left;
+    background: url(../img/zxx-301.png) -287px -52px no-repeat;    
+}
+
+.search{
+    float: left;
+    height: 90px;
+    margin-left: 20px;
+}
+.search p:nth-child(2){
+    margin-top: 10px;
+}
+.message input{
+    height: 30px;
+    border-radius: 3px; 
+
+}
+.message>p span{    
+    display: inline-block;
+    background-color:#D0D0D0;
+    color: #666;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    padding-top:8px;    
+    border-radius: 3px; 
+   
+}
+.message p{
+    margin-left: 30px;
+}
+.message p:nth-child(1){
+    margin-top: 30px;
+}
+/* 优惠卷结束 */
+/* 使用优惠券开始 */
+.faqs p{
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 35px;
+}
+.faqs p:nth-child(1){
+    margin-left: 30px;
+}
+.faqs p:last-child{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.message .faqs p:nth-child(5) span{
+    color:#1D94D1;
+}
+.cart-sy{
+    width: 100%;
+    height: 130px;
+    margin-top: 20px;
+}
+.pro-text{
+    width: 100%;
+    height: 130px;
+    /* float: right; */
+}
+.pro-text p{
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.pro-text p span{
+    font-size: 14px;
+    color: #666;
+}
+.pro-text p span:last-child{
+    margin-left: 30px;
+}
+.pro-text  p:nth-child(1) span:nth-child(2),.pro-text  p:nth-child(2) span:nth-child(2){
+    color: #F3168A;
+    font-weight: 700;
+}
+.pro-text  p:nth-child(1) span:last-child{
+    color: #000;
+    font-size: 14px;
+}
+/* 使用优惠券结束 */
+/* 结算开始 */
+.prices{
+    width: 100%;
+    height: 50px;
+    background-color:#F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+.prices span:nth-child(1){
+    display: inline-block;
+    height: 50px;
+    width: 250px;
+    background-color: #F3168A;
+    float: right;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+.prices span:nth-child(2){
+    float: right;
+    line-height: 50px;
+    margin-right: 80px;
+    font-size: 14px;
+}
+.c-promises{
+    width: 100%;
+    height: 150px;
+}
+.c-promises li{
+    float: left;
+    width: 26%;
+    height: 141px;
+    margin-top: 30px;
+}
+.c-promises li:nth-child(1) i{
+    display: inline-block;
+    width: 300px;
+    height: 141px;
+    background: url(../img/zxx-302.png) 0 0 no-repeat;
+}
+.c-promises li:nth-child(2){
+    margin-left: 11%;
+    margin-right: 11%;
+    
+   
+}
+.c-promises li:nth-child(2) i{
+    display: inline-block;
+    width: 300px;
+    height: 141px;
+    background: url(../img/zxx-302.png) -302px 0 no-repeat;   
+}
+.c-promises li:nth-child(3) i{
+    display: inline-block;
+    width: 300px;
+    height: 141px;
+    background: url(../img/zxx-302.png) 0 -145px no-repeat;   
+}
+/* 结算结束 */
+
+/* 版心内容结束 */
+.P-footer{
+    margin-top: 30px;
+}
