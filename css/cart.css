@@ -260,7 +260,7 @@
     border-radius: 3px; 
 
 }
-.message>p span{    
+.message>p span,.search>p span{    
     display: inline-block;
     background-color:#D0D0D0;
     color: #666;
