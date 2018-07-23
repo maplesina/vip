@@ -7,19 +7,12 @@
 // }
 
 //中奖名单
-function autoScroll() { 
-    $(".winning").find("ul").animate({ 
-        marginTop: "-30px" 
-    }, 1000, function() { 
-        $(this).css({marginTop: "0px"}).find("li:first").appendTo(this); 
-    }) 
-} 
-$(function() { 
-    var scroll = setInterval('autoScroll(".winning")', 1500); 
-    $(".winning").hover(function() { 
-        console.log("aaa"); 
-        clearInterval(scroll); 
-    }, function() { 
-        scroll = setInterval('autoScroll(".winning")', 1500); 
-    }); 
+$(document).ready(function(){
+	$('.winning li:even').addClass('lieven');
+})
+$(function(){
+	$("div.winning").myScroll({
+		speed:40, //��ֵԽ���ٶ�Խ��
+		rowHeight:68 //li�ĸ߶�
+	});
 });

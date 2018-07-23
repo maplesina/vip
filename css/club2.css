@@ -163,31 +163,31 @@ body{
     height: 400px;
 }
 
-.wrap1 .winning{
-    position: absolute;
+.win{
+    float: left;
     margin-top: 250px;
     margin-left: 30px;
 }
-.wrap1 .winning>p{
-    font-size: 25px;
+.winning{
+    height: 200px;
+    overflow: hidden;
 }
-.wrap1 .winning ul{
-    height: 190px;
-}
-.wrap1 .winning ul li{
-    line-height: 30px;
-}
-.wrap1 .winning>p{
+.win>p{
     font-size: 16px;
     color: #ec4674;
 }
-.wrap1 .winning>p i{
+.win>p i{
     display: inline-block;
     width: 30px;
     height: 30px;
-    background: url(../img/xy-club2-img2.png);
+    background: url(../img/xy-club2-img2.png) -1852px -60px;
+    vertical-align: -15px;
 }
-.wrap1 .winning ul li span{
+
+.winning li{
+    padding: 10px;
+}
+.winning ul li span{
     margin: 20px;
     font-size: 14px;
 }
