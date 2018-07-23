@@ -63,14 +63,20 @@ button{
 
 
 /* 上下的大图开始 */
-.wrapper{
+.bg1{
     position: relative;
     background: url(../img/xy-秋-1980x400头部d.jpg) no-repeat;
 }
-.content2{
+.bg2{
     height: 400px;
     margin-top: -30px;
     background: url(../img/xy-秋-1980x400尾部d.jpg) no-repeat;
+}
+.wrapper>div{
+    display: none;
+}
+.wrapper>.active{
+    display: block;
 }
 /* 上下的大图结束 */
 
