@@ -1,432 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>产品详情页</title>
-    <link rel="stylesheet" href="css/reset.css">
-    
-    <link rel="stylesheet" href="css/public.css">
-	<link rel="stylesheet" type="text/css" href="css/zoomio.css">
-    <link rel="stylesheet" href="iconfont/iconfont.css">
-    <link rel="stylesheet" href="css/Prodocts.css">
-    <script src="js/jquery-1.12.4.js"></script>
-    
-    <!-- <script src="js/index.js"></script> -->
-</head>
-<body>
- <!-- 滚动条到一定位置显示加入购物车固定导航栏开始 -->
- <div class="nav-pr">
-    <div class="product-nav">
-            <ul class="wraper">
-                <li class="active-tab">商品详情</li>
-                <li>商品咨询</li>
-                <li>关于我们</li>
-                <div class="tab-button">
-                    <small>￥</small><big>2490</big>
-                    <span><i class="iconfont">&#xe642;</i>加入购物车</span>
-                </div>
-            </ul>
-            
-        </div>
-</div>
-<!-- 滚动条到一定位置显示加入购物车固定导航栏结束 -->
-<!-- 头部导航开始 -->
-<div class="head">
-        <div class="head-bg">
-            <div class="wraper clearfix">
-                <div class="location">
-                    <span>省份</span>
-                    <i class="ico-dis"></i>
-                    <div class="province">
-                        
-                    </div>
-                </div>
-                <div class="r-head">
-                    <ul class="clearfix">
-                        <li class="head-item item-active head-user">
-                            <a href="">
-                                <span>请登录</span>
-                                <div class="user-info">
-                                    <div class="top-userinfo">
-                                        <span class="top-userinfo-pic"></span>
-                                        <div><a href="">您好！ [请登录]</a></div>
-                                    </div>
-                                    <ul class="cent-userinfo">
-                                        <li>我的收藏</li>
-                                        <li>我的订单</li>
-                                        <li>零钱</li>
-                                        <li>我的优惠券</li>
-                                        <li>我的唯品币</li>
-                                        <li>唯品金融</li>
-                                    </ul>
-                                </div>
-                                <i class="head-icon"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span>注册</span>
-                                <i class="head-icon"></i>
-                            </a>
-                        </li>
-                        <li class="head-item">
-                            <img src="img/q-ind-h1.gif" /> 签到有礼
-                            <i class="head-icon"></i>
-                            
-                        </li>
-                        <li>我的订单
-                            <i class="head-icon"></i>
-                        </li>
-                        <li class="head-item item-active head-dis">我的特卖
-                            <i class="head-icon"></i>
-                            <i class="ico-dis"></i>
-                            <div class="top-nav-dis">
-                                <p>品牌收藏(0)</p>
-                                <p>商品收藏(0)</p>
-                                <p>我的足迹(0)</p>
-                            </div>
-                        </li>
-                        <li class="head-item item-active head-club">会员俱乐部
-                            <i class="head-icon"></i>
-                            <i class="ico-dis"></i>
-                            <div class="head-vip">
-                                <p>俱乐部首页</p>
-                                <p>唯品币兑换</p>
-                                <p>免费抽大奖</p>
-                            </div>
-                        </li>
-                        <li class="head-item item-active head-service">客户服务								
-                            <i class="head-icon"></i>
-                            <i class="ico-dis"></i>
-                            <div class="head-service-infor">
-                                <p>联系客服</p>
-                                <p>帮助中心</p>
-                                <p>服务中心</p>
-                                <p>知识产权投诉</p>
-                            </div>
-                        </li>
-                        <li class="head-item clearfix head-phone-in">
-                            <i class="phone"></i> 手机版
-                            <i class="head-icon"></i>
-                            <div class="head-phone">
-                                <img src="img/q-ind-saoma.png" width="186"/>
-                            </div>
-                        </li>
-                        <li class=" item-active">更多</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="top-nav clearfix wraper">
-            <div class="logo">
-                <img src="img/q-ind-log1.png" />
-            </div>
-            <div class="c-nav">
-                <img src="img/q-ind-log2.png" />
-            </div>
 
-            <div class="tool clearfix">
-                <span>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>产品详情页</title>
+		<link rel="stylesheet" href="css/reset.css">
+
+		<link rel="stylesheet" href="css/public.css">
+		<link rel="stylesheet" type="text/css" href="css/zoomio.css">
+		<link rel="stylesheet" href="iconfont/iconfont.css">
+		<link rel="stylesheet" href="css/Prodocts.css">
+		<script src="js/jquery-1.12.4.js"></script>
+
+		<!-- <script src="js/index.js"></script> -->
+	</head>
+
+	<body>
+		<!-- 滚动条到一定位置显示加入购物车固定导航栏开始 -->
+		<div class="nav-pr">
+			<div class="product-nav">
+				<ul class="wraper">
+					<li class="active-tab">商品详情</li>
+					<li>商品咨询</li>
+					<li>关于我们</li>
+					<div class="tab-button">
+						<small>￥</small><big>2490</big>
+						<span><i class="iconfont">&#xe642;</i>加入购物车</span>
+					</div>
+				</ul>
+
+			</div>
+		</div>
+		<!-- 滚动条到一定位置显示加入购物车固定导航栏结束 -->
+		<!-- 头部导航开始 -->
+		<div class="head">
+			<div class="head-bg">
+				<div class="wraper clearfix">
+					<div class="location">
+						<span>省份</span>
+						<i class="ico-dis"></i>
+						<div class="province">
+
+						</div>
+					</div>
+					<div class="r-head">
+						<ul class="clearfix">
+							<li class="head-item item-active head-user">
+								<a href="">
+									<span>请登录</span>
+									<div class="user-info">
+										<div class="top-userinfo">
+											<span class="top-userinfo-pic"></span>
+											<div>
+												<a href="">您好！ [请登录]</a>
+											</div>
+										</div>
+										<ul class="cent-userinfo">
+											<li>我的收藏</li>
+											<li>我的订单</li>
+											<li>零钱</li>
+											<li>我的优惠券</li>
+											<li>我的唯品币</li>
+											<li>唯品金融</li>
+										</ul>
+									</div>
+									<i class="head-icon"></i>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>注册</span>
+									<i class="head-icon"></i>
+								</a>
+							</li>
+							<li class="head-item">
+								<img src="img/q-ind-h1.gif" /> 签到有礼
+								<i class="head-icon"></i>
+
+							</li>
+							<li>我的订单
+								<i class="head-icon"></i>
+							</li>
+							<li class="head-item item-active head-dis">我的特卖
+								<i class="head-icon"></i>
+								<i class="ico-dis"></i>
+								<div class="top-nav-dis">
+									<p>品牌收藏(0)</p>
+									<p>商品收藏(0)</p>
+									<p>我的足迹(0)</p>
+								</div>
+							</li>
+							<li class="head-item item-active head-club">会员俱乐部
+								<i class="head-icon"></i>
+								<i class="ico-dis"></i>
+								<div class="head-vip">
+									<p>俱乐部首页</p>
+									<p>唯品币兑换</p>
+									<p>免费抽大奖</p>
+								</div>
+							</li>
+							<li class="head-item item-active head-service">客户服务
+								<i class="head-icon"></i>
+								<i class="ico-dis"></i>
+								<div class="head-service-infor">
+									<p>联系客服</p>
+									<p>帮助中心</p>
+									<p>服务中心</p>
+									<p>知识产权投诉</p>
+								</div>
+							</li>
+							<li class="head-item clearfix head-phone-in">
+								<i class="phone"></i> 手机版
+								<i class="head-icon"></i>
+								<div class="head-phone">
+									<img src="img/q-ind-saoma.png" width="186" />
+								</div>
+							</li>
+							<li class=" item-active">更多</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="top-nav clearfix wraper">
+				<div class="logo">
+					<img src="img/q-ind-log1.png" />
+				</div>
+				<div class="c-nav">
+					<img src="img/q-ind-log2.png" />
+				</div>
+
+				<div class="tool clearfix">
+					<span>
                     <input type="text" name="" id="" value="" placeholder="大家都在搜：连衣裙" />
                     <p class="search">
                         <img src="img/q-ind-log4.png" />
                     </p>
                 </span>
-                <div class="c-nav-r clearfix">
-                    <a href="">
-                        <i>
+					<div class="c-nav-r clearfix">
+						<a href="">
+							<i>
                             <img src="img/q-ind-log3.png" />
                         </i>
-                        <span>购物袋</span>
-                        <b class="c-nav-icon">0</b>
-                    </a>
+							<span>购物袋</span>
+							<b class="c-nav-icon">0</b>
+						</a>
 
-                </div>
-            </div>
-        </div>
-        <!-- 头部主菜单结构开始 -->
-        <div class="top-menu">
-            <div class="main-nav">
-                <div class="head-inner wraper">
-                    <ul class="clearfix">
-                        <li class="first-page">
-                            <a href="###" class="main-nav-atag">首页</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">女装</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">母婴</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">美妆</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">国际</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">男装</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">居家</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">鞋包</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">运动</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">生活</a>
-                        </li>
-                        <li class="more-wrap" style="position: relative">
-                            <a href="###" class="main-nav-atag" style="position: relative;">更多
-                                <i class="icon-desc"></i>
-                            </a>
-                            <div class="channel-item-group">
-                                <div class="channel-item">
-                                    <a href="###">
-                                        <img src="img/w-00003.jpg" alt="这是一张图片">
-                                        <div class="shadow"></div>
-                                        <div class="brand-text">
-                                            <p class="brand-name-chinese">配饰</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="channel-item">
-                                    <a href="###">
-                                        <img src="img/w-00004.jpg" alt="这是一张图片">
-                                        <div class="shadow"></div>
-                                        <div class="brand-text">
-                                            <p class="brand-name-chinese">唯品.奢</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="channel-item">
-                                    <a href="###">
-                                        <img src="img/w-00005.jpg" alt="这是一张图片">
-                                        <div class="shadow"></div>
-                                        <div class="brand-text">
-                                            <p class="brand-name-chinese">金融</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="channel-item">
-                                    <a href="###">
-                                        <img src="img/w-00006.png" alt="这是一张图片">
-                                        <div class="shadow"></div>
-                                        <div class="brand-text">
-                                            <p class="brand-name-chinese">电商扶贫</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-comingsoon">
-                            <a href="###" class="main-nav-link" class="main-nav-atag">
-                                <img src="img/w-00001.png" alt="这是一张图片"> 预告
-                            </a>
-                        </li>
-                        <li class="nav-category">
-                            <a href="###" class="main-nav-link">
-                                <img src="img/w-00002.png" alt="这是一张图片"> 分类
-                            </a>
-                            <span class="line"></span>
-                        </li>
-                    </ul>
-                </div>
+					</div>
+				</div>
+			</div>
+			<!-- 头部主菜单结构开始 -->
+			<div class="top-menu">
+				<div class="main-nav">
+					<div class="head-inner wraper">
+						<ul class="clearfix">
+							<li class="first-page">
+								<a href="###" class="main-nav-atag">首页</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">女装</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">母婴</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">美妆</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">国际</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">男装</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">居家</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">鞋包</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">运动</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">生活</a>
+							</li>
+							<li class="more-wrap" style="position: relative">
+								<a href="###" class="main-nav-atag" style="position: relative;">更多
+									<i class="icon-desc"></i>
+								</a>
+								<div class="channel-item-group">
+									<div class="channel-item">
+										<a href="###">
+											<img src="img/w-00003.jpg" alt="这是一张图片">
+											<div class="shadow"></div>
+											<div class="brand-text">
+												<p class="brand-name-chinese">配饰</p>
+											</div>
+										</a>
+									</div>
+									<div class="channel-item">
+										<a href="###">
+											<img src="img/w-00004.jpg" alt="这是一张图片">
+											<div class="shadow"></div>
+											<div class="brand-text">
+												<p class="brand-name-chinese">唯品.奢</p>
+											</div>
+										</a>
+									</div>
+									<div class="channel-item">
+										<a href="###">
+											<img src="img/w-00005.jpg" alt="这是一张图片">
+											<div class="shadow"></div>
+											<div class="brand-text">
+												<p class="brand-name-chinese">金融</p>
+											</div>
+										</a>
+									</div>
+									<div class="channel-item">
+										<a href="###">
+											<img src="img/w-00006.png" alt="这是一张图片">
+											<div class="shadow"></div>
+											<div class="brand-text">
+												<p class="brand-name-chinese">电商扶贫</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-comingsoon">
+								<a href="###" class="main-nav-link" class="main-nav-atag">
+									<img src="img/w-00001.png" alt="这是一张图片"> 预告
+								</a>
+							</li>
+							<li class="nav-category">
+								<a href="###" class="main-nav-link">
+									<img src="img/w-00002.png" alt="这是一张图片"> 分类
+								</a>
+								<span class="line"></span>
+							</li>
+						</ul>
+					</div>
 
-            </div>
-        </div>
-        <div class="top-menu-hidden">
-            <div class="main-nav wraper">
-                <div class="head-inner">
-                    <ul class="clearfix">
-                        <li class="first-page">
-                            <a href="###" class="main-nav-atag">首页</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">女装</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">母婴</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">美妆</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">国际</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">男装</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">居家</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">鞋包</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">运动</a>
-                        </li>
-                        <li>
-                            <a href="###" class="main-nav-atag">生活</a>
-                        </li>
-                        <li class="more-wrap" style="position: relative">
-                            <a href="###" class="main-nav-atag" style="position: relative;">更多
-                                <i class="icon-desc"></i>
-                            </a>
-                            <div class="channel-item-group">
-                                <div class="channel-item">
-                                    <a href="###">
-                                        <img src="img/w-00003.jpg" alt="这是一张图片">
-                                        <div class="shadow"></div>
-                                        <div class="brand-text">
-                                            <p class="brand-name-chinese">配饰</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="channel-item">
-                                    <a href="###">
-                                        <img src="img/w-00004.jpg" alt="这是一张图片">
-                                        <div class="shadow"></div>
-                                        <div class="brand-text">
-                                            <p class="brand-name-chinese">唯品.奢</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="channel-item">
-                                    <a href="###">
-                                        <img src="img/w-00005.jpg" alt="这是一张图片">
-                                        <div class="shadow"></div>
-                                        <div class="brand-text">
-                                            <p class="brand-name-chinese">金融</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="channel-item">
-                                    <a href="###">
-                                        <img src="img/w-00006.png" alt="这是一张图片">
-                                        <div class="shadow"></div>
-                                        <div class="brand-text">
-                                            <p class="brand-name-chinese">电商扶贫</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-comingsoon">
-                            <a href="###" class="main-nav-link" class="main-nav-atag">
-                                <img src="img/w-00001.png" alt="这是一张图片"> 预告
-                            </a>
-                        </li>
-                        <li class="nav-category">
-                            <a href="###" class="main-nav-link">
-                                <img src="img/w-00002.png" alt="这是一张图片"> 分类
-                            </a>
-                            <span class="line"></span>
-                        </li>
-                    </ul>
-                </div>
-            
-            </div>
-        </div>
-    </div>
-    <!--头部导航结束-->
-    <!-- 右边的购物袋开始 -->
-    <div class="side">
-            <div class="gouwu">
-                <div class="user">
-                    <i class="iconfont icon-yonghutouxiang"></i>
-                    <span>账号</span>
-                    <div class="login clearfix">
-                        <div class="head-portrait">
-                            <big>×</big>
-                            <img src="img/xy-login.jpg" alt="">
-                            <p>你好 ! 请
-                                <a href="#">登录</a>
-                            </p>
-                        </div>
-                        <div class="list mt">
-                            <ul class="clearfix">
-                                <li>
-                                    <i class="iconfont icon-order"></i>
-                                    <p>我的订单</p>
-                                </li>
-                                <li>
-                                    <i class="iconfont icon-xiaoxi"></i>
-                                    <p>我的消息</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="https://iclub.vip.com/?ff=99999|3|1|6">会员俱乐部</a>
-                    </div>
-                </div>
-    
-                <i class="iconfont icon-youhuiquan">
+				</div>
+			</div>
+			<div class="top-menu-hidden">
+				<div class="main-nav wraper">
+					<div class="head-inner">
+						<ul class="clearfix">
+							<li class="first-page">
+								<a href="###" class="main-nav-atag">首页</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">女装</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">母婴</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">美妆</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">国际</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">男装</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">居家</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">鞋包</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">运动</a>
+							</li>
+							<li>
+								<a href="###" class="main-nav-atag">生活</a>
+							</li>
+							<li class="more-wrap" style="position: relative">
+								<a href="###" class="main-nav-atag" style="position: relative;">更多
+									<i class="icon-desc"></i>
+								</a>
+								<div class="channel-item-group">
+									<div class="channel-item">
+										<a href="###">
+											<img src="img/w-00003.jpg" alt="这是一张图片">
+											<div class="shadow"></div>
+											<div class="brand-text">
+												<p class="brand-name-chinese">配饰</p>
+											</div>
+										</a>
+									</div>
+									<div class="channel-item">
+										<a href="###">
+											<img src="img/w-00004.jpg" alt="这是一张图片">
+											<div class="shadow"></div>
+											<div class="brand-text">
+												<p class="brand-name-chinese">唯品.奢</p>
+											</div>
+										</a>
+									</div>
+									<div class="channel-item">
+										<a href="###">
+											<img src="img/w-00005.jpg" alt="这是一张图片">
+											<div class="shadow"></div>
+											<div class="brand-text">
+												<p class="brand-name-chinese">金融</p>
+											</div>
+										</a>
+									</div>
+									<div class="channel-item">
+										<a href="###">
+											<img src="img/w-00006.png" alt="这是一张图片">
+											<div class="shadow"></div>
+											<div class="brand-text">
+												<p class="brand-name-chinese">电商扶贫</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-comingsoon">
+								<a href="###" class="main-nav-link" class="main-nav-atag">
+									<img src="img/w-00001.png" alt="这是一张图片"> 预告
+								</a>
+							</li>
+							<li class="nav-category">
+								<a href="###" class="main-nav-link">
+									<img src="img/w-00002.png" alt="这是一张图片"> 分类
+								</a>
+								<span class="line"></span>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--头部导航结束-->
+		<!-- 右边的购物袋开始 -->
+		<div class="side">
+			<div class="gouwu">
+				<div class="user">
+					<i class="iconfont icon-yonghutouxiang"></i>
+					<span>账号</span>
+					<div class="login clearfix">
+						<div class="head-portrait">
+							<big>×</big>
+							<img src="img/xy-login.jpg" alt="">
+							<p>你好 ! 请
+								<a href="#">登录</a>
+							</p>
+						</div>
+						<div class="list mt">
+							<ul class="clearfix">
+								<li>
+									<i class="iconfont icon-order"></i>
+									<p>我的订单</p>
+								</li>
+								<li>
+									<i class="iconfont icon-xiaoxi"></i>
+									<p>我的消息</p>
+								</li>
+							</ul>
+						</div>
+						<a href="https://iclub.vip.com/?ff=99999|3|1|6">会员俱乐部</a>
+					</div>
+				</div>
+
+				<i class="iconfont icon-youhuiquan">
                     <p>我的优惠券</p>
                 </i>
-                <i class="iconfont icon-shoucang1">
+				<i class="iconfont icon-shoucang1">
                     <p>品牌收藏</p>
                 </i>
-                <i class="iconfont icon-xingxing">
+				<i class="iconfont icon-xingxing">
                     <p>商品收藏</p>
                 </i>
-                <i class="iconfont icon-daojishi">
+				<i class="iconfont icon-daojishi">
                     <p>我的足迹</p>
                 </i>
-                <i class="iconfont icon-bi">
+				<i class="iconfont icon-bi">
                     <p>会员反馈</p>
                 </i>
-    
-                
-            </div>
-            <div class="shop">
-                <i class="iconfont icon-gouwudai"></i>
-                <p>购物袋</p>
-                <span>0</span>
-                <div class="head-portrait">
-                    <big>×</big>
-                    <img src="img/xy-login.jpg" alt="">
-                    <p>你好 ! 请
-                        <a href="#">登录</a>
-                    </p>
-                </div>
-            </div>
-            <i class="iconfont icon-jiantoushang" id="top">
+
+			</div>
+			<div class="shop">
+				<i class="iconfont icon-gouwudai"></i>
+				<p>购物袋</p>
+				<span>0</span>
+				<div class="head-portrait">
+					<big>×</big>
+					<img src="img/xy-login.jpg" alt="">
+					<p>你好 ! 请
+						<a href="#">登录</a>
+					</p>
+				</div>
+			</div>
+			<i class="iconfont icon-jiantoushang" id="top">
                 <p>回到顶部</p>
             </i>
-        </div>
-    
-        <!-- 右边的购物袋结束 -->
-    <!-- 页面整体结构开始 -->
-    <div class="main wraper">
-    <!-- 产品模块开始 -->
-        <div class="product-01">
-            <!-- 产品位置导航开始 -->
-            <div class="product-top">
-                <a href="index.html">首页 > </a>
-                <a href="list.html"> SK-II化妆品专场</a>
-                <span> >SK-II 神仙水曜白焕亮美肌挚选礼盒 神仙水 小灯泡 护肤套装 面部精华 保湿 亮肤</span>
-            </div>
-            <!-- 产品位置导航结束 -->
-            <!-- 产品左侧图片及简介开始 -->
-            <div class="product-left">
-                    <div class="productimg">
-                            <i></i>
-                    </div>
-                
-                    <div class="htmleaf-content">        
-                        <img class="sampleimage" src="img/zxx-001.jpg" />
-                    </div>
-               
-                               
-                <div class="p-text">
-                    <span>商品编码：18225061602</span>
-                    <span><i></i>收藏商品</span>
-                    <span>
+		</div>
+
+		<!-- 右边的购物袋结束 -->
+		<!-- 页面整体结构开始 -->
+		<div class="main wraper">
+			<!-- 产品模块开始 -->
+			<div class="product-01">
+				<!-- 产品位置导航开始 -->
+				<div class="product-top">
+					<a href="index.html">首页 > </a>
+					<a href="list.html"> SK-II化妆品专场</a>
+					<span> >SK-II 神仙水曜白焕亮美肌挚选礼盒 神仙水 小灯泡 护肤套装 面部精华 保湿 亮肤</span>
+				</div>
+				<!-- 产品位置导航结束 -->
+				<!-- 产品左侧图片及简介开始 -->
+				<div class="product-left">
+					<div class="productimg">
+						<i></i>
+					</div>
+
+					<div class="htmleaf-content">
+						<img class="sampleimage" src="img/zxx-001.jpg" />
+					</div>
+
+					<div class="p-text">
+						<span>商品编码：18225061602</span>
+						<span><i></i>收藏商品</span>
+						<span>
                         <i></i>分享到:
                         <ul class="vips-bshare">
                                 <li><i></i></li>
@@ -434,406 +436,418 @@
                                 <li><i></i></li>
                                 <li><i></i></li>
                         </ul>
-                    </span>       
-                </div>
-                
-                <div class="p-safe mt">
-                    <ul>
-                        <li><i></i>100%正品</li>
-                        <li><i></i>上市公司</li>
-                        <li><i></i>支持换货</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 产品左侧图片以及简介结束 -->
-            <!-- 右侧商品介绍开始 -->
-            <div class="product-right">
-                <div class="product-right-01">
-                    <p>SK-II</p>
-                    <p>SK-II 神仙水曜白焕亮美肌挚选礼盒 神仙水 小灯泡 护肤套装 面部精华 保湿 亮肤</p>
-                    <p>
-                        <span>小灯泡礼盒</span> 神仙水+小灯泡，人气护肤套装，补水保湿、提亮肤色、淡斑亮白，美肌白成一道光。</p>
-                    <div class="prices">
-                        <div class="prices-top">
-                            <div class="prices-left">
-                                <small>￥</small><big>2490</big>
-                            </div>
-                            <div class="prices-right">
-                                <span>7.8折</span>
-                                <span><del>¥3192</del></span>
-                            </div>
-                            <div class="Ptext">
-                                <p>该商品为特殊商品, 不支持使用全场券、品类券</p>
-                            </div>
-                        </div>
-                        
-                    </div> 
-                    <div class="pr-box">                                                               
-                        <div style="width:420px;">
-                            <span style=" color:#777;font-size: 12px; margin-right: 20px;">配送</span>
-                            <input type="text" id="city" style="height:25px;width: 250px;">
-                        </div>
-                             
-                            <p><span>运费</span>&nbsp;&nbsp;&nbsp;<span>免运费</span>&nbsp;&nbsp;&nbsp;<span>（订单满288免运费）</span></p>
-                
-                        </div>
-                        <div class="g-w">
-                            <div class="tab-button">
-                                <span><i class="iconfont">&#xe642;</i>加入购物车</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-right-02">
-                            <div class="recommend-txt">
-                                <p>• 本商品已下架，下次早点来！</p>
-                            </div>
-                        
-                        <div class="recommend-warper">
-                            <div class="rec-p">
-                                <p>此商品暂时还无法购买, 您可能还喜欢</p>
-                            </div>
-                            <div class="recommend-pr">
-                                <ul>
-                                    <li><img src="img/zxx-041-1.jpg" alt=""></li>
-                                    <li>SK-II “神仙水”口碑臻献明星礼盒 神仙水 护肤套装 面部精华 保湿</li>
-                                    <li><span>￥2990</span><del>￥3994</del></li>
-                                </ul>
-                                <ul>
-                                    <li><img src="img/zxx-042-1.jpg" alt=""></li>
-                                    <li>SK-II “神仙水”大容量囤货挚选礼盒 神仙水 护肤套装 面部精华 保湿</li>
-                                    <li><span>￥1450</span><del>￥1915</del></li>
-                                </ul>
-                                <ul>
-                                    <li><img src="img/zxx-043-1.jpg" alt=""></li>
-                                    <li>神仙水曜白光蕴美肌礼盒 神仙水 小灯泡 护肤套装 面部精华 保湿 亮肤</li>
-                                    <li><span>￥1980</span><del>￥2645</del></li>
-                                
-                                </ul>
-                                <ul>
-                                    <li><img src="img/zxx-044-1.jpg" alt=""></li>
-                                    <li>高端美妆夏季品牌钜献 > SK-II 经典“神仙水”精选护肤套装 神仙水 护肤套装 面部精华 保湿</li>
-                                    <li><span>￥1450</span><del>￥1629</del></li>
-                                   
-                                </ul>
-                                <ul>
-                                    <li><img src="img/zxx-045-1.jpg" alt=""></li>
-                                    <li>小红鸾限量版神仙水230ml礼盒 神仙水 护肤套装 面部精华 保湿</li>
-                                    <li><span>￥1450</span><del>￥1629</del></li>
-                                
-                                </ul>
-                                <ul>
-                                    <li><img src="img/zxx-046-1.jpg" alt=""></li>
-                                    <li>SK-II “神仙水”情侣双支臻享礼盒 神仙水 护肤套装 男士 面部精华 保湿</li>
-                                    <li><span>￥1450</span><del>￥1629</del></li>
+                    </span>
+					</div>
 
-                                </ul>
-                            </div>
-                            <div class="service">
-                                <p><span>服务</span>此类商品属于特殊商品，如非质量问题，暂不支持7天无理由退货服务<br>
-                                    该商品支持换货，订单签收7天内可申请换货</p>
-                            </div>
-                        </div>
-                            
-                      
-                    </div>
-                
+					<div class="p-safe mt">
+						<ul>
+							<li><i></i>100%正品</li>
+							<li><i></i>上市公司</li>
+							<li><i></i>支持换货</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 产品左侧图片以及简介结束 -->
+				<!-- 右侧商品介绍开始 -->
+				<div class="product-right">
+					<div class="product-right-01">
+						<p>SK-II</p>
+						<p>SK-II 神仙水曜白焕亮美肌挚选礼盒 神仙水 小灯泡 护肤套装 面部精华 保湿 亮肤</p>
+						<p>
+							<span>小灯泡礼盒</span> 神仙水+小灯泡，人气护肤套装，补水保湿、提亮肤色、淡斑亮白，美肌白成一道光。</p>
+						<div class="prices">
+							<div class="prices-top">
+								<div class="prices-left">
+									<small>￥</small><big>2490</big>
+								</div>
+								<div class="prices-right">
+									<span>7.8折</span>
+									<span><del>¥3192</del></span>
+								</div>
+								<div class="Ptext">
+									<p>该商品为特殊商品, 不支持使用全场券、品类券</p>
+								</div>
+							</div>
 
-            </div>
-            <!-- 右侧商品介绍结束 -->
-        </div>
-        <!-- 产品模块结束 -->
-       
-        <!-- 产品详细简介开始 -->
-        <div class="product-xq warper">
-            <div class="product-nav">
-                <ul>
-                    <li class="active-tab">商品详情</li>
-                    <li>商品咨询</li>
-                    <li>关于我们</li>
-                </ul>
-            </div>
-            <div class="product-list">
-                <!-- 商品详情开始 -->
-                <div class="product-center">
-                    <div class="product-excel">
-                        <h1>
+						</div>
+						<div class="pr-box">
+							<div style="width:420px;">
+								<span style=" color:#777;font-size: 12px; margin-right: 20px;">配送</span>
+								<input type="text" id="city" style="height:25px;width: 250px;">
+							</div>
+
+							<p><span>运费</span>&nbsp;&nbsp;&nbsp;<span>免运费</span>&nbsp;&nbsp;&nbsp;<span>（订单满288免运费）</span></p>
+
+						</div>
+						<div class="add-shop-num clearfix">
+							<p>数量</p>
+							<div>
+								<span class="del" >-</span>
+								<b class="num" >1</b>
+								<input type="hidden" id="shopnum" width="29px" value="1"/>
+								<span class="add">+</span>
+							</div>
+						</div>
+						<div class="g-w">
+						
+						
+							<div class="tab-button">
+								<span><i class="iconfont">&#xe642;</i>加入购物车</span>
+							</div>
+						</div>
+					</div>
+					<div class="product-right-02">
+						<div class="recommend-txt">
+							<p>• 本商品已下架，下次早点来！</p>
+						</div>
+
+						<div class="recommend-warper">
+							<div class="rec-p">
+								<p>此商品暂时还无法购买, 您可能还喜欢</p>
+							</div>
+							<div class="recommend-pr">
+								<ul>
+									<li><img src="img/zxx-041-1.jpg" alt=""></li>
+									<li>SK-II “神仙水”口碑臻献明星礼盒 神仙水 护肤套装 面部精华 保湿</li>
+									<li><span>￥2990</span><del>￥3994</del></li>
+								</ul>
+								<ul>
+									<li><img src="img/zxx-042-1.jpg" alt=""></li>
+									<li>SK-II “神仙水”大容量囤货挚选礼盒 神仙水 护肤套装 面部精华 保湿</li>
+									<li><span>￥1450</span><del>￥1915</del></li>
+								</ul>
+								<ul>
+									<li><img src="img/zxx-043-1.jpg" alt=""></li>
+									<li>神仙水曜白光蕴美肌礼盒 神仙水 小灯泡 护肤套装 面部精华 保湿 亮肤</li>
+									<li><span>￥1980</span><del>￥2645</del></li>
+
+								</ul>
+								<ul>
+									<li><img src="img/zxx-044-1.jpg" alt=""></li>
+									<li>高端美妆夏季品牌钜献 > SK-II 经典“神仙水”精选护肤套装 神仙水 护肤套装 面部精华 保湿</li>
+									<li><span>￥1450</span><del>￥1629</del></li>
+
+								</ul>
+								<ul>
+									<li><img src="img/zxx-045-1.jpg" alt=""></li>
+									<li>小红鸾限量版神仙水230ml礼盒 神仙水 护肤套装 面部精华 保湿</li>
+									<li><span>￥1450</span><del>￥1629</del></li>
+
+								</ul>
+								<ul>
+									<li><img src="img/zxx-046-1.jpg" alt=""></li>
+									<li>SK-II “神仙水”情侣双支臻享礼盒 神仙水 护肤套装 男士 面部精华 保湿</li>
+									<li><span>￥1450</span><del>￥1629</del></li>
+
+								</ul>
+							</div>
+							<div class="service">
+								<p><span>服务</span>此类商品属于特殊商品，如非质量问题，暂不支持7天无理由退货服务<br> 该商品支持换货，订单签收7天内可申请换货
+								</p>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- 右侧商品介绍结束 -->
+			</div>
+			<!-- 产品模块结束 -->
+
+			<!-- 产品详细简介开始 -->
+			<div class="product-xq warper">
+				<div class="product-nav">
+					<ul>
+						<li class="active-tab">商品详情</li>
+						<li>商品咨询</li>
+						<li>关于我们</li>
+					</ul>
+				</div>
+				<div class="product-list">
+					<!-- 商品详情开始 -->
+					<div class="product-center">
+						<div class="product-excel">
+							<h1>
                             <span>商品参数</span>
                             <span>DETAIL</span>
                         </h1>
-                        <p></p>
-                        <table class="pr-table">
-                            <tr>
-                                <th>品牌名称：</th>
-                                <td>SK-II</td>
-                                <th>商品名称：</th>
-                                <td>SK-II 神仙水曜白焕亮美肌挚选礼盒 神仙水 小灯泡 护肤套装 面部精华 保湿 亮肤</td>
-                            </tr>
-                            <tr>
-                                <th>产地：</th>
-                                <td>日本，原产地：日本</td>
-                                <th>套装明细：</th>
-                                <td>SK-II护肤精华露230ml+肌因光蕴环采钻白精华露30ml+【赠品：护肤洁面霜20g+护肤精华露10ml+嫩肤清莹露30ml+微肌因赋活修护精华霜2.5g*2+微肌因修护焕采眼霜2.5g+唯白晶焕润透修护面膜1片*2】</td>
-                            </tr>
+							<p></p>
+							<table class="pr-table">
+								<tr>
+									<th>品牌名称：</th>
+									<td>SK-II</td>
+									<th>商品名称：</th>
+									<td>SK-II 神仙水曜白焕亮美肌挚选礼盒 神仙水 小灯泡 护肤套装 面部精华 保湿 亮肤</td>
+								</tr>
+								<tr>
+									<th>产地：</th>
+									<td>日本，原产地：日本</td>
+									<th>套装明细：</th>
+									<td>SK-II护肤精华露230ml+肌因光蕴环采钻白精华露30ml+【赠品：护肤洁面霜20g+护肤精华露10ml+嫩肤清莹露30ml+微肌因赋活修护精华霜2.5g*2+微肌因修护焕采眼霜2.5g+唯白晶焕润透修护面膜1片*2】</td>
+								</tr>
 
-                            <tr>
-                                <th>有效期：</th>
-                                <td>2020年（具体日期以收到实物为准）</td>
-                                <th>规格：</th>
-                                <td>均码</td>
-                            </tr>
+								<tr>
+									<th>有效期：</th>
+									<td>2020年（具体日期以收到实物为准）</td>
+									<th>规格：</th>
+									<td>均码</td>
+								</tr>
 
-                            <tr>
-                                <th>配件/备注：</th>
-                                <td>包装：不同批次包装不同，具体以收到实物为准</td>
-                                <th>商品编号:</th>
-                                <td>18225061602</td>
-                            </tr>
+								<tr>
+									<th>配件/备注：</th>
+									<td>包装：不同批次包装不同，具体以收到实物为准</td>
+									<th>商品编号:</th>
+									<td>18225061602</td>
+								</tr>
 
-                        </table>
-                    </div>
-                    <div class="product-excel">
-                        <h1>
+							</table>
+						</div>
+						<div class="product-excel">
+							<h1>
                             <span>品牌授权</span>
                             <span>AUTHORIZATION</span>
                         </h1>
-                        <p></p>
-                        <img src="img/zxx-003.jpg" alt="">
-                    </div>
-                    <div class="product-excel">
-                        <h1>
+							<p></p>
+							<img src="img/zxx-003.jpg" alt="">
+						</div>
+						<div class="product-excel">
+							<h1>
                             <span>商品展示</span>
                             <span>IMAGE</span>
                         </h1>
-                        <p></p>
-                        <img src="img/zxx-004.jpg" alt="">
-                        <img src="img/zxx-005.jpg" alt="">
-                        <img src="img/zxx-006.jpg" alt="">
-                        <img src="img/zxx-007.jpg" alt="">
-                        <img src="img/zxx-008.jpg" alt="">
-                        <img src="img/zxx-009.jpg" alt="">
-                        <img src="img/zxx-010.jpg" alt="">
-                        <img src="img/zxx-011.jpg" alt="">
-                        <img src="img/zxx-012.jpg" alt="">
-                        <img src="img/zxx-013.jpg" alt="">
-                        <img src="img/zxx-014.jpg" alt="">
-                        <img src="img/zxx-015.jpg" alt="">
-                    </div>
-                    <div class="product-excel">
-                        <h1>
+							<p></p>
+							<img src="img/zxx-004.jpg" alt="">
+							<img src="img/zxx-005.jpg" alt="">
+							<img src="img/zxx-006.jpg" alt="">
+							<img src="img/zxx-007.jpg" alt="">
+							<img src="img/zxx-008.jpg" alt="">
+							<img src="img/zxx-009.jpg" alt="">
+							<img src="img/zxx-010.jpg" alt="">
+							<img src="img/zxx-011.jpg" alt="">
+							<img src="img/zxx-012.jpg" alt="">
+							<img src="img/zxx-013.jpg" alt="">
+							<img src="img/zxx-014.jpg" alt="">
+							<img src="img/zxx-015.jpg" alt="">
+						</div>
+						<div class="product-excel">
+							<h1>
                             <span>品牌介绍</span>
                             <span>BRAND INTRODUCTION</span>
                         </h1>
-                        <p></p>
-                        <img src="img/zxx-016.jpg" alt="">
-                    </div>
-                </div>
-                <!-- 商品详情结束 -->
-                <!-- 商品咨询开始   -->
-                <div class="question">
-                    <div class="list-title">
-                        <h3>商品咨询</h3>
-                    </div>
-                    <div class="question-text">
-                        <p>购买前如有问题，请向唯品会咨询<a href="###"></a><span>联系客服</span></a></p>
-                        <ul>
-                            <li><i></i>商品都是正品吗？</li>
-                            <li><i></i>请你放心，唯品会www.vip.com上所售卖的商品均确保正品，并由中国人民财产保险股份有限公司为你购买的每一件商品进行承保。</li>
-                        </ul>
-                        <ul>
-                            <li><i></i>衣服图片上搭配的腰带、项链等配件，会连商品一同送货吗？</li>
-                            <li><i></i>这点请注意咯，如非特别说明，服装类商品图片中的腰带、饰品等配件均为拍摄搭配之用，是不包含在所售商品中的。</li>
-                        </ul>
-                        <ul>
-                            <li><i></i>尺码表上的尺码标准吗？</li>
-                            <li><i></i>唯品会所售商品尺寸均为人工测量，可能会存在1-2cm的正常误差范围。</li>
-                        </ul>
-                        <ul>
-                            <li><i></i>图片颜色和实物颜色是否相同？</li>
-                            <li><i></i>唯品会所有商品均采用业拍摄，力求将最真实的信息传达至你的视线。但由于个人显示器不同，可能导致实物与图片存在色差，最终颜色以实物为准。</li>
-                        </ul>
-                        <ul>
-                            <li><i></i>为什么我收到的商品包装和图片显示的不一致？</li>
-                            <li><i></i>唯品会展示的中间未划横线价格（显示如¥799）为唯品会销售价，该价格是交易成交价，是您最终决定是否购买商品的依据。
-                                        唯品会展示的中间划横线价格（显示如 ¥2899）为参考价，采集自品牌专柜标价、商品吊牌价或由品牌供应商提供的正品零售价；由于地区、时间的差异性和市场行情波动，品牌专柜标价、商品吊牌价可能会与您购物时展示的不一致。该价格仅供您参考。
-                                        折扣比为唯品会销售价与参考价的对比（该值四舍五入后采小数点后1位，如¥799/¥2899=0.2756=2.8折），该对比值仅供您参考，不作为结算基数。</li>
-                        </ul>        
-                    </div>
-                </div>
-                <!-- 商品咨询结束  其他地方如果看到 就是错的   这个是对的-->
-                <!-- 关于我们开始 -->
-                <div class="about">
-                    <div class="list-title">
-                        <h3>关于我们</h3>
-                    </div>
-                    <div class="about-tab">
-                        <ul class="about-img">
-                            <li><i class="active"></i></li>
-                            <li><i></i></li>
-                            <li><i></i></li>
-                            <li><i></i></li>
-                            <li><i></i></li>
-                            <li><i></i></li>
-                            <li><i></i></li>
-                            <li><i></i></li>
-                        </ul>
-                        <div class="about-content">
-                            <div class="about-imgtab active">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                            <div class="about-imgtab">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                            <div class="about-imgtab">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                            <div class="about-imgtab">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                            <div class="about-imgtab">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                            <div class="about-imgtab">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                            <div class="about-imgtab">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                            <div class="about-imgtab">
-                                    <ul>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <!-- 关于我们结束 -->
-            </div>
-        </div>
-        <!-- 产品详细简介结束 -->
-    
-    </div>
-    <!-- 页面整体结构结束 --> 
+							<p></p>
+							<img src="img/zxx-016.jpg" alt="">
+						</div>
+					</div>
+					<!-- 商品详情结束 -->
+					<!-- 商品咨询开始   -->
+					<div class="question">
+						<div class="list-title">
+							<h3>商品咨询</h3>
+						</div>
+						<div class="question-text">
+							<p>购买前如有问题，请向唯品会咨询
+								<a href="###"></a><span>联系客服</span></a>
+							</p>
+							<ul>
+								<li><i></i>商品都是正品吗？</li>
+								<li><i></i>请你放心，唯品会www.vip.com上所售卖的商品均确保正品，并由中国人民财产保险股份有限公司为你购买的每一件商品进行承保。</li>
+							</ul>
+							<ul>
+								<li><i></i>衣服图片上搭配的腰带、项链等配件，会连商品一同送货吗？</li>
+								<li><i></i>这点请注意咯，如非特别说明，服装类商品图片中的腰带、饰品等配件均为拍摄搭配之用，是不包含在所售商品中的。</li>
+							</ul>
+							<ul>
+								<li><i></i>尺码表上的尺码标准吗？</li>
+								<li><i></i>唯品会所售商品尺寸均为人工测量，可能会存在1-2cm的正常误差范围。</li>
+							</ul>
+							<ul>
+								<li><i></i>图片颜色和实物颜色是否相同？</li>
+								<li><i></i>唯品会所有商品均采用业拍摄，力求将最真实的信息传达至你的视线。但由于个人显示器不同，可能导致实物与图片存在色差，最终颜色以实物为准。</li>
+							</ul>
+							<ul>
+								<li><i></i>为什么我收到的商品包装和图片显示的不一致？</li>
+								<li><i></i>唯品会展示的中间未划横线价格（显示如¥799）为唯品会销售价，该价格是交易成交价，是您最终决定是否购买商品的依据。 唯品会展示的中间划横线价格（显示如 ¥2899）为参考价，采集自品牌专柜标价、商品吊牌价或由品牌供应商提供的正品零售价；由于地区、时间的差异性和市场行情波动，品牌专柜标价、商品吊牌价可能会与您购物时展示的不一致。该价格仅供您参考。 折扣比为唯品会销售价与参考价的对比（该值四舍五入后采小数点后1位，如¥799/¥2899=0.2756=2.8折），该对比值仅供您参考，不作为结算基数。
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 商品咨询结束  其他地方如果看到 就是错的   这个是对的-->
+					<!-- 关于我们开始 -->
+					<div class="about">
+						<div class="list-title">
+							<h3>关于我们</h3>
+						</div>
+						<div class="about-tab">
+							<ul class="about-img">
+								<li><i class="active"></i></li>
+								<li><i></i></li>
+								<li><i></i></li>
+								<li><i></i></li>
+								<li><i></i></li>
+								<li><i></i></li>
+								<li><i></i></li>
+								<li><i></i></li>
+							</ul>
+							<div class="about-content">
+								<div class="about-imgtab active">
+									<ul>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="about-imgtab">
+									<ul>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="about-imgtab">
+									<ul>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="about-imgtab">
+									<ul>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="about-imgtab">
+									<ul>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="about-imgtab">
+									<ul>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="about-imgtab">
+									<ul>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="about-imgtab">
+									<ul>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 关于我们结束 -->
+				</div>
+			</div>
+			<!-- 产品详细简介结束 -->
+
+		</div>
+		<!-- 页面整体结构结束 -->
 		<!--底部菜单开始-->
 		<div class="P-footer">
-            <!-- 底部版心开始 -->
-            <div class="footer-center wraper">
-                <ul class="footer-vip mt">
-                    <!-- <li><img src="img/zxx-list.png" alt=""></li> -->
-                    <li><i></i></li>
-                    <li><i></i></li>
-                    <li><i></i></li>
-                    <li><i></i></li>
-                    <li><i></i></li>
-                    <li><i></i></li>
-                    <li><i></i></li>
-                    <li><i></i></li>
-                    <li><i></i></li>
-                    <li><i></i></li>
-                </ul>
-                <div class="footer-list">
-                    <ul class="list-icon">服务保障                  
-                        <li>正品保证</li>
-                        <li>7天无理由放心退</li>
-                        <li>退货返运费</li>
-                        <li>7x15小时客户服务</li>
-                        <li>7天无理由随心换</li>
-                    </ul>
-                    <ul class="list-icon">购物指南
-                      
-                        <li>导购演示</li>
-                        <li>订单操作</li>
-                        <li>会员注册</li>
-                        <li>账户管理</li>
-                        <li>收货样品</li>
-                        <li>会员等级</li>
-                    </ul>
-                    <ul class="list-icon">支付方式
-                        
-                        <li>快捷支付</li>
-                        <li>23家主流网银支付</li>
-                        <li>货到付款</li>
-                        <li>支付宝、银联等支付</li>
-                        <li>信用卡支付</li>
-                        <li>零钱支付</li>
-                    </ul>
-                    <ul class="list-icon">配送方式
-                        
-                        <li>全场满288元免运费</li>
-                        <li>配送范围及运费</li>
-                        <li>验货与签收</li>
-                        
-                    </ul>
-                    <ul class="list-icon">售后服务
-                        <li>退货政策</li>
-                        <li>退货流程</li>
-                        <li>退款方式和时效</li>
-                        <li>退货返运费</li>
-                        
-                    </ul>
-                    <ul>
-                        <li style="list-style: none;">唯品会APP二维码</li>
-                        <li style="list-style: none;"><img src="img/zxx-weixin.png" alt=""></li>
-                        <li style="list-style: none;">下载唯品会移动APP</li>
-                    </ul>
-                </div>
-                <div class="footer-infor">
-                    <p>关于我们| About us| Investor Relations| 媒体报道| 品牌招商| 隐私条款| 唯品诚聘| 365爱心基金| 唯品卡| 联系我们</p>
-                    <p>Copyright © 2008-2018 vip.com，All Rights Reserved  使用本网站即表示接受唯品会用户协议。版权所有 广州唯品会电子商务有限公司</p>
-                    <p>粤公网安备 44010302111111号  粤ICP备08114786号 增值业务经营许可证：粤B2-20170777 网络文化经营许可证：粤网文〔2015〕1528-229</p>
-                    <p>自营主体经营证照  风险监测信息  互联网药品交易服务资格证（粤C20140002）</p>
-                </div>
-                <div class="footer-pic">
-                    <p>
-                        <span><i></i></span>
-                        <span><i></i></span>
-                        <span><i></i></span>
-                        <span><i></i></span>
-                        <span><i></i></span>
-                        <span><i></i></span>
-                        <span><i></i></span>
-                    </p>
-                </div>
-            </div>
-            <!-- 底部版心结束 -->
-    </div> 
-    <!-- 详情页底部结束 -->
+			<!-- 底部版心开始 -->
+			<div class="footer-center wraper">
+				<ul class="footer-vip mt">
+					<!-- <li><img src="img/zxx-list.png" alt=""></li> -->
+					<li><i></i></li>
+					<li><i></i></li>
+					<li><i></i></li>
+					<li><i></i></li>
+					<li><i></i></li>
+					<li><i></i></li>
+					<li><i></i></li>
+					<li><i></i></li>
+					<li><i></i></li>
+					<li><i></i></li>
+				</ul>
+				<div class="footer-list">
+					<ul class="list-icon">服务保障
+						<li>正品保证</li>
+						<li>7天无理由放心退</li>
+						<li>退货返运费</li>
+						<li>7x15小时客户服务</li>
+						<li>7天无理由随心换</li>
+					</ul>
+					<ul class="list-icon">购物指南
 
-    <script src=js/Prodocts.js></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
-    <script type="text/javascript" src="js/zoomio.js"></script>
-    <script src="js/Popt.js"></script>
-    <script src="js/cityJson.js"></script>
-    <script src="js/citySet.js"></script> 
-    <script type="text/javascript">
-        $("#city").click(function (e) {
-            SelCity(this,e);
-            console.log("inout",$(this).val(),new Date())
-        });
-    </script>
-    <script src=js/public.js></script>
-   
+						<li>导购演示</li>
+						<li>订单操作</li>
+						<li>会员注册</li>
+						<li>账户管理</li>
+						<li>收货样品</li>
+						<li>会员等级</li>
+					</ul>
+					<ul class="list-icon">支付方式
 
-</body>
+						<li>快捷支付</li>
+						<li>23家主流网银支付</li>
+						<li>货到付款</li>
+						<li>支付宝、银联等支付</li>
+						<li>信用卡支付</li>
+						<li>零钱支付</li>
+					</ul>
+					<ul class="list-icon">配送方式
+
+						<li>全场满288元免运费</li>
+						<li>配送范围及运费</li>
+						<li>验货与签收</li>
+
+					</ul>
+					<ul class="list-icon">售后服务
+						<li>退货政策</li>
+						<li>退货流程</li>
+						<li>退款方式和时效</li>
+						<li>退货返运费</li>
+
+					</ul>
+					<ul>
+						<li style="list-style: none;">唯品会APP二维码</li>
+						<li style="list-style: none;"><img src="img/zxx-weixin.png" alt=""></li>
+						<li style="list-style: none;">下载唯品会移动APP</li>
+					</ul>
+				</div>
+				<div class="footer-infor">
+					<p>关于我们| About us| Investor Relations| 媒体报道| 品牌招商| 隐私条款| 唯品诚聘| 365爱心基金| 唯品卡| 联系我们</p>
+					<p>Copyright © 2008-2018 vip.com，All Rights Reserved 使用本网站即表示接受唯品会用户协议。版权所有 广州唯品会电子商务有限公司</p>
+					<p>粤公网安备 44010302111111号 粤ICP备08114786号 增值业务经营许可证：粤B2-20170777 网络文化经营许可证：粤网文〔2015〕1528-229</p>
+					<p>自营主体经营证照 风险监测信息 互联网药品交易服务资格证（粤C20140002）</p>
+				</div>
+				<div class="footer-pic">
+					<p>
+						<span><i></i></span>
+						<span><i></i></span>
+						<span><i></i></span>
+						<span><i></i></span>
+						<span><i></i></span>
+						<span><i></i></span>
+						<span><i></i></span>
+					</p>
+				</div>
+			</div>
+			<!-- 底部版心结束 -->
+		</div>
+		<!-- 详情页底部结束 -->
+
+		<script src=js/Prodocts.js></script>
+		<script>
+			window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
+		</script>
+		<script type="text/javascript" src="js/zoomio.js"></script>
+		<script src="js/Popt.js"></script>
+		<script src="js/cityJson.js"></script>
+		<script src="js/citySet.js"></script>
+		<script type="text/javascript">
+			$("#city").click(function(e) {
+				SelCity(this, e);
+				console.log("inout", $(this).val(), new Date())
+			});
+		</script>
+		<script src=js/public.js></script>
+
+	</body>
+
 </html>
