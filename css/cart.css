@@ -40,7 +40,9 @@
     margin-right: 20px;
     
 }
-
+.m-site-nav .m-site-nav-user:hover{
+	color: #1d94d1;
+}
 .c-helper-small>li{                                                                                                                                                                                                                                                                                                                                                                                                            
     float: right;
     padding-right: 10px;
