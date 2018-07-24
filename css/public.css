@@ -25,7 +25,6 @@ li {
 	width: 100%;
 	height: 40px;
 	min-width: 1170px;
-	line-height: 40px;
 	background-color: #f10180;
 }
 
@@ -52,10 +51,12 @@ li {
 	min-width: 1000px;
 }
 
-.head-inner li {
+.head-inner>ul>li {
 	float: left;
 }
-
+.head-inner>ul{
+	line-height: 40px;
+}
 .main-nav-atag {
 	padding: 0 20px;
 	color: #fff;
@@ -127,7 +128,7 @@ li {
 	background: grey;
 }
 
-.head-inner li:hover {
+.head-inner>ul>li:hover {
 	background: #bd1067;
 }
 
