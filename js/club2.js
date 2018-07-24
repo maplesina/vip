@@ -16,6 +16,6 @@ $(function(){
 		rowHeight:68 //li�ĸ߶�
 	});
 });
-
+ 
 // tab切换
-liTab($(".first-page"),$(".wrapper>div"));
+// liTab($(".first-page"),$(".wrapper>div"));
