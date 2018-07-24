@@ -18,10 +18,8 @@ button{
     border-radius: 5px;
 }
 
+
 /* 返回顶部 */
-/* #top:hover #top>ul>li:first-child{
-    margin-top: -55px;
-} */
 #top{
     width: 60px;
     height: 55px;
@@ -57,17 +55,20 @@ button{
     padding: 0 12px;
 }
 .footer-list ul{
-    width: 165px;
+    width: 149px;
 }
 /* 头部、尾部结束 */
 
 
 /* 上下的大图开始 */
-.wrapper{
+.bg1,.bg2{
+    width: 100%;
+}
+.bg1{
     position: relative;
     background: url(../img/xy-秋-1980x400头部d.jpg) no-repeat;
 }
-.content2{
+.bg2{
     height: 400px;
     margin-top: -30px;
     background: url(../img/xy-秋-1980x400尾部d.jpg) no-repeat;
@@ -76,11 +77,25 @@ button{
 
 
 /* 头部开始 */
+.wrapper{
+    width: 2000px;
+    margin-left: -500px;
+}
+.wrapper>div{
+    width: 2000px;
+    height: auto;
+    float: left;
+    display: none;
+}
+.wrapper>div{
+    display: none;
+}
+.wrapper .active{
+    display: block;
+}
 .content{
     width: 1000px;
     margin: 0 auto;
-    /* position: absolute; */
-    /* top: 0; */
 }
 
 
@@ -325,7 +340,7 @@ button{
     line-height: 30px;
     transform: skewX(30deg);
 }
-.wrap3 .title ul li:hover,.wrap3 .title ul li:active{
+.wrap3 .title ul li:hover{
     color: #fff;
     background-color: #F10783;
 }
