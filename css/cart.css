@@ -6,6 +6,8 @@
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
   }
+
+
 /* 头部开始 */
 .g-top{
     width: 100%;
@@ -73,6 +75,7 @@
     margin-left: 25px;
     margin-right: 10px;
 }
+
 .c-helper-small>li:nth-child(1){
     width: 88px;
 }
@@ -147,59 +150,24 @@
     font-size: 14px;
     margin-left: 20px;
 }
-.g-excle{
-    border: 1px solid #D0D0D0;
-    width: 100%;
-    margin-top: 20px;
-}
+
 .orders{
-    border-bottom: 1px solid #D0D0D0;
+ 
     width: 100%;
+    height: 40px;
+    line-height: 40px;
     
 }
-.orders ul li{
-    float: left;
-    width: 18%;
-    text-align: center;
-    font-size: 12px;
-    color: #666;
-}
-.orders>ul li:nth-child(1){
-    width: 42%;
-    text-align: left;
-    margin-left: 20px;
-}
 
-.g-excle div:first-child{
-   height: 40px;
-   border-left:2px solid #F3168A;
-   line-height: 40px;    
-}
-
-.g-excle div:first-child li:nth-child(1){
-    color:#F3168A;
-    font-size: 16px;
-}
-.g-excle div:nth-child(2){
-    height: 100px;
-    line-height: 100px;    
- }
-
-.g-excle div:last-child{
-    border-bottom:none;
-    height: 40px;
-    line-height: 40px;  
-    font-size: 12px;
-    margin-left: 20px;
-}
-.g-excle div:last-child span:nth-child(1){
+.orders span:nth-child(1){
     background-color: #FF9933;
     color: #fff;
     padding: 2px 10px;
     border-radius: 2px;
+    margin-left: 20px;
     
 }
-.g-excle div:last-child span:nth-child(2){
+.orders span:nth-child(2){
     margin-left: 20px;
 }
 /* 购买物品结束 */

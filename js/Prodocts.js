@@ -82,7 +82,7 @@ $(function() {
 		})
 		//点击-号,数量-一;
 		$(".del").on("click", function(event) {
-			if(num <= 0) {
+			if(num <= 1) {
 				event.preventDefault();
 				return;
 			}
