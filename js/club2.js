@@ -18,26 +18,40 @@ $(function(){
 });
  
 
-// tab切换
-function liTab(obj1, obj2, obj3, obj4) {
-	function init() {
-		for(var i = 0; i < obj1.length; i++) {
-			obj2[0].style.display = "block";
-			obj1[0].className = "first-page";
-		}
-	};
-	init();
-	for(var i = 0; i < obj1.length; i++) {
-		obj1[i].index = i;
-		obj1[i].onclick = function() {
-			for(var j = 0; j < obj1.length; j++) {
-				obj2[j].style.display = "none";
+// ///////////////tab切换
+// function liTab(obj1, obj2, obj3, obj4) {
+// 	function init() {
+// 		for(var i = 0; i < obj1.length; i++) {
+// 			obj2[0].style.display = "block";
+// 			obj1[0].className = "first-page";
+// 		}
+// 	};
+// 	init();
+// 	for(var i = 0; i < obj1.length; i++) {
+// 		obj1[i].index = i;
+// 		obj1[i].onclick = function() {
+// 			for(var j = 0; j < obj1.length; j++) {
+// 				obj2[j].style.display = "none";
+// 				obj1[j].className = "";
+// 			}
+// 			obj2[this.index].style.display = "block";
+// 			this.className = "first-page";
+// 		};
+// 	}
+// };
+;(function(obj1,obj2){
+	var len = obj1.length;
+	for(var i=0;i<len;i++){
+		obj1[i].onclick = function(){
+			for(var j = 0; j < len ; j++){
 				obj1[j].className = "";
+				obj2[j].className = "";
 			}
-			obj2[this.index].style.display = "block";
 			this.className = "first-page";
-		};
+			var n = this.getAttribute("index");
+			obj2[n].className = "active";
+		}
 	}
-};
+}($(".head-inner>ul>li"),$(".wrapper>div")))
 
-liTab($(".head-inner li"),$(".wrapper>div"));
+

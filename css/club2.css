@@ -35,47 +35,47 @@ body{
 
 
 /* 上下的大图开始 */
-.wrapper{
+ /* .rap{
     width: 1000px;
     height: 1100px;
     background-color: #fff;
     margin: -200px auto;
-}
-.wrapper>h4{
+} */
+.rap>h4{
     position: absolute;
     margin-top: -70px;
     margin-left: 57px;
     font-weight: normal;
 }
 .wrap{
-    height: 400px;
+    /* height: 400px; */
     background: url(../img/xy-club2-img1.jpg) no-repeat;
 }
-.wrapper .wrap1{
+.rap .wrap1{
     height: 500px;
     position: relative;
     margin-bottom: 50px;
     background-color: #FFE5EC;
 }
-.wrapper .wrap1>span{
+.rap .wrap1>span{
     display: inline-block;
     background:url(../img/xy-club2-img2.png) no-repeat;
 }
-.wrapper .wrap1 .hb{
+.rap .wrap1 .hb{
     width: 1000px;
     height: 10px;
     background-position:  -886px 0px ;
 }
-.wrapper .wrap1 .hb:first-child{
+.rap .wrap1 .hb:first-child{
     position: absolute;
     margin-top: -10px;
 }
-.wrapper .wrap1 .hb2{
+.rap .wrap1 .hb2{
     position: absolute;
     transform: rotate(180deg);
     margin-top: 500px;
 }
-.wrapper .wrap1 .left{
+.rap .wrap1 .left{
     width: 40px;
     height: 103px;
     position: absolute;
@@ -83,14 +83,14 @@ body{
     margin-top: 30px;
     background-position:  -886px -176px ;
 }
-.wrap1 .Personal{
+.rap .wrap1 .Personal{
     position: absolute;
     width: 360px;
     height: 200px;
     margin-left: 30px;
     margin-top: 20px;
 }
-.wrap1 .Personal-left{
+.rap .wrap1 .Personal-left{
     float: left;
     width: 170px;
     height: 100%;
@@ -99,7 +99,7 @@ body{
     background-color: #FFFFFF;
     border-right: 1px solid #ffc6d6;
 }
-.wrap1 .Personal-left img{
+.rap .wrap1 .Personal-left img{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -107,7 +107,7 @@ body{
     border: 3px solid #FDE7ED;
 }
 
-.wrap1 .Personal-left button{
+.rap .wrap1 .Personal-left button{
     width: 120px;
     height: 30px;
     border: none;
@@ -117,12 +117,12 @@ body{
     font-size: 12px;
     background-color: #F10180;
 }
-.wrap1 .Personal-left button:hover{
+.rap .wrap1 .Personal-left button:hover{
     background-color: #f43499;
     cursor: pointer;
 }
 
-.wrap1 .Personal-right{
+.rap .wrap1 .Personal-right{
     width: 189px;
     height: 100%;
     float: left;
@@ -130,12 +130,12 @@ body{
     box-shadow: 10px 5px 20px #666;
     background-color: #FFF6F8;
 }
-.wrap1 .Personal-right ul{
+.rap .wrap1 .Personal-right ul{
     width: 150px;
     font-size: 14px;
     margin-top: 30px;
 }
-.wrap1 .Personal-right ul li i{
+.rap .wrap1 .Personal-right ul li i{
     display: inline-block;
     width: 70px;
     height: 30px;
@@ -145,17 +145,16 @@ body{
     background: url(../img/xy-club2-img2.png) -1161px -175px no-repeat;
     transform: scale(0.8);
 }
-.wrap1 .Personal-right ul li{
+.rap .wrap1 .Personal-right ul li{
     height: 30px;
 }
-.wrap1 .Personal-right ul li span small{
+.rap .wrap1 .Personal-right ul li span small{
     font-size: 14px;
     color: #F10180;
     margin: 0px 3px;
 }
 
-
-.wrap1 .col-md-6{
+.rap .wrap1 .col-md-6{
     position: relative;
     margin-left: 490px;
     margin-top: 40px;
@@ -163,20 +162,20 @@ body{
     height: 400px;
 }
 
-.win{
+.rap .win{
     float: left;
     margin-top: 250px;
     margin-left: 30px;
 }
-.winning{
+.rap .winning{
     height: 200px;
     overflow: hidden;
 }
-.win>p{
+.rap .win>p{
     font-size: 16px;
     color: #ec4674;
 }
-.win>p i{
+.rap .win>p i{
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -184,10 +183,10 @@ body{
     vertical-align: -15px;
 }
 
-.winning li{
+.rap .winning li{
     padding: 10px;
 }
-.winning ul li span{
+.rap .winning ul li span{
     margin: 20px;
     font-size: 14px;
 }
@@ -196,30 +195,30 @@ body{
 
 
 /* 第二部分 */
-.top-prize{
+.rap .top-prize{
     margin-right: 20px;
     margin-left: 30px;
 }
-.top-prize h2{
+.rap .top-prize h2{
     font-weight: normal;
     text-indent: 12px;
     font-size: 20px;
     border-left: 8px solid #f10180;
 }
-.top-prize h2 a{
+.rap .top-prize h2 a{
     color: inherit;
     color: #1d94d1;
     font-size: 14px;
     float: right;
 }
-.top-prize h2 a:hover{
+.rap .top-prize h2 a:hover{
     color: #3cbdff;
 }
-.top-prize img{
+.rap .top-prize img{
     margin-top: 20px;
     width: 460px;
 }
-.top-prize .img2{
+.rap .top-prize .img2{
     margin-left: 23px;
 }
 
