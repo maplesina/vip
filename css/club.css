@@ -2,7 +2,7 @@
 .bg{
     background-color: #fff;
 }
-.wrap1 .wrap1-right .wrap1-right-bottom ul .mr{
+.bg1 .wrap1 .wrap1-right .wrap1-right-bottom ul .mr{
     margin-right: 0;
 }
 p{
@@ -19,13 +19,22 @@ button{
 }
 
 
-/* 返回顶部 */
+/* 返回顶部开始 */
+@media screen and (max-width: 1300px){
+    #top{
+        right: 10px;
+    }
+}
+@media screen and (min-width: 1900px) {
+    #top{
+        right: 360px;
+    }
+}
 #top{
     width: 60px;
     height: 55px;
     position: fixed;
     top: 800px;
-    right: 360px;
     overflow: hidden;
     border: 1px solid #cf669e;
 }
@@ -43,6 +52,7 @@ button{
     letter-spacing: 5px;
     background-color: #f10180;
 }
+/* 返回顶部结束 */
 
 
 
@@ -56,6 +66,9 @@ button{
 }
 .footer-list ul{
     width: 149px;
+}
+.footer-pic p span{
+    margin-right: 5px;
 }
 /* 头部、尾部结束 */
 
@@ -76,18 +89,16 @@ button{
 /* 上下的大图结束 */
 
 
+
+
 /* 头部开始 */
 .wrapper{
-    width: 2000px;
-    margin-left: -500px;
+    margin-left: -46%;
 }
 .wrapper>div{
-    width: 2000px;
+    width: 1921px;
     height: auto;
     float: left;
-    display: none;
-}
-.wrapper>div{
     display: none;
 }
 .wrapper .active{
@@ -97,16 +108,21 @@ button{
     width: 1000px;
     margin: 0 auto;
 }
+.content-bg1{
+    background-color: #FBFBF5;
+}
+.content-bg2{
+    background-color: #FFF4F0;
+}
 
 
 
 /* 第一部分开始 */
-.wrap1{
+.bg1 .wrap1{
     width: 100%;
-    height: 430px;
-}
+} 
 /* 第一部分左边 */
-.wrap1 .wrap1-left{
+.bg1 .wrap1 .wrap1-left{
     float: left;
     width: 255px;
     height: 410px;
@@ -114,35 +130,35 @@ button{
     text-align: center;
     background-color: #F5F5F5;
 }
-.wrap1 .wrap1-left>img{
+.bg1 .wrap1 .wrap1-left>img{
     margin-top: 40px;
 }
-.wrap1 .wrap1-left>p{
+.bg1 .wrap1 .wrap1-left>p{
     margin-top: 40px;
     font-size: 14px;
 }
-.wrap1 .wrap1-left>button{
+.bg1 .wrap1 .wrap1-left>button{
     margin-top: 20px;
     width: 130px;
     height: 40px;
 }
-.wrap1 .wrap1-left ul{
+.bg1 .wrap1 .wrap1-left ul{
     height: 100px;
     margin-top: 50px;
     /* background-color: saddlebrown; */
 }
-.wrap1 .wrap1-left li{
+.bg1 .wrap1 .wrap1-left li{
     float: left;
     width: 40px;
     height: 90px;
     margin: 3px;
     /* background-color: red; */
 }
-.wrap1 .wrap1-left li:first-child{
+.bg1 .wrap1 .wrap1-left li:first-child{
     width: 60px;
     margin-left: 5px;
 }
-.wrap1 .wrap1-left li:first-child span{
+.bg1 .wrap1 .wrap1-left li:first-child span{
     display: inline-block;
     width: 40px;
     color: #333;
@@ -150,13 +166,13 @@ button{
     margin-bottom: 10px;
     border-left: 2px solid #f10180;
 }
-.wrap1 .wrap1-left li:first-child p{
+.bg1 .wrap1 .wrap1-left li:first-child p{
     font-size: 10px;
     text-align: left;
     margin-left: 9px;
     color: #999;
 }
-.wrap1 .wrap1-left li i{
+.bg1 .wrap1 .wrap1-left li i{
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -164,20 +180,20 @@ button{
     background: url(../img/xy-club-wrap1-left2.png) -236px -754px no-repeat;
 }
 /* 第一部分右边 */
-.wrap1 .wrap1-right{
+.bg1 .wrap1 .wrap1-right{
     float: left;
     width: 695px;
     height: 410px;
     margin: 10px;
     background-color: #fff;
 }
-.wrap1 .wrap1-right .wrap1-right-top{
+.bg1 .wrap1 .wrap1-right .wrap1-right-top{
     height: 260px;
     margin-top: 10px;
     margin-bottom: 10px;
     transition: all 5s;
 }
-.wrap1 .wrap1-right .wrap1-right-bottom ul li{
+.bg1 .wrap1 .wrap1-right .wrap1-right-bottom ul li{
     width: 225px;
     height: 130px;
     float: left;
@@ -187,14 +203,14 @@ button{
 
 
 /* 第二部分开始 */
-.title{
+.bg1 .title{
     height: 37px;
     border-top: 2px solid #f10783;
 }
-.wrap2 .title a:hover{
+.bg1 .wrap2 .title a:hover{
     text-decoration: underline;
 }
-.title>span:first-child{
+.bg1 .title>span:first-child{
     display: inline-block;
     color: #fff;
     width: 175px;
@@ -205,24 +221,24 @@ button{
     padding-left: 25px;
     background: url(../img/xy-jinglingtu1.png) -153px -457px no-repeat;
 }
-.title>span:nth-child(2) i{
+.bg1 .title>span:nth-child(2) i{
     display: inline-block;
     width: 15px;
     height: 10px;
     margin-left: 5px;
     background: url(../img/xy-jinglingtu1.png) -95px -429px no-repeat;
 }
-.ms{
+.bg1 .ms{
     float: right;
     color: #666;
     line-height: 37px;
 }
-.ms a{
+.bg1 .ms a{
     color: initial;
     color: #1d94d1;
     margin-left: 20px;
 }
-.ms span:after{
+.bg1 .ms span:after{
     content: "";
     width: 0;
     height: 15px;
@@ -231,100 +247,100 @@ button{
     margin-left: 10px;
     border-right: 1px solid #333;
 }
-.ms span:hover{
+.bg1 .ms span:hover{
     cursor: pointer;
 }
 
 
-.wrap2 .details ul li{
+.bg1 .wrap2 .details ul li{
     float: left;
     width: 235px;
     margin: 6px;
     border: 1px solid #eee;
 }
-.wrap2 .details ul li:hover{
+.bg1 .wrap2 .details ul li:hover{
     border-color: #f10783;
 }
-/* .wrap2 .details ul li a {
-    text-decoration: underline;
-    color: inherit;
-} */
-.wrap2 .details ul li p{
+.bg1 .wrap2 .details ul li p{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.wrap2 .details ul li p:nth-child(2){
+.bg1 .wrap2 .details ul li p:nth-child(2){
     color: #333;
     font-size: 14px;
     padding: 5px;
 }
-.wrap2 .details ul li p:nth-child(3){
+.bg1 .wrap2 .details ul li p:nth-child(3){
     color: #999;
     font-size: 12px;
     padding: 0px 5px;
     min-height: 20px;
 }
-.wrap2 .details ul li div{
+.bg1 .wrap2 .details ul li div{
     padding-left: 5px;
     margin-bottom: 20px;
 }
-.wrap2 .details ul li div span,.wrap2 .details ul li div del{
+.bg1 .wrap2 .details ul li div span,.wrap2 .details ul li div del{
     display: block;
     padding: 2px;
 }
-.wrap2 .details ul li div span{
+.bg1 .wrap2 .details ul li div span{
     color: #f10180;
 }
 
-.wrap2 .details ul li div button{
+.bg1 .wrap2 .details ul li div button{
     float: right;
     
     margin-top: -45px;
     margin-right: 10px;
 }
-.disabled{
+.bg1 .disabled{
     cursor: not-allowed;
     color: #999999;
     background-color: #D0D0D0;
 }
-.btn{
+.bg1 .btn{
     color: #FBEFFF;
     background-color: #F10180;
 }
-.btn:hover{
+.bg1 .btn:hover{
     cursor: pointer;
     color: #FFFFFF;
     background-color: #F43499;
 }
-.wrap2 .details ul li:first-child{
+.bg1 .wrap2 .details ul li:first-child{
     position: relative;
 }
-.wrap2 .details ul li:nth-child(4){
+.bg1 .wrap2 .details ul li:nth-child(4){
     position: relative;
 }
-.wrap2 .details ul li .none{
+.bg1 .wrap2 .details ul li .none{
     position: absolute;
     z-index: 1;
     top: 50%;
     margin-top: -45%;
     left: 50%;
     margin-left: -15%;
+} 
+.bg1 .wrap2 .details ul li .lazy{
+    width: 235px;
+    height: 300px;
 }
 /* 第二部分结束 */
 
 
 /* 第三部分开始 */
 
-.wrap3 .title>span:first-child,.wrap4 .title>span:first-child{
+.bg1 .wrap3 .title>span:first-child,.wrap4 .title>span:first-child{
     width: 119px;
     padding-left: 35px;
     background: url(../img/xy-jinglingtu1.png) 0px -457px no-repeat;
 }
-.wrap3 .title ul{
+.bg1 .wrap3 .title ul{
     float: right;
 }
-.wrap3 .title>ul li{
+.bg1 .wrap3 .title>ul li{
     float: left;
     width: 95px;
     height: 30px;
@@ -333,118 +349,308 @@ button{
     border-left: 1px solid #eee;
     transform: skewX(-30deg);
 }
-.wrap3 .title>ul li:last-child{
+.bg1 .wrap3 .title>ul li:last-child{
     margin-right: 10px;
 }
-.wrap3 .title>ul li p{
+.bg1 .wrap3 .title>ul li p{
     line-height: 30px;
     transform: skewX(30deg);
 }
-.wrap3 .title ul li:hover{
+.bg1 .bg1 .wrap3 .title ul li:hover{
     color: #fff;
     background-color: #F10783;
 }
-.wrap3 .ms{
+.bg1 .wrap3 .ms{
     width: 100%;
     text-align: right;
     margin-top: -6px;
     font-size: 12px;
     border-top: 3px solid #eee;
 }
-.wrap3 .ms span:hover,
-.wrap3 .ms a:hover{
+.bg1 .wrap3 .ms span:hover,
+.bg1 .wrap3 .ms a:hover{
     border-bottom: 1px dotted #333;
 }
-.wrap3 .ms a:hover{
+.bg1 .wrap3 .ms a:hover{
     border-color: #1d94d1;
 }
 
 
 
-.wrap3 .time ul li{
+.bg1 .wrap3 .time ul li{
     float: left;
     margin: 29px;   
     margin-bottom: 40px;
     text-align: center;
 }
-.wrap3 .time ul li>p:first-child{
+.bg1 .wrap3 .time ul li>p:first-child{
     line-height: 47px;
     width: 190px;
     border-radius: 5px;
     background: url(../img/xy-club-wrap3-5.jpg) no-repeat;
 }
-.wrap3 .time ul li p img{
+.bg1 .wrap3 .time ul li p img{
     margin-top: -5px;
 }
-.wrap3 .time ul li div{
+.bg1 .wrap3 .time ul li div{
     width: 180px;
     margin-left: 5px;
     margin-top: -6px;
     border: 1px dashed #333;
 }
-.wrap3 .time ul li div p{
+.bg1 .wrap3 .time ul li div p{
     line-height: 45px;
 }
-.wrap3 .time ul li div button{
+.bg1 .wrap3 .time ul li div button{
     width: 120px;
     height: 35px;
     border: none;
 }
-.wrap3 .time .btn{
+.bg1 .wrap3 .time .btn{
     color: #F3018D;
     background-color: #FFD9E6;
 }
-.wrap3 .time ul li div p:last-child{
+.bg1 .wrap3 .time ul li div p:last-child{
     font-size: 12px;
 }
-.wrap3 .time li>p i{
+.bg1 .wrap3 .time li>p i{
     display: inline-block;
     width: 30px;
     height: 30px;
     vertical-align: -5px;
     background: url(../img/xy-club-wrap3-jinglingtu.png) -4px -1122px no-repeat;
 }
-.wrap3 .time li>p span{
+.bg1 .wrap3 .time li>p span{
     font-size: 30px;
-    color: #666;
+    color: #666; 
 }
 /* 第三部分结束 */
 
 
 /* 第四部分开始 */
 
-.wrap4 .privilege{
+.bg1 .wrap4 .privilege{
     margin: 30px;
     padding-bottom: 20px;
 }
-.wrap4 .privilege>img{
+.bg1 .wrap4 .privilege>img{
     float: left;
     margin-right: 50px;
 }
-.wrap4 .privilege-right{
+.bg1 .wrap4 .privilege-right{
     float: left;
 }
-.wrap4 .privilege-right li{
+.bg1 .wrap4 .privilege-right li{
     float: left;
     margin: 15px;
     margin-top: 30px;
     text-align: center;
 }
-.wrap4 .privilege-right li p span{
+.bg1 .wrap4 .privilege-right li p span{
     color: #f10783;
 }
-.wrap4 .privilege-right a{
+.bg1 .wrap4 .privilege-right a{
     color: #1d94d1;
 }
-.wrap4 .privilege-right>p:last-child{
+.bg1 .wrap4 .privilege-right>p:last-child{
     font-size: 12px;
     margin-top: 10px;
 }
 /* 第四部分结束 */
 
 
-
 /* 头部结束 */
 
 
 
+/* club2 css部分开始 */
+.wrap{
+    height: auto;
+    background: url(../img/xy-club2-img1.jpg) no-repeat;
+}
+.rap>h4{
+    padding-top: 165px;
+    padding-left: 50px;
+    font-weight: normal;
+}
+/* .wrap1部分开始 */
+.rap .wrap1{
+    height: 500px;
+    position: relative;
+    margin-top: 50px;
+    background-color: #FFE5EC;
+}
+.rap .wrap1>span{
+    display: inline-block;
+    background:url(../img/xy-club2-img2.png) no-repeat;
+}
+.rap .wrap1 .hb{
+    width: 1000px;
+    height: 10px;
+    background-position:  -886px 0px ;
+}
+.rap .wrap1 .hb:first-child{
+    position: absolute;
+    margin-top: -10px;
+}
+.rap .wrap1 .hb2{
+    position: absolute;
+    transform: rotate(180deg);
+    margin-top: 500px;
+}
+.rap .wrap1 .left{
+    width: 40px;
+    height: 103px;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 30px;
+    background-position:  -886px -176px ;
+}
+.rap .wrap1 .Personal{
+    position: absolute;
+    width: 360px;
+    height: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.rap .wrap1 .Personal-left{
+    float: left;
+    width: 170px;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0px 5px 20px #666;
+    background-color: #FFFFFF;
+    border-right: 1px solid #ffc6d6;
+}
+.rap .wrap1 .Personal-left img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 3px solid #FDE7ED;
+}
+
+.rap .wrap1 .Personal-left button{
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 12px;
+    background-color: #F10180;
+}
+.rap .wrap1 .Personal-left button:hover{
+    background-color: #f43499;
+    cursor: pointer;
+}
+
+.rap .wrap1 .Personal-right{
+    width: 189px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    box-shadow: 10px 5px 20px #666;
+    background-color: #FFF6F8;
+}
+.rap .wrap1 .Personal-right ul{
+    width: 150px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.rap .wrap1 .Personal-right ul li i{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    vertical-align: -10px;
+    margin-left: 25px;
+    margin-right: -10px;
+    background: url(../img/xy-club2-img2.png) -1161px -175px no-repeat;
+    transform: scale(0.8);
+}
+.rap .wrap1 .Personal-right ul li{
+    height: 30px;
+}
+.rap .wrap1 .Personal-right ul li span small{
+    font-size: 14px;
+    color: #F10180;
+    margin: 0px 3px;
+}
+
+.rap .wrap1 .col-md-6{
+    position: relative;
+    margin-left: 490px;
+    margin-top: 40px;
+    width: 400px; 
+    height: 400px;
+}
+
+.rap .win{
+    float: left;
+    margin-top: 250px;
+    margin-left: 30px;
+}
+.rap .winning{
+    height: 150px;
+    overflow: hidden;
+}
+.rap .win>p{
+    font-size: 16px;
+    color: #ec4674;
+}
+.rap .win>p i{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/xy-club2-img2.png) -1852px -60px;
+    vertical-align: -15px;
+}
+
+.rap .winning li{
+    color: #666;
+    padding: 10px;
+}
+.rap .winning ul li span{
+    margin: 20px;
+    font-size: 14px;
+}
+/* 上下的大图结束 */
+
+
+
+/* 第二部分 */
+.rap .top-prize{
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-left: 2px solid #ffebf0;
+    border-right: 2px solid #ffebf0;
+}
+.rap .top-prize h2{
+    font-weight: normal;
+    text-indent: 12px;
+    font-size: 20px;
+    border-left: 8px solid #f10180;
+}
+.rap .top-prize h2 a{
+    color: inherit;
+    color: #1d94d1;
+    font-size: 14px;
+    float: right;
+}
+.rap .top-prize h2 a:hover{
+    color: #3cbdff;
+}
+.rap .top-prize img{
+    margin-top: 20px;
+    width: 460px;
+}
+.rap .top-prize .img2{
+    margin-left: 20px;
+}
+/* .wrap1部分结束 */
+
+
+
+/* club2 css部分结束 */
