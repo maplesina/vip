@@ -11,22 +11,30 @@
 $(document).ready(function(){
 	$('.winning li:even').addClass('lieven');
 })
-$(function(){
-	$("div.winning").myScroll({
-		speed:40, //��ֵԽ���ٶ�Խ��
-		rowHeight:68 //li�ĸ߶�
-	});
-});
+// $(function(){
+// 	$("div.winning").myScroll({
+// 		speed:40,
+// 		rowHeight:68
+// 	});
+// });
  
 
 //////////////////////////////////////////////////////////////////////////////tab切换
 ;(function(obj1,obj2){
 	var len = obj1.length;
 	for(var i=0;i<len;i++){
+		obj1[i].index = i;
 		obj1[i].onclick = function(){
 			for(var j = 0; j < len ; j++){
 				obj1[j].className = "";
 				obj2[j].className = "";
+			}
+			if(this.index == 1){//当点击“抽大奖”的时候才执行中奖名单滚动的操作
+				$("div.winning").myScroll({
+					speed:40,
+					rowHeight:68
+				});
+				// flag = false;
 			}
 			this.className = "first-page";
 			var n = this.getAttribute("index");
