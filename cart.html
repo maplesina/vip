@@ -1,276 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>购物车</title>
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/public.css">
-		<link rel="stylesheet" href="css/carts.css">
-		<link rel="stylesheet" href="css/cart.css">
-		<link rel="stylesheet" href="iconfont/iconfont.css">
-		<!--<script src="js/jquery-1.11.0.min.js"></script>-->
-		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
-	</head>
-
-	<body>
-		<!-- 头部开始 -->
-		<div class="g-top">
-			<div class="p-row wraper">
-				<div class="p-logo">
-					<span></span>
-				</div>
-				<div class="p-nav">
-					<ul class="c-helper-small">
-						<li>
-							<span>|</span>
-							<i class="iconfont icon-shuangren"></i>会员服务
-							<ul class="service">
-								<li>帮助中心</li>
-								<li>会员反馈</li>
-								<li>会员俱乐部</li>
-							</ul>
-						</li>
-						<li><span>|</span><i class="iconfont icon-kfzx"></i>在线客服</li>
-						<li><span>|</span><i class="iconfont icon-dianhua
-                        "></i>400-6789-888</li>
-					</ul>
-					<div class="m-site-nav">
-						<span>你好,<div class="m-site-nav-user" style="display: inline;"> 156*****5</div><i></i></span>
-						<span>[退出] </span>
-						<span>订单管理</span>
-					</div>
-					<div class="helper">
-						<ul>
-							<li>100% 正品保证</li>
-							<li>七天无理由放心退</li>
-							<li>退货返运费</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- 头部结束 -->
-		<!-- 中间部分内容开始 -->
-		<div class="main">
-			<!-- 版心内容开始 -->
-			<div class="main-center wraper">
-				<!-- 购买物品开始 -->
-				<div class="shop-row">
-					<ul>
-						<li>特卖商品03 : 47 <span>|</span></li>
-						<li>唯品医药 </li>
-					</ul>
-				</div>
-				<div class="Address">
-					<p>
-						<span>配送至</span>
-						<span>高新区</span>
-						<span>|</span>
-						<span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/carts.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <!--<script src="js/jquery-1.11.0.min.js"></script>-->
+    <script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <!-- 头部开始 -->
+    <div class="g-top">
+        <div class="p-row wraper">
+            <div class="p-logo">
+                <span></span>
+            </div>
+            <div class="p-nav">
+                <ul class="c-helper-small"> 
+                    <li>
+                        <span>|</span>
+                        <i class="iconfont icon-shuangren"></i>会员服务
+                        <ul class="service">
+                            <li>帮助中心</li>
+                            <li>会员反馈</li>
+                            <li>会员俱乐部</li>
+                        </ul>
+                    </li>
+                    <li><span>|</span><i class="iconfont icon-kfzx"></i>在线客服</li>
+                    <li><span>|</span><i class="iconfont icon-dianhua
+                        "></i>400-6789-888</li> 
+                </ul>
+                <div class="m-site-nav">
+                    <span>你好,<div class="m-site-nav-user" style="display: inline;"> 156*****5</div><i></i></span>
+                    <span>[退出] </span>
+                    <span>订单管理</span>
+                </div>
+                <div class="helper">
+                    <ul>
+                        <li><i class="iconfont icon-duihao"></i>100% 正品保证</li>
+                        <li><i class="iconfont icon-qitiantuihuan"></i>七天无理由放心退</li>
+                        <li><i class="iconfont icon-qian"></i>退货返运费</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+    <!-- 中间部分内容开始 -->
+    <div class="main">
+        <!-- 版心内容开始 -->
+        <div class="main-center wraper">
+            <!-- 购买物品开始 -->
+            <div class="shop-row">
+                <ul>
+                    <li>特卖商品03 : 47 <span>|</span></li>
+                    <li>唯品医药 </li>
+                </ul>
+            </div>
+            <div class="Address">         
+                        <p>
+                            <span>配送至</span>
+                            <span>高新区</span>
+                            <span>|</span>
+                            <span>
                                 请在倒计时结束前提交订单，下单后你另有 30 分钟的支付时间。
                             </span>
-					</p>
-				</div>
-				<!-- <div class="g-excle">
-                <div class="orders">
-                    <ul>
-                        <li>精品特卖</li>
-                        <li>单价</li>
-                        <li>数量</li>
-                        <li>小计</li>
-                    </ul>
+                        </p>
                 </div>
-                <div class="orders">
-                    <ul>
-                        <li>精品特卖</li>
-                        <li>单价</li>
-                        <li>数量</li>
-                        <li>小计</li>
-                    </ul>
-                </div>
-                <div class="orders">
-                    <span>运费</span><span>唯品自营: 自营商品已免运费</span>
-                </div>
-        </div> -->
-				<div class="cartMain_hd">
-					<ul class="order_lists cartTop">
-						<li class="list_chk">
-							<!--所有商品全选-->
-							<input type="checkbox" id="all" class="whole_check">
-							<label for="all"></label> 全选
-						</li>
-						<li class="list_con">商品</li>
-						<li class="list_info">商品参数</li>
-						<li class="list_price">单价</li>
-						<li class="list_amount">数量</li>
-						<li class="list_sum">金额</li>
-						<li class="list_op">操作</li>
-					</ul>
-				</div>
+
+        <div class="cartMain_hd">
+            <ul class="order_lists cartTop">
+                <li class="list_chk">
+                    <!--所有商品全选-->
+                    <input type="checkbox" id="all" class="whole_check">
+                    <label for="all"></label>
+                    全选
+                </li>
+                <li class="list_con">商品</li>
+                <li class="list_info">商品参数</li>
+                <li class="list_price">单价</li>
+                <li class="list_amount">数量</li>
+                <li class="list_sum">金额</li>
+                <li class="list_op">操作</li>
+            </ul>
+        </div>
 
 				<div class="cartBox">
 
-					<div class="order_content">
-						<ul class="order_lists">
-							<li class="list_chk">
-								<input type="checkbox" id="checkbox_2" class="son_check">
-								<label for="checkbox_2"></label>
-							</li>
-							<li class="list_con">
-								<div class="list_img">
-									<a href="javascript:;"><img src="./img/1.png" alt=""></a>
-								</div>
-								<div class="list_text">
-									<a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a>
-								</div>
-							</li>
-							<li class="list_info">
-								<p>规格：默认</p>
-								<p>尺寸：16*16*3(cm)</p>
-							</li>
-							<li class="list_price">
-								<p class="price">￥980</p>
-							</li>
-							<li class="list_amount">
-								<div class="amount_box">
-									<a href="javascript:;" class="reduce reSty">-</a>
-									<input type="text" value="1" class="sum">
-									<a href="javascript:;" class="plus">+</a>
-								</div>
-							</li>
-							<li class="list_sum">
-								<p class="sum_price">￥980</p>
-							</li>
-							<li class="list_op">
-								<p class="del">
-									<a href="javascript:;" class="delBtn">移除商品</a>
-								</p>
-							</li>
-						</ul>
-						<ul class="order_lists">
-							<li class="list_chk">
-								<input type="checkbox" id="checkbox_3" class="son_check">
-								<label for="checkbox_3"></label>
-							</li>
-							<li class="list_con">
-								<div class="list_img">
-									<a href="javascript:;"><img src="./img/w-00027.jpg" alt=""></a>
-								</div>
-								<div class="list_text">
-									<a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a>
-								</div>
-							</li>
-							<li class="list_info">
-								<p>规格：默认</p>
-								<p>尺寸：16*16*3(cm)</p>
-							</li>
-							<li class="list_price">
-								<p class="price">￥780</p>
-							</li>
-							<li class="list_amount">
-								<div class="amount_box">
-									<a href="javascript:;" class="reduce reSty">-</a>
-									<input type="text" value="1" class="sum">
-									<a href="javascript:;" class="plus">+</a>
-								</div>
-							</li>
-							<li class="list_sum">
-								<p class="sum_price">￥780</p>
-							</li>
-							<li class="list_op">
-								<p class="del">
-									<a href="javascript:;" class="delBtn">移除商品</a>
-								</p>
-							</li>
-						</ul>
-						<ul class="order_lists">
-							<li class="list_chk">
-								<input type="checkbox" id="checkbox_6" class="son_check">
-								<label for="checkbox_6"></label>
-							</li>
-							<li class="list_con">
-								<div class="list_img">
-									<a href="javascript:;"><img src="./img/3.png" alt=""></a>
-								</div>
-								<div class="list_text">
-									<a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a>
-								</div>
-							</li>
-							<li class="list_info">
-								<p>规格：默认</p>
-								<p>尺寸：16*16*3(cm)</p>
-							</li>
-							<li class="list_price">
-								<p class="price">￥180</p>
-							</li>
-							<li class="list_amount">
-								<div class="amount_box">
-									<a href="javascript:;" class="reduce reSty">-</a>
-									<input type="text" value="1" class="sum">
-									<a href="javascript:;" class="plus">+</a>
-								</div>
-							</li>
-							<li class="list_sum">
-								<p class="sum_price">￥180</p>
-							</li>
-							<li class="list_op">
-								<p class="del">
-									<a href="javascript:;" class="delBtn">移除商品</a>
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!-- 购买物品结束 -->
-				<!-- 优惠券开始 -->
-				<div class="act-nav">
-					<div class="activities">
-						<span class="coupon1">使用优惠券<b style="margin-left: 10px;">∨</b></span>
-					</div>
-					<div class="message message-01">
-						<div class="mes-01">
-							<div class="message-center">
-								<div class="circle">
-									<i></i>
-								</div>
-								<div class="search">
-									<p>没有可使用的优惠券，激活新的优惠券</p>
-									<p>
-										<input type="text" placeholder="请输入激活码"><span>激活并使用</span>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- 优惠券结束 -->
-				<!-- 使用优惠口令开始 -->
-				<div class="act-nav">
-					<div class="activities">
-						<span class="coupon2">使用优惠口令<b style="margin-left: 10px;">∨</b></span>
-					</div>
-					<div class="message message-02">
-						<p>
-							<input type="text" placeholder="请输入优惠口令"><span>激活并使用</span>
-						</p>
-						<div class="faqs">
-							<p>提示:</p>
-							<p>1.优惠口令不可用于部分特惠商品；</p>
-							<p>2.优惠口令不可与优惠券同时使用，每次仅能使用1个；</p>
-							<p>3.优惠口令暂不支持品牌商家直发专场、预付专场。</p>
-							<p>更多问题，可查看<span>优惠口令使用说明</span></p>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="pro-text">
-					<p class="piece">共<strong class="piece_num">1</strong>件商品&nbsp;&nbsp;&nbsp;商品金额<strong class="total_text">0.00</strong></p>
-					<p><span>总金额(未含运费)</span><strong class="total_text">0.00</strong></p>
-				</div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_2" class="son_check">
+                        <label for="checkbox_2"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./img/zxx-044-1.jpg" alt=""></a></div>
+                        <div class="list_text"><a href="Prodocts.html">SK-II “神仙水”大容量囤货挚选礼盒 神仙水 护肤套装 面部精华 保湿</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：16*16*3(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥980</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥980</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_3" class="son_check">
+                        <label for="checkbox_3"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./img/zxx-045-1.jpg" alt=""></a></div>
+                        <div class="list_text"><a href="Prodocts.html">高端美妆夏季品牌钜献 > SK-II 经典“神仙水”精选护肤套装 神仙水 护肤套装 面部精华 保湿</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：16*16*3(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥780</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥780</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_6" class="son_check">
+                        <label for="checkbox_6"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./img/zxx-046-1.jpg" alt=""></a></div>
+                        <div class="list_text"><a href="Prodocts.html">神仙水曜白光蕴美肌礼盒 神仙水 小灯泡 护肤套装 面部精华 保湿 亮肤</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：16*16*3(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥180</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥180</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+                <div class="orders">
+                    <span>运费</span><span>唯品自营: 自营商品已免运费</span>
+                </div>
+            </div>
+            
+        </div>
+            <!-- 购买物品结束 -->
+            <!-- 优惠券开始 -->
+            <div class="act-nav"> 
+                <div class="activities">
+                    <span class="coupon1">使用优惠券<b style="margin-left: 10px;">∨</b></span>
+                </div>
+                <div class="message message-01">
+                    <div class="mes-01">
+                        <div class="message-center">
+                            <div class="circle">
+                                <i></i>
+                            </div>
+                            <div class="search">
+                                <p>没有可使用的优惠券，激活新的优惠券</p>
+                                <p>
+                                    <input type="text" placeholder="请输入激活码"><span>激活并使用</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 优惠券结束 -->
+            <!-- 使用优惠口令开始 -->
+            <div class="act-nav"> 
+                <div class="activities">
+                    <span class="coupon2">使用优惠口令<b style="margin-left: 10px;">∨</b></span>
+                </div>
+                <div class="message message-02">
+                    <p>
+                        <input type="text" placeholder="请输入优惠口令"><span>激活并使用</span>
+                    </p>
+                    <div class="faqs">
+                        <p>提示:</p>
+                        <p>1.优惠口令不可用于部分特惠商品；</p>
+                        <p>2.优惠口令不可与优惠券同时使用，每次仅能使用1个；</p>
+                        <p>3.优惠口令暂不支持品牌商家直发专场、预付专场。</p>
+                        <p>更多问题，可查看<span>优惠口令使用说明</span></p>
+                    </div>
+                </div>
+               
+			</div>
+			<div class="pro-text">
+				<p class="piece">共<strong class="piece_num">1</strong>件商品&nbsp;&nbsp;&nbsp;商品金额<strong class="total_text">0.00</strong></p>
+				<p><span>总金额(未含运费)</span><strong class="total_text">0.00</strong></p>
+			</div>
 
 				<section class="model_bg"></section>
 				<section class="my_model">
