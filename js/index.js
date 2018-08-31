@@ -84,3 +84,13 @@
 					});
 			})
 })(jQuery)
+
+;(function($){
+//	省区三级联动
+$("#province").click(function  (e) {
+	SelCity(this,e);
+})
+
+
+})(jQuery)
+

@@ -166,14 +166,17 @@
     line-height: 30px;
     margin-top: 20px;
     border:1px solid #fff;
-
     
 }
 .ht-left>span:nth-child(2):hover{
     border:1px solid #666;
+    border-bottom: none;
 }
 .ht-left>span:nth-child(2):hover .nav-left{
-    display: block;    
+    display: block;
+    border-top: none;
+    margin-top: -1px;
+    margin-left:-1px ;    
 }
 .ht-left>span i{
     font-size: 12px;

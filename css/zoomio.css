@@ -1,6 +1,6 @@
 #zoomiocontainer{ /* container containing enlarged image (native sized image) */
 	position: absolute;
-	z-index: 1000;
+	z-index: 10;
 	overflow: hidden;
 	background: white;
 	visibility: hidden;
